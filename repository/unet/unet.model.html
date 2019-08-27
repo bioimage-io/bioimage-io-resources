@@ -1,0 +1,108 @@
+<docs lang="markdown">
+# Unet Segmentation
+A U-net model for image segmentation.
+
+## Usage
+
+### Inference
+Load your image file and run the model.
+
+### Training
+For training, your images should be organized according to the following structure
+
+```
+    - train
+    - sample1
+        - channelA.png
+        - channelB.png
+        - channelC.png
+    - sample2
+        - channelA.png
+        - channelB.png
+        - channelC.png
+    - ...
+    - valid
+    - sample20
+        - channelA.png
+        - channelB.png
+        - channelC.png
+    - ...
+    - test
+    - sample43
+        - channelA.png
+        - channelC.png
+    - sample44
+        - channelA.png
+        - channelC.png
+```
+In the above folder structure, `train/valid/test` are three folders, `sample1`...`sample44` are sample folders, within the sample folder, it contains images with different channels.
+
+For the naming, you have to use `train`/`valid`/`test` as the top level folder name, but the sample name can be choose freely.
+
+Once you organized the images, 
+
+</docs>
+
+<config lang="json">
+{
+    "name": "Unet Segmentation",
+    "type": "model",
+    "tags": ["ImageJ", "CellProfiler", "ImJoy", "Ilastik"],
+    "labels": ["PyTorch", "Segmentation"],
+    "ui": null,
+    "version": "0.1.0",
+    "api_version": "0.1.0",
+    "description": "A U-net model for image segmentation.",
+    "icon": "extension",
+    "inputs": null,
+    "outputs": null,
+    "requirements": [
+    ],
+    "cover": []
+}
+</config>
+
+<script tag="Ilastik;ImJoy;CellProfiler" lang="python">
+from ilastik.bioimage import api
+
+model_url = "https://.../model.pb"
+
+class Model():
+    def run(self):
+        img_in = api.getCurrentImage()
+        model = api.loadModel(model_url)
+        img_out = model.predict(img_in)
+        api.showImage(img_in)
+
+    def train(self):
+        folder = api.showFileDialog()
+        dataset = api.loadDataset(folder)
+        model = api.loadModel(model_url)
+        model.train(dataset)
+
+api.export(Model())
+</script>
+
+<script tag="ImageJ" lang="groovy">
+import bioimage.api
+
+model_url = "https://.../model.pb"
+
+class Model {
+    def run() {
+        ip_in = api.getCurrentImage()
+        model = api.loadModel(model_url)
+        ip_out = model.predict(ip_in)
+        api.showImage(ip_out)
+    }
+
+    def train(){
+        folder = api.showFileDialog()
+        dataset = api.loadDataset(folder)
+        model = api.loadModel(model_url)
+        model.train(dataset)
+    }
+
+}
+api.export(new Model())
+</script>
