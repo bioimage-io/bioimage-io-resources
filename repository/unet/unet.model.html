@@ -72,7 +72,7 @@ class Model():
         img_in = api.getCurrentImage()
         model = api.loadModel(model_url)
         img_out = model.predict(img_in)
-        api.showImage(img_in)
+        api.showImage(img_out)
 
     def train(self):
         folder = api.showFileDialog()
