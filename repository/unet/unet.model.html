@@ -79,6 +79,11 @@ class Model():
         X = X / X.max()
         return self.model.fit(X, y)
 
+    def test_predict(self):
+        import numpy as np
+        result = self.predict(np.random.randint(255, size=(1, 4, 256, 256)))
+        assert result.shape == (1, 1, 256, 256)
+
 api.export(Model())
 </script>
 
