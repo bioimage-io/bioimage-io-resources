@@ -43,42 +43,41 @@ Once you organized the images,
 
 </docs>
 
-<config lang="json">
-{
-    "name": "Unet Segmentation",
-    "type": "model",
-    "tags": ["ImageJ", "CellProfiler", "ImJoy", "Ilastik"],
-    "labels": ["PyTorch", "Segmentation"],
-    "ui": null,
-    "version": "0.1.0",
-    "api_version": "0.1.0",
-    "description": "A U-net model for image segmentation.",
-    "icon": "extension",
-    "inputs": null,
-    "outputs": null,
-    "requirements": [
-    ],
-    "cover": []
-}
+<config lang="yaml">
+name: Unet Segmentation
+type: model
+tags: ["ImageJ", "CellProfiler", "ImJoy", "Ilastik"]
+cover: ''
+version: 0.1.0
+api_version: 0.1.6
+description: A U-net model for image segmentation.
+icon: extension
+permissions: []
+requirements: []
+dependencies: []
 </config>
 
 <script tag="Ilastik;ImJoy;CellProfiler" lang="python">
 from bioimage import api
 
-model_url = "https://.../model.pb"
-
 class Model():
-    def run(self):
-        img_in = api.getCurrentImage()
-        model = api.loadModel(model_url)
-        img_out = model.predict(img_in)
-        api.showImage(img_out)
+    def setup(self):
+        self.model = api.loadModel('https://.../model.onnx')
+        api.register(
+            type='model',
+            input_shape=[None, 4, 256, 256],
+            input_shape=[None, 1, 256, 256],
+            fit=self.train,
+            transform=self.predict
+        )
 
-    def train(self):
-        folder = api.showFileDialog()
-        dataset = api.loadDataset(folder)
-        model = api.loadModel(model_url)
-        model.train(dataset)
+    def predict(self, X):
+        X = X / X.max()
+        return self.model.predict(X)
+
+    def train(self, X, y):
+        X = X / X.max()
+        return self.model.fit(X, y)
 
 api.export(Model())
 </script>
@@ -86,21 +85,26 @@ api.export(Model())
 <script tag="ImageJ" lang="groovy">
 import bioimage.api
 
-model_url = "https://.../model.pb"
-
 class Model {
-    def run() {
-        ip_in = api.getCurrentImage()
-        model = api.loadModel(model_url)
-        ip_out = model.predict(ip_in)
-        api.showImage(ip_out)
+    def setup() {
+        this.model = api.loadModel("https://.../model.onnx")
+        api.register(
+            type='model',
+            input_shape=[null, 4, 256, 256],
+            input_shape=[null, 1, 256, 256],
+            fit=this.train,
+            transform=this.predict
+        )
     }
 
-    def train(){
-        folder = api.showFileDialog()
-        dataset = api.loadDataset(folder)
-        model = api.loadModel(model_url)
-        model.train(dataset)
+    def predict(X) {
+        X = X / X.max()
+        return this.model.predict(X)
+    }
+
+    def train(X, y){
+        X = X / X.max()
+        return this.model.fit(X, y)
     }
 
 }
