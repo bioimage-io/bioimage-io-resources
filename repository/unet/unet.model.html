@@ -96,7 +96,7 @@ class Model {
         api.register(
             type='model',
             input_shape=[null, 4, 256, 256],
-            input_shape=[null, 1, 256, 256],
+            output_shape=[null, 1, 256, 256],
             fit=this.train,
             transform=this.predict
         )
