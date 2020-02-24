@@ -1,62 +1,67 @@
 {
+  "name": "BioImage Model Repository",
   "description": "The official bioimage model repository.",
+  "version": "0.1.0",
+  "url_root": "https://raw.githubusercontent.com/bioimage-io/models/master",
+  "applications": {
+    "ImJoy": "https://raw.githubusercontent.com/bioimage-io/models/master/src/Fiji-app.imjoy.html",
+    "Ilastik": "https://raw.githubusercontent.com/bioimage-io/models/master/src/Ilastik-app.imjoy.html",
+    "Fiji": "https://raw.githubusercontent.com/bioimage-io/models/master/src/ImJoy-app.imjoy.html"
+  },
   "models": [
     {
-      "applications": [
-        "Ilastik",
-        "ImJoy"
-      ],
-      "authors": [
-        "Constantin Pape;@bioimage-io",
-        "Fynn Beuttenm\u00fcller"
-      ],
-      "cite": [
-        {
-          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28",
-          "text": "Ronneberger, Olaf et al. U-net: Convolutional networks for biomedical image segmentation. MICCAI 2015."
-        }
-      ],
-      "config_url": "UNet2DNucleiBroad.model.yaml",
-      "description": "A 2d U-Net pretrained on broad nucleus dataset.",
-      "documentation": "UNet2DNucleiBroad.md",
-      "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/archive/master.zip",
-      "name": "UNet2DNucleiBroad",
-      "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad",
-      "tags": [
-        "unet2d",
-        "pytorch",
-        "nucleus-segmentation"
-      ]
-    },
-    {
-      "applications": [
-        "Ilastik"
-      ],
-      "authors": [
-        "Fynn Beuttenmueller"
-      ],
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased",
+      "name": "sklearnRandomForestClassifierBroadNucleusData",
+      "description": "Random Forest Classifier form scikit-learn",
       "cite": [
         {
           "text": "L. Breiman, \"Random Forests\", Machine Learning, 45(1), 5-32, 2001",
           "url": "https://scikit-learn.org/stable/modules/generated/sklearnbased.ensemble.RandomForestClassifier.html"
         }
       ],
-      "config_url": "RandomForestClassifierBroadNucleusDataBinarized.model.yaml",
-      "description": "Random Forest Classifier form scikit-learn",
+      "authors": [
+        "Fynn Beuttenmueller"
+      ],
       "documentation": "sklearnbased.md",
-      "download_url": "https://github.com/bioimage-io/python-bioimage-io/archive/master.zip",
-      "name": "sklearnRandomForestClassifierBroadNucleusData",
-      "root_url": "https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased",
       "tags": [
         "test",
         "rf",
         "random",
         "forest",
         "example"
-      ]
+      ],
+      "config_url": "RandomForestClassifierBroadNucleusDataBinarized.model.yaml",
+      "applications": [
+        "Ilastik"
+      ],
+      "download_url": "https://github.com/bioimage-io/python-bioimage-io/archive/master.zip"
+    },
+    {
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad",
+      "name": "UNet2DNucleiBroad",
+      "description": "A 2d U-Net pretrained on broad nucleus dataset.",
+      "cite": [
+        {
+          "text": "Ronneberger, Olaf et al. U-net: Convolutional networks for biomedical image segmentation. MICCAI 2015.",
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28"
+        }
+      ],
+      "authors": [
+        "Constantin Pape;@bioimage-io",
+        "Fynn Beuttenm\u00fcller"
+      ],
+      "documentation": "UNet2DNucleiBroad.md",
+      "tags": [
+        "unet2d",
+        "pytorch",
+        "nucleus-segmentation"
+      ],
+      "config_url": "UNet2DNucleiBroad.model.yaml",
+      "applications": [
+        "Ilastik",
+        "ImJoy"
+      ],
+      "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/archive/master.zip"
     }
-  ],
-  "name": "Bioimage model repository",
-  "uri_root": "",
-  "version": "0.1.0"
+  ]
 }

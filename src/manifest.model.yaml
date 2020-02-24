@@ -1,3 +1,14 @@
+name: BioImage Model Repository
+description: The official bioimage model repository.
+version: 0.1.0
+url_root: https://raw.githubusercontent.com/bioimage-io/models/master
+
+applications:
+  ImJoy: src/Fiji-app.imjoy.html
+  Ilastik: src/Ilastik-app.imjoy.html
+  Fiji: src/ImJoy-app.imjoy.html
+
+models:
 - UNet2DNucleiBroad:
   config_url: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
   applications: [Ilastik, ImJoy]
