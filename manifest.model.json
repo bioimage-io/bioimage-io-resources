@@ -1,42 +1,62 @@
 {
-  "name": "Bioimage model repository",
   "description": "The official bioimage model repository.",
-  "version": "0.1.0",
-  "uri_root": "",
   "models": [
     {
-      "name": "Unet Segmentation",
-      "type": "model",
-      "tags": ["ImageJ", "CellProfiler", "ImJoy", "Ilastik"],
-      "labels": ["PyTorch", "Segmentation"],
-      "ui": null,
-      "version": "0.1.0",
-      "api_version": "0.1.0",
-      "description": "A U-net model for image segmentation.",
-      "icon": "extension",
-      "inputs": null,
-      "outputs": null,
-      "requirements": [
+      "applications": [
+        "Ilastik",
+        "ImJoy"
       ],
-      "cover": [],
-      "uri": "repository/unet/unet.model.html"
+      "authors": [
+        "Constantin Pape;@bioimage-io",
+        "Fynn Beuttenm\u00fcller"
+      ],
+      "cite": [
+        {
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28",
+          "text": "Ronneberger, Olaf et al. U-net: Convolutional networks for biomedical image segmentation. MICCAI 2015."
+        }
+      ],
+      "config_url": "UNet2DNucleiBroad.model.yaml",
+      "description": "A 2d U-Net pretrained on broad nucleus dataset.",
+      "documentation": "UNet2DNucleiBroad.md",
+      "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/archive/master.zip",
+      "name": "UNet2DNucleiBroad",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad",
+      "tags": [
+        "unet2d",
+        "pytorch",
+        "nucleus-segmentation"
+      ]
     },
-     {
-      "name": "Ilastik Segmentation",
-      "type": "model",
-      "tags": ["ImageJ", "CellProfiler", "ImJoy", "Ilastik"],
-      "labels": ["PyTorch", "Segmentation"],
-      "ui": null,
-      "version": "0.1.0",
-      "api_version": "0.1.0",
-      "description": "A U-net model for image segmentation.",
-      "icon": "extension",
-      "inputs": null,
-      "outputs": null,
-      "requirements": [
+    {
+      "applications": [
+        "Ilastik"
       ],
-      "cover": [],
-      "uri": "repository/unet/unet.model.html"
+      "authors": [
+        "Fynn Beuttenmueller"
+      ],
+      "cite": [
+        {
+          "text": "L. Breiman, \"Random Forests\", Machine Learning, 45(1), 5-32, 2001",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearnbased.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "config_url": "RandomForestClassifierBroadNucleusDataBinarized.model.yaml",
+      "description": "Random Forest Classifier form scikit-learn",
+      "documentation": "sklearnbased.md",
+      "download_url": "https://github.com/bioimage-io/python-bioimage-io/archive/master.zip",
+      "name": "sklearnRandomForestClassifierBroadNucleusData",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased",
+      "tags": [
+        "test",
+        "rf",
+        "random",
+        "forest",
+        "example"
+      ]
     }
-  ]
+  ],
+  "name": "Bioimage model repository",
+  "uri_root": "",
+  "version": "0.1.0"
 }
