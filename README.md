@@ -3,8 +3,9 @@
 
 ## Models
 
-* [RandomForestClassifierBroadNucleusDataBinarized](https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased/RandomForestClassifierBroadNucleusDataBinarized.model.yaml) [Ilastik]
-* [UNet2DNucleiBroad](https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml) [Ilastik, ImJoy]
+* [UNet2DNucleiBroad](https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml) [Ilastik, ImJoy], [download](https://github.com/bioimage-io/pytorch-bioimage-io/archive/master.zip)
+
+* [RandomForestClassifierBroadNucleusDataBinarized](https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased/RandomForestClassifierBroadNucleusDataBinarized.model.yaml) [Ilastik], [download](https://github.com/bioimage-io/python-bioimage-io/archive/master.zip)
 
 ## How to contribute new models?
  1. Fork this repo

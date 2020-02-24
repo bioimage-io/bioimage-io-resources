@@ -3,28 +3,6 @@
   "models": [
     {
       "authors": [
-        "Fynn Beuttenmueller"
-      ],
-      "cite": [
-        {
-          "text": "L. Breiman, \"Random Forests\", Machine Learning, 45(1), 5-32, 2001",
-          "url": "https://scikit-learn.org/stable/modules/generated/sklearnbased.ensemble.RandomForestClassifier.html"
-        }
-      ],
-      "description": "Random Forest Classifier form scikit-learn",
-      "documentation": "sklearnbased.md",
-      "name": "sklearnRandomForestClassifierBroadNucleusData",
-      "tags": [
-        "test",
-        "rf",
-        "random",
-        "forest",
-        "example"
-      ],
-      "url": "https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased/RandomForestClassifierBroadNucleusDataBinarized.model.yaml"
-    },
-    {
-      "authors": [
         "Constantin Pape;@bioimage-io",
         "Fynn Beuttenm\u00fcller"
       ],
@@ -36,6 +14,7 @@
       ],
       "description": "A 2d U-Net pretrained on broad nucleus dataset.",
       "documentation": "UNet2DNucleiBroad.md",
+      "download": "https://github.com/bioimage-io/pytorch-bioimage-io/archive/master.zip",
       "name": "UNet2DNucleiBroad",
       "tags": [
         "unet2d",
@@ -43,6 +22,29 @@
         "nucleus-segmentation"
       ],
       "url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml"
+    },
+    {
+      "authors": [
+        "Fynn Beuttenmueller"
+      ],
+      "cite": [
+        {
+          "text": "L. Breiman, \"Random Forests\", Machine Learning, 45(1), 5-32, 2001",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearnbased.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "description": "Random Forest Classifier form scikit-learn",
+      "documentation": "sklearnbased.md",
+      "download": "https://github.com/bioimage-io/python-bioimage-io/archive/master.zip",
+      "name": "sklearnRandomForestClassifierBroadNucleusData",
+      "tags": [
+        "test",
+        "rf",
+        "random",
+        "forest",
+        "example"
+      ],
+      "url": "https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased/RandomForestClassifierBroadNucleusDataBinarized.model.yaml"
     }
   ],
   "name": "Bioimage model repository",
