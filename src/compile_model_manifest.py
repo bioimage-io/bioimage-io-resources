@@ -14,8 +14,10 @@ models_yaml = yaml.safe_load(models_yaml_file.read_text())
 
 compiled_apps = {}
 for k in models_yaml['applications']:
-    app_url = models_yaml['applications'][k].strip('/').strip('./')
-    app_url = models_yaml['url_root'].strip('/') + '/' + app_url
+    app_url = models_yaml['applications'][k]
+    if not app_url.startswith('http'):
+        app_url = models_yaml['applications'][k].strip('/').strip('./')
+        app_url = models_yaml['url_root'].strip('/') + '/' + app_url
     compiled_apps[k] = app_url
 
 for item in models_yaml['models']:
@@ -32,8 +34,6 @@ for item in models_yaml['models']:
     model_config.update(item)
     model_info = {"root_url": root_url}
     for k in model_config:
-        if k == 'config_url':
-            model_config[k] = config_url.split('/')[-1]
         # normalize relative path
         if k in ['documentation']:
             model_config[k] = model_config[k].strip('/').strip('./')
