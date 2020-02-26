@@ -7,8 +7,13 @@ applications:
   ImJoy: src/Fiji-app.imjoy.html
   Ilastik: src/Ilastik-app.imjoy.html
   Fiji: src/ImJoy-app.imjoy.html
+  HPA-Classification: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
 
 models:
+- HPA-Classification:
+  config_url: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.yaml
+  applications: [HPA-Classification]
+
 - UNet2DNucleiBroad:
   config_url: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
   applications: [Ilastik, ImJoy]
