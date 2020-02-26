@@ -3,11 +3,11 @@
 
 ## Models
 
-A list of models can be found [here](./src/models.yaml).
+A list of models can be found [here](./src/manifest.model.yaml).
 
 ## How to contribute new models?
 
-BioImage.io is a static website, it read a manifest file from Github repo and render the page in users' browser. Therefore contributing models to the repository is as easy as adding meta information of your models to the manifest file.
+BioImage.io is a static website, it reads a manifest file from Github repo and render the page in users' browser. Therefore contributing models to the repository is as easy as adding meta information of your models to the manifest file.
 
 Please follow the following steps:
 
