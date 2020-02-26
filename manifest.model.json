@@ -6,7 +6,8 @@
   "applications": {
     "ImJoy": "https://raw.githubusercontent.com/bioimage-io/models/master/src/Fiji-app.imjoy.html",
     "Ilastik": "https://raw.githubusercontent.com/bioimage-io/models/master/src/Ilastik-app.imjoy.html",
-    "Fiji": "https://raw.githubusercontent.com/bioimage-io/models/master/src/ImJoy-app.imjoy.html"
+    "Fiji": "https://raw.githubusercontent.com/bioimage-io/models/master/src/ImJoy-app.imjoy.html",
+    "HPA-Classification": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html"
   },
   "models": [
     {
@@ -30,6 +31,7 @@
         "forest",
         "example"
       ],
+      "covers": [],
       "config_url": "https://raw.githubusercontent.com/bioimage-io/python-bioimage-io/master/specs/models/sklearnbased/RandomForestClassifierBroadNucleusDataBinarized.model.yaml",
       "applications": [
         "Ilastik"
@@ -37,8 +39,31 @@
       "download_url": "https://github.com/bioimage-io/python-bioimage-io/archive/master.zip"
     },
     {
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
+      "name": "HPA Classification ShuffleNetV2",
+      "description": "A light-weight model for HPA image classification competition",
+      "cite": null,
+      "authors": [
+        "Moshe Livne",
+        "Wei OUYANG"
+      ],
+      "documentation": "HPAShuffleNetV2.md",
+      "tags": [
+        "shufflenet",
+        "tensorflow.js",
+        "classification"
+      ],
+      "covers": [
+        "https://oeway.github.io/ImJoy-Plugins/hpa-classification/hpa-classification-cover.gif"
+      ],
+      "config_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.yaml",
+      "applications": [
+        "HPA-Classification"
+      ]
+    },
+    {
       "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad",
-      "name": "UNet2DNucleiBroad",
+      "name": "2D UNet Nuclei Broad",
       "description": "A 2d U-Net pretrained on broad nucleus dataset.",
       "cite": [
         {
@@ -56,6 +81,7 @@
         "pytorch",
         "nucleus-segmentation"
       ],
+      "covers": [],
       "config_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/master/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml",
       "applications": [
         "Fiji",
