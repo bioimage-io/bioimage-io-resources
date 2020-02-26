@@ -29,13 +29,19 @@ class ImJoyPlugin {
     api.log('initialized')
   }
 
+  runOneModel(model_info){
+    api.alert(`ImJoy gets model "${model_info.name}".`)
+  }
+
+  runManyModels(model_info_list){
+    api.alert(`ImJoy gets ${model_info_list.length} models.`)
+  }
+
+  testModel(){
+
+  }
+
   async run(ctx) {
-    if(Array.isArray(ctx)){
-        api.alert(`NotImplemented: Load models (#${ctx.length}).`)
-    }
-    else{
-        api.alert(`NotImplemented: Load model "${ctx.name}" from "${ctx.config_url}".`)
-    }
   }
 }
 

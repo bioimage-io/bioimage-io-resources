@@ -1,43 +1,49 @@
 <docs lang="markdown">
-    [TODO: write documentation for this plugin.]
-    </docs>
-    
-    <config lang="json">
-    {
-      "name": "Fiji Model Loader",
-      "type": "web-worker",
-      "tags": [],
-      "ui": "",
-      "version": "0.1.0",
-      "cover": "",
-      "description": "Fiji Model Loader for BioImage.io",
-      "icon": "extension",
-      "inputs": null,
-      "outputs": null,
-      "api_version": "0.1.7",
-      "env": "",
-      "permissions": [],
-      "requirements": [],
-      "dependencies": [],
-      "defaults": {"w": 20, "h": 10}
-    }
-    </config>
-    
-    <script lang="javascript">
-    class ImJoyPlugin {
-      async setup() {
-        api.log('initialized')
-      }
-    
-      async run(ctx) {
-        if(Array.isArray(ctx)){
-            api.alert(`NotImplemented: Load models (#${ctx.length}).`)
-        }
-        else{
-            api.alert(`NotImplemented: Load model "${ctx.name}" from "${ctx.config_url}".`)
-        }
-      }
-    }
-    
-    api.export(new ImJoyPlugin())
-    </script>
+[TODO: write documentation for this plugin.]
+</docs>
+
+<config lang="json">
+{
+  "name": "Fiji Model Loader",
+  "type": "web-worker",
+  "tags": [],
+  "ui": "",
+  "version": "0.1.0",
+  "cover": "",
+  "description": "Fiji Model Loader for BioImage.io",
+  "icon": "extension",
+  "inputs": null,
+  "outputs": null,
+  "api_version": "0.1.7",
+  "env": "",
+  "permissions": [],
+  "requirements": [],
+  "dependencies": [],
+  "defaults": {"w": 20, "h": 10}
+}
+</config>
+
+<script lang="javascript">
+class ImJoyPlugin {
+  async setup() {
+    api.log('initialized')
+  }
+
+  runOneModel(model_info){
+    api.alert(`Fiji gets model "${model_info.name}".`)
+  }
+
+  runManyModels(model_info_list){
+    api.alert(`Fiji gets ${model_info_list.length} models.`)
+  }
+
+  testModel(){
+
+  }
+  async run(ctx) {
+
+  }
+}
+
+api.export(new ImJoyPlugin())
+</script>
