@@ -39,7 +39,7 @@ for item in models_yaml['models']:
             model_config[k] = model_config[k].strip('/').strip('./')
         
         if k == 'covers':
-            for j in model_config[k]:
+            for j in range(len(model_config[k])):
                 model_config[k][j] = model_config[k][j].strip('/').strip('./')
 
         if k in preserved_keys:
