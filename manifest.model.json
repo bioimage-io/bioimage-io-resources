@@ -12,7 +12,7 @@
   "models": [
     {
       "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
-      "name": "HPA Classification ShuffleNetV2",
+      "name": "HPA ShuffleNetV2",
       "description": "A light-weight model for HPA image classification competition",
       "cite": null,
       "authors": [
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1/specs/models/unet2d/nuclei_broad",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad",
       "name": "2D UNet Nuclei Broad",
       "description": "A 2d U-Net pretrained on broad nucleus dataset.",
       "cite": [
@@ -53,13 +53,15 @@
         "pytorch",
         "nucleus-segmentation"
       ],
-      "covers": [],
-      "config_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml",
+      "covers": [
+        "cover0.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml",
       "applications": [
         "Ilastik",
         "ImJoy"
       ],
-      "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1/UNet2DNucleiBroad.model.zip"
+      "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"
     }
   ]
 }
