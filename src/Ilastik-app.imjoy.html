@@ -1,50 +1,92 @@
 <docs lang="markdown">
-[TODO: write documentation for this plugin.]
+## Ilastik Model Loader for BioImage.io
+
+This is a BioEngine App for running models on https://bioimage.io
+
 </docs>
 
 <config lang="json">
 {
-  "name": "Ilastik Model Loader",
-  "type": "web-worker",
-  "tags": [],
-  "ui": "",
-  "version": "0.1.0",
-  "cover": "",
-  "description": "Ilastik Model Loader for BioImage.io",
-  "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Ilastik-icon.png",
-  "inputs": null,
-  "outputs": null,
-  "api_version": "0.1.7",
-  "env": "",
-  "permissions": [],
-  "requirements": [],
-  "dependencies": [],
-  "defaults": {"w": 20, "h": 10}
+    "name": "Ilastik Model Loader",
+    "type": "native-python",
+    "version": "0.1.0",
+    "api_version": "0.1.2",
+    "description": "Ilastik Model Loader for BioImage.io",
+    "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Ilastik-icon.png",
+    "tags": [],
+    "ui": "",
+    "inputs": null,
+    "outputs": null,
+    "flags": [],
+    "env": ["conda create -n ilastik", {"type": "binder", "spec": "oeway/tiktorch-binder-image/master", "skip_requirements": true}],
+    "requirements": ["git+git://github.com/bioimage-io/pytorch-bioimage-io.git#egg=pybio.torch", "pip:git+git://github.com/bioimage-io/pytorch-bioimage-io.git#egg=pybio.torch"],
+    "dependencies": []
 }
 </config>
 
-<script lang="javascript">
-class ImJoyPlugin {
-  async setup() {
-    api.log('initialized')
-  }
-  
-  runOneModel(model_info){
-    api.alert(`Ilastik gets model "${model_info.name}".`)
-  }
+<script lang="python">
+from imjoy import api
+import numpy as np
+from PIL import Image
+import urllib.request
+import base64
+from io import BytesIO
+import torch
+from imageio import imread
+import zipfile
+from tiktorch.server.reader import eval_model_zip
 
-  runManyModels(model_info_list){
-    api.alert(`Ilastik gets ${model_info_list.length} models.`)
-  }
+def array2base64(img):
+    img = img/(img.max())*255.0
+    img = Image.fromarray(img.astype('uint8'))
+    byte_io = BytesIO()
+    img.save(byte_io, 'PNG')
+    result = base64.b64encode(byte_io.getvalue()).decode('ascii')
+    imgurl = 'data:image/png;base64,' + result
+    return imgurl
 
-  testModel(){
+class ImJoyPlugin():
+    async def setup(self) -> None:
+        self.exemplum = None
+        self.exemplum_url = None
+        self.img_url = None
+        self.input_img = None
+        api.log("initialized")
 
-  }
+    def runOneModel(self, model_config) -> None:
+        model_url = model_config['download_url']
+        if self.exemplum_url != model_url:
+            api.showMessage('Loading model from ' + model_url)
+            urllib.request.urlretrieve(model_url, 'tiktorch_model.zip')
+            with zipfile.ZipFile('tiktorch_model.zip', "r") as model_zip:
+                self.exemplum = eval_model_zip(model_zip, devices=[f"cuda:{i}" for i in range(torch.cuda.device_count())] + ["cpu"])
+                self.exemplum_url = model_url
+        
+        api.showMessage('Loading example image...')
+        image_url = 'https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png'
+        if self.img_url != image_url:
+            self.input_img = imread(image_url)
+            assert self.input_img.shape[2] == 4
+            self.img_url = image_url
 
-  async run(ctx) {
+        batch = self.input_img[None, :512, :512, 0]  # cyx
+        api.showMessage('Running model inference...')
+        prediction = self.exemplum.forward(batch)
 
-  }
-}
+        api.showMessage('Displaying results...')
+        imgurl1 = array2base64(self.input_img[:512, :512, 0])
+        imgurl2 = array2base64(prediction[0])
+        api.showMessage('Done.')
+        api.showDialog({'type': 'imjoy/image-compare', 'name': 'Ilastik Demo', 'data': {"first": imgurl1, 'second': imgurl2, 'name': 'Process with frangiVesselness in ImageJ'}})
     
-    api.export(new ImJoyPlugin())
-    </script>
+    def runManyModels(self, model_config_list):
+        api.alert('This feature is not implemented yet, please try the Ilastik icon on a individual model.')
+        api.log(str(model_config_list))
+
+    def run(self, ctx):
+        self.runOneModel({"download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"})
+
+
+api.export(ImJoyPlugin())
+</script>
+  
