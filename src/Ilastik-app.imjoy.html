@@ -20,7 +20,7 @@ This is a BioEngine App for running models on https://bioimage.io
     "flags": [],
     "env": ["conda create -n ilastik", {"type": "binder", "spec": "oeway/tiktorch-binder-image/master", "skip_requirements": true}],
     "requirements": ["git+git://github.com/bioimage-io/pytorch-bioimage-io.git#egg=pybio.torch", "pip:git+git://github.com/bioimage-io/pytorch-bioimage-io.git#egg=pybio.torch"],
-    "dependencies": []
+    "dependencies": ["https://gist.githubusercontent.com/oeway/f09955746ec01a20053793aba83c3545/raw/CompareImages.imjoy.html"]
 }
 </config>
 
@@ -77,7 +77,7 @@ class ImJoyPlugin():
         imgurl1 = array2base64(self.input_img[:512, :512, 0])
         imgurl2 = array2base64(prediction[0])
         api.showMessage('Done.')
-        api.showDialog({'type': 'imjoy/image-compare', 'name': 'Ilastik Demo', 'data': {"first": imgurl1, 'second': imgurl2, 'name': 'Process with frangiVesselness in ImageJ'}})
+        api.showDialog({'type': 'CompareImages', 'name': 'Ilastik Demo', 'data': {"first": imgurl1, 'second': imgurl2, 'name': 'Process with frangiVesselness in ImageJ'}})
     
     def runManyModels(self, model_config_list):
         api.alert('This feature is not implemented yet, please try the Ilastik icon on a individual model.')
