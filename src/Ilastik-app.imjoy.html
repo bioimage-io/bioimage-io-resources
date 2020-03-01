@@ -33,78 +33,79 @@ This is a BioEngine App for running models on https://bioimage.io
 <script lang="javascript">
 class ImJoyPlugin {
     async setup() {
-    api.log('initialized')
+        api.log('initialized')
     }
 
     runOneModel(model_info){
-    document.getElementById('model_name').innerHTML = model_info.name;
-    document.getElementById('model_description').innerHTML = model_info.description;
-    window.downloadModel = function(){
-        window.open(model_info.download_url);
-    }
-    window.loadImage = async function(){
-        const ret = await api.confirm('Would you like to an image file with the BioEngine? Otherwise, an example image will be used.')
-        if(ret){
-            document.getElementById('upload_file').click()
+        document.getElementById('model_name').innerHTML = model_info.name;
+        document.getElementById('model_description').innerHTML = model_info.description;
+        document.getElementById('cover').src = model_info.cover && model_info.cover[0];
+        window.downloadModel = function(){
+            window.open(model_info.download_url);
         }
-        else{
-            await window.runDemo();
+        window.loadImage = async function(){
+            const ret = await api.confirm('Would you like to an image file with the BioEngine? Otherwise, an example image will be used.')
+            if(ret){
+                document.getElementById('upload_file').click()
+            }
+            else{
+                await window.runDemo();
+            }
+            
         }
-        
-    }
-    window.fileChanged = async function(){
-        try{
-        document.getElementById('loading').style.display = 'block'
-        const file = document.getElementById('upload_file').files[0]
-        if(file){
-            await window.runDemo(file)
-        }
-        else{
-            api.showMessage('No file selected.')
-        }
-        
-        }
-        finally{
-        document.getElementById('loading').style.display = 'none'
-        }
-    }
-
-    window.runDemo = async function(file){
-        const p = await api.getPlugin('Tiktorch Model Loader')
-        const manager_url = await p.get_file_manager()
-        const fm = await api.getFileManager(manager_url)
-        
-        let ret;
-        if(file){
-        await fm.putFile(file, file.name)
-        const img_url = await p.preview_image(file.name)
-        document.getElementById('result').innerHTML =`<img class="img-responsive" src="${img_url}"></img>`
-        ret = await p.run_model(model_info.download_url, file.name)
-        }
-        else{
-        ret = await p.run_model(model_info.download_url, 'https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png')
+        window.fileChanged = async function(){
+            try{
+            document.getElementById('loading').style.display = 'block'
+            const file = document.getElementById('upload_file').files[0]
+            if(file){
+                await window.runDemo(file)
+            }
+            else{
+                api.showMessage('No file selected.')
+            }
+            
+            }
+            finally{
+            document.getElementById('loading').style.display = 'none'
+            }
         }
 
-        document.getElementById('result').innerHTML =`
-<div class="comparison-slider" style="height: ${ret.height}px; width: ${ret.width}px;">
-    <figure class="comparison-before">
-    <!-- image (before) -->
-    <img class="rounded" src="${ret.inputs}"></img>
-    <div class="comparison-label">Before</div>
-    </figure>
+        window.runDemo = async function(file){
+            const p = await api.getPlugin('Tiktorch Model Loader')
+            const manager_url = await p.get_file_manager()
+            const fm = await api.getFileManager(manager_url)
+            
+            let ret;
+            if(file){
+            await fm.putFile(file, file.name)
+            const img_url = await p.preview_image(file.name)
+            document.getElementById('result').innerHTML =`<img class="img-responsive" src="${img_url}"></img>`
+            ret = await p.run_model(model_info.download_url, file.name)
+            }
+            else{
+            ret = await p.run_model(model_info.download_url, 'https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png')
+            }
 
-    <figure class="comparison-after">
-    <!-- image (after) -->
-    <img class="filter-grayscale rounded" src="${ret.outputs}"></img>
-    <div class="comparison-label">After</div>
-    <textarea class="comparison-resizer" readonly></textarea>
-    </figure>
-</div>`
-    }
+            document.getElementById('result').innerHTML =`
+    <div class="comparison-slider" style="height: ${ret.height}px; width: ${ret.width}px;">
+        <figure class="comparison-before">
+        <!-- image (before) -->
+        <img class="rounded" src="${ret.inputs}"></img>
+        <div class="comparison-label">Before</div>
+        </figure>
+
+        <figure class="comparison-after">
+        <!-- image (after) -->
+        <img class="filter-grayscale rounded" src="${ret.outputs}"></img>
+        <div class="comparison-label">After</div>
+        <textarea class="comparison-resizer" readonly></textarea>
+        </figure>
+    </div>`
+        }
     }
 
     async run(ctx) {
-    this.runOneModel({name: "2D UNet Nuclei Broad", description: "", download_url: "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"})
+        this.runOneModel({name: "2D UNet Nuclei Broad", description: "", download_url: "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"})
     }
 }
 
@@ -126,7 +127,7 @@ api.export(new ImJoyPlugin())
             <br>
             <div class="card-subtitle">This model requires Ilastik, if you don't have it, download from <a href="https://www.ilastik.org/download.html" target="_blank">here</a></div>
         <div class="card-image" id="result">
-            <img class="img-responsive" src="https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png"></img>
+            <img class="img-responsive" id="cover" src=""></img>
             
         </div>
         </div>
