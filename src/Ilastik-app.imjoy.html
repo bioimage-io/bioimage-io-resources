@@ -8,85 +8,144 @@ This is a BioEngine App for running models on https://bioimage.io
 <config lang="json">
 {
     "name": "Ilastik Model Preview",
-    "type": "native-python",
-    "version": "0.1.0",
-    "api_version": "0.1.2",
-    "description": "Ilastik Model Preview for BioImage.io",
-    "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Ilastik-icon.png",
+    "type": "window",
     "tags": [],
     "ui": "",
+    "version": "0.1.0",
+    "cover": "",
+    "description": "Ilastik Model Preview for BioImage.io",
+    "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Ilastik-icon.png",
     "inputs": null,
     "outputs": null,
-    "flags": [],
-    "env": ["conda create -n ilastik", {"type": "binder", "spec": "oeway/tiktorch-binder-image/master", "skip_requirements": true}],
-    "requirements": ["git+git://github.com/bioimage-io/pytorch-bioimage-io.git#egg=pybio.torch", "pip:git+git://github.com/bioimage-io/pytorch-bioimage-io.git#egg=pybio.torch"],
-    "dependencies": ["https://gist.githubusercontent.com/oeway/f09955746ec01a20053793aba83c3545/raw/CompareImages.imjoy.html"]
+    "api_version": "0.1.7",
+    "env": "",
+    "permissions": [],
+    "requirements": [
+        "https://static.imjoy.io/spectre.css/spectre.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-exp.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-icons.min.css"
+    ],
+    "dependencies": ["https://gist.githubusercontent.com/oeway/2d4b5899424a14d8e90ad908d4cec364/raw/TiktorchModelLoader.imjoy.html", "https://gist.githubusercontent.com/oeway/f09955746ec01a20053793aba83c3545/raw/CompareImages.imjoy.html"],
+    "defaults": {"w": 20, "h": 10, "as_dialog": true}
 }
 </config>
 
-<script lang="python">
-from imjoy import api
-import numpy as np
-from PIL import Image
-import urllib.request
-import base64
-from io import BytesIO
-import torch
-from imageio import imread
-import zipfile
-from tiktorch.server.reader import eval_model_zip
+<script lang="javascript">
+class ImJoyPlugin {
+    async setup() {
+    api.log('initialized')
+    }
 
-def array2base64(img):
-    img = img/(img.max())*255.0
-    img = Image.fromarray(img.astype('uint8'))
-    byte_io = BytesIO()
-    img.save(byte_io, 'PNG')
-    result = base64.b64encode(byte_io.getvalue()).decode('ascii')
-    imgurl = 'data:image/png;base64,' + result
-    return imgurl
-
-class ImJoyPlugin():
-    async def setup(self) -> None:
-        self.exemplum = None
-        self.exemplum_url = None
-        self.img_url = None
-        self.input_img = None
-        api.log("initialized")
-
-    def runOneModel(self, model_config) -> None:
-        model_url = model_config['download_url']
-        if self.exemplum_url != model_url:
-            api.showMessage('Loading model from ' + model_url)
-            urllib.request.urlretrieve(model_url, 'tiktorch_model.zip')
-            with zipfile.ZipFile('tiktorch_model.zip', "r") as model_zip:
-                self.exemplum = eval_model_zip(model_zip, devices=[f"cuda:{i}" for i in range(torch.cuda.device_count())] + ["cpu"])
-                self.exemplum_url = model_url
+    runOneModel(model_info){
+    document.getElementById('model_name').innerHTML = model_info.name;
+    document.getElementById('model_description').innerHTML = model_info.description;
+    window.downloadModel = function(){
+        window.open(model_info.download_url);
+    }
+    window.loadImage = async function(){
+        const ret = await api.confirm('Would you like to an image file with the BioEngine? Otherwise, an example image will be used.')
+        if(ret){
+            document.getElementById('upload_file').click()
+        }
+        else{
+            await window.runDemo();
+        }
         
-        api.showMessage('Loading example image...')
-        image_url = 'https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png'
-        if self.img_url != image_url:
-            self.input_img = imread(image_url)
-            assert self.input_img.shape[2] == 4
-            self.img_url = image_url
+    }
+    window.fileChanged = async function(){
+        try{
+        document.getElementById('loading').style.display = 'block'
+        const file = document.getElementById('upload_file').files[0]
+        if(file){
+            await window.runDemo(file)
+        }
+        else{
+            api.showMessage('No file selected.')
+        }
+        
+        }
+        finally{
+        document.getElementById('loading').style.display = 'none'
+        }
+    }
 
-        batch = self.input_img[None, :512, :512, 0]  # cyx
-        api.showMessage('Running model inference...')
-        prediction = self.exemplum.forward(batch)
+    window.runDemo = async function(file){
+        const p = await api.getPlugin('Tiktorch Model Loader')
+        const manager_url = await p.get_file_manager()
+        const fm = await api.getFileManager(manager_url)
+        
+        let ret;
+        if(file){
+        await fm.putFile(file, file.name)
+        const img_url = await p.preview_image(file.name)
+        document.getElementById('result').innerHTML =`<img class="img-responsive" src="${img_url}"></img>`
+        ret = await p.run_model(model_info.download_url, file.name)
+        }
+        else{
+        ret = await p.run_model(model_info.download_url, 'https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png')
+        }
 
-        api.showMessage('Displaying results...')
-        imgurl1 = array2base64(self.input_img[:512, :512, 0])
-        imgurl2 = array2base64(prediction[0])
-        api.showMessage('Done.')
-        api.showDialog({'type': 'CompareImages', 'name': 'Ilastik Demo', 'data': {"first": imgurl1, 'second': imgurl2, 'name': 'Process with frangiVesselness in ImageJ'}})
-    
-    def runManyModels(self, model_config_list):
-        api.alert('This feature is not implemented yet, please try the Ilastik icon on a individual model.')
-        api.log(str(model_config_list))
+        document.getElementById('result').innerHTML =`
+<div class="comparison-slider" style="height: ${ret.height}px; width: ${ret.width}px;">
+    <figure class="comparison-before">
+    <!-- image (before) -->
+    <img class="rounded" src="${ret.inputs}"></img>
+    <div class="comparison-label">Before</div>
+    </figure>
 
-    def run(self, ctx):
-        self.runOneModel({"download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"})
+    <figure class="comparison-after">
+    <!-- image (after) -->
+    <img class="filter-grayscale rounded" src="${ret.outputs}"></img>
+    <div class="comparison-label">After</div>
+    <textarea class="comparison-resizer" readonly></textarea>
+    </figure>
+</div>`
+    }
+    }
 
+    async run(ctx) {
+    this.runOneModel({name: "2D UNet Nuclei Broad", description: "", download_url: "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"})
+    }
+}
 
-api.export(ImJoyPlugin())
+api.export(new ImJoyPlugin())
 </script>
-  
+
+<window lang="html">
+    <div>
+    <div class="loading loading-lg floating" style="display: none;" id="loading"></div>
+    <div class="model-info">
+        <div class="card">
+            <div class="card-header">
+            <h1 id="model_name">Ilastik Model</h1>
+            <p id="model_description"></p>
+            <button class="btn " onclick="downloadModel()">Download for Ilastik</button>
+            <button class="btn btn-primary" onclick="loadImage()">Run Model with BioEngine</button>
+            <input type="file" onchange="fileChanged()" style="display:none;" id="upload_file"/>
+            </div>
+            <br>
+            <div class="card-subtitle">This model requires Ilastik, if you don't have it, download from <a href="https://www.ilastik.org/download.html" target="_blank">here</a></div>
+        <div class="card-image" id="result">
+            <img class="img-responsive" src="https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/cover0.png"></img>
+            
+        </div>
+        </div>
+
+    </div>
+</window>
+
+<style lang="css">
+.model-info{
+    padding: 10px;
+}
+.card{
+    padding: 10px 20px;
+}
+.floating {
+    position: absolute !important;
+    left: calc( 50% - 2px ) !important;
+    top: calc( 50% ) !important;
+    z-index: 999;
+}
+</style>
+    
