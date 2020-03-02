@@ -23,3 +23,8 @@ models:
   config_url: https://raw.githubusercontent.com/FynnBe/pytorch-3dunet/d870f42d049fef82427962dd67a2c63efc8438bf/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml  # todo: use @wolny's repo once PR is merged
   applications: [Ilastik, ImJoy]
   download_url: https://github.com/wolny/pytorch-3dunet/releases/download/1.2.5/UNet3DArabidopsisOvules.model.zip
+
+- UNet3DPlatyCellProbs:
+  config_url: https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml
+  applications: [Ilastik, ImJoy]
+  download_url: https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip

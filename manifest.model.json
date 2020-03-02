@@ -34,7 +34,40 @@
       ]
     },
     {
-      "root_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/1.2.5/bioimage-io/UNet3DArabidopsisOvules.model",
+      "root_url": "https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model",
+      "name": "3D UNet Platynereis Cell Segmentation (Probabilities)",
+      "description": "A 3d U-Net trained to predict the cell boundaries in a EM volume of a 6 day old Platynereis.",
+      "cite": [
+        {
+          "text": "Vergara, Hernando M. et al. Whole-body integration of gene expression and single-cell morphology. BioRxiv 2020.\"",
+          "doi": "https://doi.org/10.1101/2020.02.26.961037"
+        }
+      ],
+      "authors": [
+        "Constantin Pape;@bioimage-io"
+      ],
+      "documentation": "README.md",
+      "tags": [
+        "unet3d",
+        "pytorch",
+        "platynereis",
+        "cell membrane",
+        "segmentation",
+        "EM"
+      ],
+      "covers": [
+        "ilastik_raw.png",
+        "ilastik_pred.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml",
+      "applications": [
+        "Ilastik",
+        "ImJoy"
+      ],
+      "download_url": "https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip"
+    },
+    {
+      "root_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/1.2.6//bioimage-io/UNet3DArabidopsisOvules.model",
       "name": "3D UNet Arabidopsis Ovules",
       "description": "A 3d U-Net trained to predict the cell boundaries in confocal stacks of Arabidopsis ovules.",
       "cite": [
@@ -57,18 +90,18 @@
         "plant tissue"
       ],
       "covers": [
-        "ilastik(4)",
-        "ilastik(5)",
-        "ilastik(6)",
-        "ilastik(7)",
-        "ilastik(8)"
+        "ilastik(4).png",
+        "ilastik(5).png",
+        "ilastik(6).png",
+        "ilastik(7).png",
+        "ilastik(8).png"
       ],
-      "config_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/1.2.5/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml",
+      "config_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/1.2.6//bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml",
       "applications": [
         "Ilastik",
         "ImJoy"
       ],
-      "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.5/UNet3DArabidopsisOvules.model.zip"
+      "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip"
     },
     {
       "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad",
