@@ -39,7 +39,7 @@ class ImJoyPlugin {
     runOneModel(model_info){
         document.getElementById('model_name').innerHTML = model_info.name;
         document.getElementById('model_description').innerHTML = model_info.description;
-        document.getElementById('cover').src = model_info.cover && model_info.cover[0];
+        document.getElementById('cover').src = model_info.cover_image && model_info.cover_image;
         window.downloadModel = function(){
             window.open(model_info.download_url);
         }
