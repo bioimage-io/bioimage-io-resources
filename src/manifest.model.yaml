@@ -18,3 +18,13 @@ models:
   config_url: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
   applications: [Ilastik, ImJoy]
   download_url: https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip
+
+- UNet3DArabidopsisOvules:
+  config_url: https://raw.githubusercontent.com/wolny/pytorch-3dunet/1.2.6/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml
+  applications: [Ilastik, ImJoy]
+  download_url: https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip
+
+- UNet3DPlatyCellProbs:
+  config_url: https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml
+  applications: [Ilastik, ImJoy]
+  download_url: https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip
