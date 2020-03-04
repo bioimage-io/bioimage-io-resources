@@ -7,7 +7,7 @@ A list of models can be found [here](./src/manifest.model.yaml).
 
 ## How to contribute new models?
 
-BioImage.io is a static website, it reads a manifest file from Github repo and render the page in users' browser. Therefore contributing models to the repository is as easy as adding meta information of your models to the manifest file.
+BioImage.io is a static website, it reads a manifest file from this Github repo (`manifest.model.json`) and render the page in the browser. Therefore, contributing models to the repository is as easy as adding links of your models to the manifest file.
 
 Please follow the following steps:
 
@@ -15,12 +15,12 @@ Please follow the following steps:
  1. Add your models to the `src/manifest.model.yaml` file
  1. Run `python src/compile_model_manifest.py` to generate a new `manifest.model.json` with your models
  1. Commit your changes and push to your Github repo.
- 1. You can preview it constructing an URL which makes BioImage.io render the page with the manifest file in your repo. The URL format is: `https://bioimage.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://bioimage.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models.
- 1. If you are satisfied with the result above, you can send us a Pull Request, and we will review it before it get merged.
+ 1. You can preview it constructing an URL which makes BioImage.io render the page with the manifest file in your repo. The URL format is: `https://bioimage.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://bioimage.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models. You can also add commit hash tag, branch name or tag after that, for example: https://bioimage.io?repo=oeway/models/06a9ffac88.
+ 1. If you are satisfied with the result above, you can send us a [Pull Request](https://github.com/bioimage-io/models/pulls), and we will review it before it get merged.
 
  ## How to build BioEngine Apps?
  
- Each model in the BioImage model zoo can associated with a list of applications which you can run directly in website. We use BioEngine, a tailored version of [ImJoy](https://imjoy.io) to run these applications. Therefore, you can basically run ImJoy plugins with the BioEngine specific api. By default it loads also a [Jupyter Engine](https://github.com/imjoy-team/jupyter-engine-manager) which uses free computational resources on MyBinder.org, so you can also run small models in Python. 
+ Each model in the BioImage model zoo can associated with a list of applications which you can run directly by the end user. We use BioEngine, a tailored version of [ImJoy](https://imjoy.io) to run these applications. Therefore, you can basically run ImJoy plugins with the BioEngine specific api. By default it loads also a [Jupyter Engine](https://github.com/imjoy-team/jupyter-engine-manager) which uses free computational resources on MyBinder.org, so you can also run small models in Python. 
 
 Since BioEngine is designed for running model specific ImJoy plugins, it needs to define either `runOneModel()` and/or `runManyModels()` function in the plugin api. Plus, you need also a `testModel` function which will be used to run tests in a CI environment. For example, the following python plugin would treat as a qualified BioEngine App:
 
@@ -66,6 +66,13 @@ Here are the steps:
  1. Define a key in the `applications` section in `src/manifest.model.yaml`, and set the value as the `raw` URL to the BioEngine app file.
  1. For all the models which your app can digest, you can add your app key to the `applications` field of the model.
  1. The procedure later are the same as contributing models, you can basically: run `python src/compile_model_manifest.py` to generate a new `manifest.model.json`, commit and push to your Github repo, preview it on BioImage.io with `https://bioimage.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO` and optionally send us a Pull Request.
+
+
+## How integrate the model zoo to my own software?
+
+If you are developing or maintaining a software which can digest models in the model description format used in the BioImage model zoo, it's easy to fetch the latest model list (along with the other meta information) from this url `https://raw.githubusercontent.com/bioimage-io/models/master/manifest.model.json`. 
+
+By fetching the content of this JSON file, you will get all the models from the BioImage model zoo, and you can filter it based on your own supported framework, programming language etc.
 
 
 
