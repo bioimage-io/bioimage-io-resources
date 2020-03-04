@@ -11,6 +11,32 @@
   },
   "models": [
     {
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo",
+      "name": "N2V SEM Demo",
+      "description": "Demo model for denoising trained on a single SEM image with Noise2Void",
+      "cite": {
+        "text": "Buchholz, T. et al. - Content-aware image restoration for electron microscopy. \nMethods in Cell Biology, Volume 152 p.277-289, ISSN 0091-679X (2019)",
+        "doi": "https://doi.org/10.1016/bs.mch.2019.05.001"
+      },
+      "authors": [
+        "Deborah Schmidt"
+      ],
+      "documentation": "README.md",
+      "covers": [
+        "thumbnail.png"
+      ],
+      "tags": [
+        "denoising",
+        "unet2d",
+        "n2v"
+      ],
+      "config_url": "https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo/n2v-sem-demo.model.yaml",
+      "applications": [
+        "Fiji"
+      ],
+      "download_url": "https://github.com/bioimage-io/fiji-bioimage-io/releases/download/v0.1.4/n2v-sem-demo.zip"
+    },
+    {
       "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
       "name": "HPA ShuffleNetV2",
       "description": "A light-weight model for HPA image classification competition",
