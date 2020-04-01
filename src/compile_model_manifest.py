@@ -9,7 +9,7 @@ compiled_models = []
 preserved_keys = ["config_url", "applications", "download_url", "name", "description", "cite", "authors", "documentation", "tags", "covers"]
 assert 'url' not in preserved_keys
 
-models_yaml_file = Path('src/manifest.model.yaml')
+models_yaml_file = Path(__file__).parent / "manifest.model.yaml"
 models_yaml = yaml.safe_load(models_yaml_file.read_text())
 
 compiled_apps = {}
@@ -48,7 +48,7 @@ for item in models_yaml['models']:
     compiled_models.append(model_info)
     compiled_models.sort(key=lambda m: m['name'], reverse=True)
 
-with open('manifest.model.json', 'wb') as f:
+with (Path(__file__).parent / "../manifest.model.json").open("wb") as f:
     models_yaml['models'] = compiled_models
     models_yaml['applications'] = compiled_apps
     f.write(json.dumps(models_yaml, indent=2, separators=(',', ': ')).encode('utf-8'))
