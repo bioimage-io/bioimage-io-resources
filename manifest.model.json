@@ -4,14 +4,13 @@
   "version": "0.1.0",
   "url_root": "https://raw.githubusercontent.com/bioimage-io/models/master",
   "applications": {
-    "ImJoy": "https://raw.githubusercontent.com/bioimage-io/models/master/src/ImJoy-app.imjoy.html",
     "Ilastik": "https://raw.githubusercontent.com/bioimage-io/models/master/src/Ilastik-app.imjoy.html",
     "Fiji": "https://raw.githubusercontent.com/bioimage-io/models/master/src/Fiji-app.imjoy.html",
     "HPA-Classification": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html"
   },
   "models": [
     {
-      "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2",
+      "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.1",
       "name": "U-Net DA (Domain Adaptation)",
       "description": "U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
       "cite": [
@@ -35,15 +34,14 @@
       "covers": [
         "documentation/covers/UNetCover.png"
       ],
-      "config_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/UNetDA.model.yaml",
+      "config_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.1/UNetDA.model.yaml",
       "applications": [
-        "Ilastik",
-        "ImJoy"
+        "Ilastik"
       ],
-      "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip"
+      "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.1/UNetDA.model.zip"
     },
     {
-      "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2",
+      "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.1",
       "name": "Two Steam U-Net DA",
       "description": "Two Steam U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). Two Steam U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. Two Steam U-Net uses differet encoders to process inputs from source and target, and use a common decoder to generate the respective segmentation outputs. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
       "cite": [
@@ -67,12 +65,11 @@
       "covers": [
         "documentation/covers/2sUNetCover.png"
       ],
-      "config_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/2sUNetDA.model.yaml",
+      "config_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.1/2sUNetDA.model.yaml",
       "applications": [
-        "Ilastik",
-        "ImJoy"
+        "Ilastik"
       ],
-      "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip"
+      "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.1/2sUNetDA.model.zip"
     },
     {
       "root_url": "https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo",
@@ -179,8 +176,7 @@
       ],
       "config_url": "https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml",
       "applications": [
-        "Ilastik",
-        "ImJoy"
+        "Ilastik"
       ],
       "download_url": "https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip"
     },
@@ -216,8 +212,7 @@
       ],
       "config_url": "https://raw.githubusercontent.com/fynnbe/pytorch-3dunet/eabf146079c5829f6c6fe0488595838e54887c06/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml",
       "applications": [
-        "Ilastik",
-        "ImJoy"
+        "Ilastik"
       ],
       "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip"
     },
@@ -246,8 +241,7 @@
       ],
       "config_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml",
       "applications": [
-        "Ilastik",
-        "ImJoy"
+        "Ilastik"
       ],
       "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"
     }
