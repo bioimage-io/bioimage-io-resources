@@ -244,6 +244,39 @@
         "Ilastik"
       ],
       "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip"
+    },
+    {
+      "root_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/645a51b7f19f01b36edfb263c425476f5e4a20b7/bioimage-io/UNet2DArabidopsisOvules.model",
+      "name": "2D UNet Arabidopsis Ovules",
+      "description": "A 2D U-Net trained to predict the cell boundaries in confocal stacks of Arabidopsis ovules. Trained on z-slices of 3D confocal images.",
+      "cite": [
+        {
+          "text": "Wolny, Adrian et al. Accurate and Versatile 3D Segmentation of Plant Tissues at Cellular Resolution. BioRxiv 2020.",
+          "doi": "https://doi.org/10.1101/2020.01.17.910562"
+        }
+      ],
+      "authors": [
+        "Adrian Wolny;@bioimage-io"
+      ],
+      "documentation": "README.md",
+      "tags": [
+        "unet3d",
+        "pytorch",
+        "arabidopsis",
+        "ovuls",
+        "cell membrane",
+        "segmentation",
+        "plant tissue"
+      ],
+      "covers": [
+        "raw.png",
+        "pred.png"
+      ],
+      "config_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/645a51b7f19f01b36edfb263c425476f5e4a20b7/bioimage-io/UNet2DArabidopsisOvules.model/UNet2DArabidopsisOvules.model.yaml",
+      "applications": [
+        "Ilastik"
+      ],
+      "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.11/UNet2DArabidopsisOvules.model.zip"
     }
   ]
 }
