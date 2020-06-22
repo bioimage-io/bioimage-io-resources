@@ -4,9 +4,9 @@ version: 0.2.0
 url_root: https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master
 
 applications:
-- id: Ilastik
+- id: Ilastik Model Preview
   source: src/Ilastik-app.imjoy.html
-- id: Fiji
+- id: Fiji Model Preview
   source: src/Fiji-app.imjoy.html
 - id: HPA-Classification
   source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
@@ -22,39 +22,47 @@ notebooks:
 models:
 - id: HPA-Classification
   source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.yaml
-  applications: [HPA-Classification]
+  applications:
+    - HPA-Classification
 
 - id: UNet2DNucleiBroad
   source: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
-  applications: [Ilastik]
+  applications:
+    - Ilastik Model Preview
   download_url: https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip
 
 - id: UNet3DArabidopsisOvules
   source: https://raw.githubusercontent.com/fynnbe/pytorch-3dunet/eabf146079c5829f6c6fe0488595838e54887c06/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml
-  applications: [Ilastik]
+  applications:
+    - Ilastik Model Preview
   download_url: https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip
 
 - id: UNet3DPlatyCellProbs
   source: https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml
-  applications: [Ilastik]
+  applications:
+    - Ilastik Model Preview
   download_url: https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip
 
 - id: N2VSEMDemo
   source: https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo/n2v-sem-demo.model.yaml
-  applications: [Fiji]
+  applications:
+    - Fiji Model Preview
   download_url: https://github.com/bioimage-io/fiji-bioimage-io/releases/download/v0.1.4/n2v-sem-demo.zip
 
 - id: FRUNet2DsEVSegmentation
   source: https://raw.githubusercontent.com/deepimagej/models/master/fru-net_sev_segmentation/FRUNet2DsEVSegmentation.model.yaml
-  applications: [Fiji]
+  applications:
+    - Fiji Model Preview
   download_url: https://github.com/deepimagej/models/releases/download/0.1/fru-net_sev_segmentation.zip
 
 - id: UNetDA
   source: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/UNetDA.model.yaml
-  applications: [Ilastik]
+  applications:
+    - Ilastik Model Preview
   download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip
 
 - id: 2sUNetDA
   source: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/2sUNetDA.model.yaml
-  applications: [Ilastik]
+  applications:
+    - Ilastik Model Preview
   download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip
