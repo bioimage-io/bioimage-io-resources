@@ -73,6 +73,12 @@ for item in models_yaml["applications"]:
     tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
     app_config["tags"] = tags
     app_config["covers"] = plugin_config.get("cover", [])
+    # make sure we have a list
+    if app_config["covers"] and type(app_config["covers"]) is not list:
+        app_config["covers"] = [app_config["covers"]]
+    else:
+        app_config["covers"] = []
+
     app_config["authors"] = plugin_config.get("author", [])
     assert item["id"] == plugin_config["name"], (
         "Please use the app name (" + plugin_config["name"] + ") as its application id."
