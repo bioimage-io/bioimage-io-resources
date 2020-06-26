@@ -10,7 +10,7 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  build-manifest:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -38,7 +38,7 @@ jobs:
           name: built-output
           path: ./dist
     
-  deploy-plugin:
+  deploy-manifest:
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'refs/heads/master'
