@@ -8,7 +8,8 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-
+  schedule:
+    - cron:  '0 */2 * * *'
 jobs:
   build-manifest:
     runs-on: ubuntu-latest
@@ -40,7 +41,7 @@ jobs:
     
   deploy-manifest:
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-manifest
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Load saved build output
