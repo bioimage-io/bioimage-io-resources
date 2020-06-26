@@ -8,7 +8,8 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-
+  schedule:
+    - cron:  '0 */2 * * *'
 jobs:
   build-manifest:
     runs-on: ubuntu-latest
