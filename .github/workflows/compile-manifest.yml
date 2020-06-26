@@ -33,10 +33,10 @@ jobs:
           cp ./manifest.bioimage.io.json ./dist/
 
       - name: Save build output
-      uses: actions/upload-artifact@v1
-      with:
-        name: built-output
-        path: ./dist
+        uses: actions/upload-artifact@v1
+        with:
+          name: built-output
+          path: ./dist
     
     deploy-plugin:
       runs-on: ubuntu-latest
