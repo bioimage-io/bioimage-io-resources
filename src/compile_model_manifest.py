@@ -41,9 +41,11 @@ for item in models_yaml["applications"]:
     app_url = item["source"]
     if os.path.exists(app_url):
         content = open(app_url, 'r').read()
+        if not app_url.startswith("http"):
+            app_url = item["source"].strip("/").strip("./")
+            app_url = models_yaml["url_root"].strip("/") + "/" + app_url
     else:
         if not app_url.startswith("http"):
-            
             app_url = item["source"].strip("/").strip("./")
             app_url = models_yaml["url_root"].strip("/") + "/" + app_url
 
