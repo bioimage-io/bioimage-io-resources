@@ -7,7 +7,7 @@
     {
       "id": "Ilastik Model Preview",
       "type": "application",
-      "source": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master/src/Ilastik-app.imjoy.html",
+      "source": "src/Ilastik-app.imjoy.html",
       "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Ilastik-icon.png",
       "name": "Ilastik Model Preview",
       "version": "0.1.0",
@@ -25,12 +25,13 @@
       "env": "",
       "tags": [],
       "covers": [],
+      "badges": [],
       "authors": []
     },
     {
       "id": "Fiji Model Preview",
       "type": "application",
-      "source": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master/src/Fiji-app.imjoy.html",
+      "source": "src/Fiji-app.imjoy.html",
       "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Fiji-icon.png",
       "name": "Fiji Model Preview",
       "version": "0.1.0",
@@ -45,6 +46,7 @@
       "env": "",
       "tags": [],
       "covers": [],
+      "badges": [],
       "authors": []
     },
     {
@@ -71,7 +73,36 @@
       "covers": [
         "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
       ],
+      "badges": [],
       "authors": []
+    },
+    {
+      "id": "Kaibu",
+      "type": "application",
+      "source": "src/Kaibu-app.imjoy.html",
+      "name": "Kaibu",
+      "version": "0.1.0",
+      "api_version": "0.2.3",
+      "description": "Kaibu--a web application for visualizing and annotating multi-dimensional images",
+      "tags": [],
+      "covers": [
+        "https://github.com/imjoy-team/kaibu/raw/master/public/static/img/kaibu-screenshot-1.png"
+      ],
+      "badges": [
+        {
+          "icon": "https://imjoy.io/static/badge/launch-imjoy-badge.svg",
+          "label": "Launch ImJoy",
+          "url": "https://imjoy.io/#/app?plugin=https://kaibu.org/#/app"
+        },
+        {
+          "icon": "https://mybinder.org/badge_logo.svg",
+          "label": "Launch Binder",
+          "url": "https://mybinder.org/v2/gist/oeway/690c2e62311223ae93e644d542eb8949/master?filepath=Kaibu-jupyter-tutorial.ipynb"
+        }
+      ],
+      "authors": [
+        "ImJoy-Team"
+      ]
     },
     {
       "root_url": "https://gist.githubusercontent.com/oeway/582856630a0aed4d4d221e54df1b3ece/raw",
@@ -209,6 +240,8 @@
         "tensorflow.js",
         "classification"
       ],
+      "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
+      "license": "Apache 2.0",
       "format_version": "0.1.0",
       "source": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.yaml",
       "covers": [
