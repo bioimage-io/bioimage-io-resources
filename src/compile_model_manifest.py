@@ -10,6 +10,7 @@ preserved_keys = [
     "api_version",
     "applications",
     "authors",
+    "git_repo",
     "cite",
     "co2",
     "covers",
