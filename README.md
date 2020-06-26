@@ -20,6 +20,8 @@ Please follow the following steps:
  1. You can preview it constructing an URL which makes BioImage.io render the page with the manifest file in your repo. The URL format is: `https://bioimage.io?repo=YOUR_GITHUB_USER_NAME/YOUR_GITHUB_REPO`, for example: https://bioimage.io?repo=oeway/models will point to the model manifest hosted on https://github.com/oeway/models. You can also add commit hash tag, branch name or tag after that, for example: https://bioimage.io?repo=oeway/models/06a9ffac88.
  1. If you are satisfied with the result above, you can send us a [Pull Request](https://github.com/bioimage-io/models/pulls), and we will review it before it get merged.
 
+ Note: once your PR get merged to the repo, the CI script will automatically compile the `manifest.bioimage.io.yaml` file, again, so please don't edit the genearted `manifest.model.json` file manually.
+
  ## How to build BioEngine Apps?
  
  Each model in the BioImage model zoo can associated with a list of applications which you can run directly by the end user. We use BioEngine, a tailored version of [ImJoy](https://imjoy.io) to run these applications. Therefore, you can basically run ImJoy plugins with the BioEngine specific api. By default it loads also a [Jupyter Engine](https://github.com/imjoy-team/jupyter-engine-manager) which uses free computational resources on MyBinder.org, so you can also run small models in Python. 
