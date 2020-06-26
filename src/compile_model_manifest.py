@@ -14,6 +14,7 @@ preserved_keys = [
     "cite",
     "co2",
     "covers",
+    "badges",
     "description",
     "documentation",
     "download_url",
@@ -38,16 +39,22 @@ compiled_apps = []
 apps_names = []
 for item in models_yaml["applications"]:
     app_url = item["source"]
-    if not app_url.startswith("http"):
-        app_url = item["source"].strip("/").strip("./")
-        app_url = models_yaml["url_root"].strip("/") + "/" + app_url
+    if os.path.exists(app_url):
+        content = open(app_url, 'r').read()
+        if not app_url.startswith("http"):
+            app_url = item["source"].strip("/").strip("./")
+            app_url = models_yaml["url_root"].strip("/") + "/" + app_url
+    else:
+        if not app_url.startswith("http"):
+            app_url = item["source"].strip("/").strip("./")
+            app_url = models_yaml["url_root"].strip("/") + "/" + app_url
 
-    response = requests.get(app_url)
-    if response.status_code != 200:
-        print("Failed to fetch model config from " + app_url)
-        continue
+        response = requests.get(app_url)
+        if response.status_code != 200:
+            print("Failed to fetch model config from " + app_url)
+            continue
 
-    content = response.content.decode("utf-8")
+        content = response.content.decode("utf-8")
     found = re.findall("<config (.*)>(.*)</config>", content, re.DOTALL)[0]
     if "json" in found[0]:
         plugin_config = json.loads(found[1])
@@ -73,14 +80,26 @@ for item in models_yaml["applications"]:
             app_config[f] = plugin_config[f]
     tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
     app_config["tags"] = tags
-    app_config["covers"] = plugin_config.get("cover", [])
-    # make sure we have a list
-    if app_config["covers"] and type(app_config["covers"]) is not list:
-        app_config["covers"] = [app_config["covers"]]
-    else:
-        app_config["covers"] = []
 
-    app_config["authors"] = plugin_config.get("author", [])
+    app_config["covers"] = plugin_config.get("cover")
+    # make sure we have a list
+    if not app_config["covers"]:
+        app_config["covers"] = []
+    elif type(app_config["covers"]) is not list:
+        app_config["covers"] = [app_config["covers"]]
+
+    app_config["badges"] = plugin_config.get("badge")
+    if not app_config["badges"]:
+        app_config["badges"] = []
+    elif type(app_config["badges"]) is not list:
+        app_config["badges"] = [app_config["badges"]]
+
+    app_config["authors"] = plugin_config.get("author")    
+    if not app_config["authors"]:
+        app_config["authors"] = []
+    elif type(app_config["authors"]) is not list:
+        app_config["authors"] = [app_config["authors"]]
+
     assert item["id"] == plugin_config["name"], (
         "Please use the app name (" + plugin_config["name"] + ") as its application id."
     )
