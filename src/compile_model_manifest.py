@@ -176,7 +176,16 @@ with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
     compiled_apps.sort(key=lambda m: m["name"], reverse=True)
     compiled_items.sort(key=lambda m: m["name"], reverse=True)
     new_model_yaml["collections"] = collections
-    new_model_yaml["resources"] = compiled_apps + compiled_items
+    resources = compiled_apps + compiled_items
+    ids = []
+    for res in resources:
+        if 'id' not in res:
+            res['id'] = res['name'].replace(' ', '-')
+        if res['id'] in ids:
+            raise Exception("Duplicated resource id found: " + res['id'])
+        ids.append(res['id'])
+
+    new_model_yaml["resources"] = resources
     f.write(
         json.dumps(new_model_yaml, indent=2, separators=(",", ": ")).encode("utf-8")
     )
