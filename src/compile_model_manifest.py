@@ -125,35 +125,40 @@ def parse_manifest(models_yaml):
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
-            source = item["source"]
-            root_url = "/".join(source.split("/")[:-1])
-            response = requests.get(source)
-            if response.status_code != 200:
-                print("Failed to fetch source from " + source)
-                continue
+            if "source" in item:
+                source = item["source"]
+                root_url = "/".join(source.split("/")[:-1])
+                response = requests.get(source)
+                if response.status_code != 200:
+                    print("Failed to fetch source from " + source)
+                    continue
 
-            model_config = yaml.safe_load(response.content)
+                model_config = yaml.safe_load(response.content)
 
-            # merge item from models.yaml to model config
-            model_config.update(item)
-            model_info = {"root_url": root_url, "type": tp, "attachments": {}}
+                # merge item from models.yaml to model config
+                item.update(model_config)
+            else:
+                root_url = None
+            model_info = {"type": tp, "attachments": {}}
+            if root_url is not None: 
+                model_info["root_url"] = root_url
             attachments = model_info["attachments"]
-            if "files" in model_config:
-                attachments["files"] = model_config["files"]
-            if "weights" in model_config:
-                attachments["weights"] = model_config["weights"]
-            for k in model_config:
+            if "files" in item:
+                attachments["files"] = item["files"]
+            if "weights" in item:
+                attachments["weights"] = item["weights"]
+            for k in item:
                 # normalize relative path
                 if k in ["documentation"]:
-                    if model_config[k]:
-                        model_config[k] = model_config[k].strip("/").strip("./")
+                    if item[k]:
+                        item[k] = item[k].strip("/").strip("./")
 
                 if k == "covers":
-                    for j in range(len(model_config[k])):
-                        model_config[k][j] = model_config[k][j].strip("/").strip("./")
+                    for j in range(len(item[k])):
+                        item[k][j] = item[k][j].strip("/").strip("./")
 
                 if k in preserved_keys:
-                    model_info[k] = model_config[k]
+                    model_info[k] = item[k]
 
             if len(model_info["attachments"]) <= 0:
                 del model_info["attachments"]
