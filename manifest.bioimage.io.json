@@ -84,13 +84,13 @@
   ],
   "resources": [
     {
-      "id": "notebook-preview",
+      "id": "Notebook Preview",
       "type": "application",
       "source": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master/src/notebook-preview.imjoy.html",
-      "name": "notebook-preview",
+      "name": "Notebook Preview",
       "version": "0.1.0",
       "api_version": "0.2.3",
-      "description": "[TODO: add description for notebook-preview ]",
+      "description": "A plugin for previewing Jupyter notebook (without a server)",
       "tags": [],
       "covers": [],
       "badges": [],
@@ -198,16 +198,11 @@
     },
     {
       "type": "notebook",
-      "attachments": {
-        "files": [
-          "https://gist.githubusercontent.com/oeway/ebedc17c9ab1f6aa5eee181679d85b5f/raw/vitessce-image-viewer-imjoy-demo.ipynb"
-        ]
-      },
       "root_url": "https://gist.githubusercontent.com/oeway/582856630a0aed4d4d221e54df1b3ece/raw",
       "id": "vitessce-image-viewer",
       "source": "https://gist.githubusercontent.com/oeway/582856630a0aed4d4d221e54df1b3ece/raw/vitessce-image-viewer.notebook.yaml",
       "links": [
-        "notebook-preview"
+        "Notebook Preview"
       ],
       "tags": [
         "visualization",
@@ -230,8 +225,7 @@
           "url": "https://imjoy.io",
           "icon": "https://imjoy.io/static/badge/powered-by-imjoy-badge.svg"
         }
-      ],
-      "documentation": null
+      ]
     },
     {
       "type": "notebook",
@@ -259,10 +253,43 @@
       "documentation": null,
       "tags": [
         "ZeroCostDL4Mic",
-        "UNet",
-        "segmentation"
+        "segmentation",
+        "UNet"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
+    },
+    {
+      "type": "notebook",
+      "root_url": "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation",
+      "id": "unet-2d-pancreatic-cell-segmentation",
+      "name": "U-net (2D)",
+      "description": "Easy example to define a 2D U-Net for segmentation with Keras and import it into DeepImageJ format.",
+      "cite": {
+        "text": "Falk, T., Mai, D., Bensch, R. et al. U-Net: deep learning for cell counting, detection, and morphometry. Nat Methods 16, 67\u201370 (2019).",
+        "doi": "https://doi.org/10.1038/s41592-018-0261-2"
+      },
+      "authors": [
+        "Ignacio Arganda-Carreras and DeepImageJ"
+      ],
+      "covers": [
+        "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/notebook_intro.png",
+        "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/usecase.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/deepimagej/models/blob/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
+      "tags": [
+        "DeepImageJ",
+        "segmentation",
+        "UNet",
+        "deepimagej"
+      ],
+      "source": "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     },
     {
       "type": "model",
@@ -273,10 +300,10 @@
         "unet-2d-pancreatic-cell-segmentation"
       ],
       "tags": [
+        "segmentation",
         "deepimagej",
-        "phase contrast",
         "pancreatic stem cells",
-        "segmentation"
+        "phase contrast"
       ],
       "name": "U-Net Pancreatic Cell Segmentation",
       "description": "DeepImageJ compatible U-Net trained to segment phase contrast microscopy images of pancreatic stem cells on a 2D polystyrene substrate.",
@@ -310,10 +337,10 @@
       "id": "UNet2DHelaSegmentation",
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_hela_segmentation/UNet2DHelaSegmentation.model.yaml",
       "tags": [
-        "deepimagej",
-        "phase contrast",
+        "segmentation",
         "hela cells",
-        "segmentation"
+        "deepimagej",
+        "phase contrast"
       ],
       "name": "U-Net Hela Cell Segmentation",
       "description": "DeepImageJ compatible U-Net trained to segment Hela cells in 2D phase contrast microscopy images",
@@ -347,12 +374,12 @@
       ],
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip",
       "tags": [
-        "sga2",
         "brain",
-        "vasculature",
-        "hbp",
         "unet2d",
-        "pytorch"
+        "vasculature",
+        "pytorch",
+        "sga2",
+        "hbp"
       ],
       "name": "U-Net DA (Domain Adaptation)",
       "description": "U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
@@ -382,12 +409,12 @@
       ],
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip",
       "tags": [
-        "sga2",
         "brain",
-        "vasculature",
-        "hbp",
         "unet2d",
-        "pytorch"
+        "vasculature",
+        "pytorch",
+        "sga2",
+        "hbp"
       ],
       "name": "Two Steam U-Net DA",
       "description": "Two Steam U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). Two Steam U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. Two Steam U-Net uses differet encoders to process inputs from source and target, and use a common decoder to generate the respective segmentation outputs. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
@@ -446,9 +473,9 @@
         "HPA-Classification"
       ],
       "tags": [
-        "shufflenet",
         "classification",
         "tensorflow.js",
+        "shufflenet",
         "imjoy"
       ],
       "name": "HPA ShuffleNetV2",
@@ -491,10 +518,10 @@
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/fru-net_sev_segmentation/FRUNet2DsEVSegmentation.model.yaml",
       "download_url": "https://github.com/deepimagej/models/releases/download/0.1/fru-net_sev_segmentation.zip",
       "tags": [
-        "deepimagej",
         "segmentation",
-        "TEM",
-        "extracellular vesicles"
+        "extracellular vesicles",
+        "deepimagej",
+        "TEM"
       ],
       "name": "Fully Residual U-Net - TEM",
       "description": "DeepImageJ compatible fully residual U-Net trained to segment small extracellular vesicles in 2D TEM images",
@@ -535,8 +562,8 @@
       "authors": [],
       "documentation": null,
       "tags": [
-        "zarr",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "zarr"
       ]
     },
     {
@@ -572,10 +599,10 @@
       "tags": [
         "cell membrane",
         "unet3d",
-        "EM",
-        "platynereis",
         "segmentation",
-        "pytorch"
+        "pytorch",
+        "platynereis",
+        "EM"
       ],
       "name": "3D UNet Platynereis Cell Segmentation (Probabilities)",
       "description": "A 3d U-Net trained to predict the cell boundaries in a EM volume of a 6 day old Platynereis.",
@@ -607,12 +634,12 @@
       "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip",
       "tags": [
         "cell membrane",
-        "arabidopsis",
         "unet3d",
-        "ovuls",
-        "plant tissue",
+        "arabidopsis",
         "segmentation",
-        "pytorch"
+        "pytorch",
+        "ovuls",
+        "plant tissue"
       ],
       "name": "3D UNet Arabidopsis Ovules",
       "description": "A 3d U-Net trained to predict the cell boundaries in confocal stacks of Arabidopsis ovules. Voxel size: (0.235, 0.150, 0.150) microns ZYX",
@@ -646,9 +673,9 @@
       ],
       "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip",
       "tags": [
+        "nucleus-segmentation",
         "unet2d",
-        "pytorch",
-        "nucleus-segmentation"
+        "pytorch"
       ],
       "name": "2D UNet Nuclei Broad",
       "description": "A 2d U-Net pretrained on broad nucleus dataset.",
