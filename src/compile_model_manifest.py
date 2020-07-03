@@ -7,26 +7,26 @@ from pathlib import Path
 
 preserved_keys = [
     "api_version",
+    "attachments",
     "authors",
-    "git_repo",
+    "badges",
     "cite",
     "co2",
     "covers",
-    "badges",
     "description",
     "documentation",
     "download_url",
-    "attachments",
     "format_version",
+    "git_repo",
+    "icon",
     "id",
     "license",
+    "links",
     "model",
     "name",
     "source",
     "tags",
     "version",
-    "links",
-    "icon",
 ]
 assert "url" not in preserved_keys
 
@@ -134,9 +134,10 @@ def parse_manifest(models_yaml):
                     continue
 
                 model_config = yaml.safe_load(response.content)
-
                 # merge item from models.yaml to model config
                 item.update(model_config)
+                # recover source
+                item["source"] = source
             else:
                 root_url = None
             model_info = {"type": tp, "attachments": {}}
@@ -154,8 +155,9 @@ def parse_manifest(models_yaml):
                         item[k] = item[k].strip("/").strip("./")
 
                 if k == "covers":
-                    for j in range(len(item[k])):
-                        item[k][j] = item[k][j].strip("/").strip("./")
+                    if isinstance(item[k], list):
+                        for j in range(len(item[k])):
+                            item[k][j] = item[k][j].strip("/").strip("./")
 
                 if k in preserved_keys:
                     model_info[k] = item[k]
