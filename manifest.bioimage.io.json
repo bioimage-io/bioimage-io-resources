@@ -23,6 +23,25 @@
   "url_root": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master",
   "collections": [
     {
+      "id": "deepimagej",
+      "name": "deepImageJ",
+      "tags": [
+        "deepimagej"
+      ],
+      "logo": "https://deepimagej.github.io/deepimagej/images/deepimagej_logo.png",
+      "icon": "https://deepimagej.github.io/deepimagej/images/deepimagej_logo.png",
+      "splash_title": "deepImageJ",
+      "splash_subtitle": "A user-friendly plugin to run deep learning models in ImageJ",
+      "splash_feature_list": null,
+      "explore_button_text": "Start Exploring",
+      "background_image": "static/img/zoo-background.svg",
+      "resource_types": [
+        "model",
+        "notebook"
+      ],
+      "url_root": "https://raw.githubusercontent.com/deepimagej/models/master"
+    },
+    {
       "id": "zero",
       "name": "ZeroCostDL4Mic",
       "version": "0.1.0",
@@ -231,9 +250,76 @@
     },
     {
       "type": "model",
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation",
+      "id": "UNet2DPancreaticSegmentation",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/UNet2DPancreaticSegmentation.model.yaml",
+      "name": "U-Net Pancreatic Cell Segmentation",
+      "description": "DeepImageJ compatible U-Net trained to segment phase contrast microscopy images of pancreatic stem cells on a 2D polystyrene substrate.",
+      "cite": {
+        "text": "G\u00f3mez-de-Mariscal E. et al., biorXiv 2019; Ulman V. et al., Nature Methods 2017; Ronneberger O. et al., MICCAI 2015",
+        "doi": "n/a"
+      },
+      "authors": [
+        "DeepImageJ",
+        "Ignacio Arganda-Carreras"
+      ],
+      "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
+      "covers": "n/a",
+      "tags": [
+        "deepimagej",
+        "pancreatic stem cells",
+        "segmentation",
+        "phase contrast"
+      ],
+      "license": null,
+      "format_version": null,
+      "model": {
+        "source": "./saved_model.pb",
+        "sha256": "n/a",
+        "v1": {
+          "source": "./variables",
+          "sha256": "n/a"
+        }
+      }
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_glioblastoma_segmentation",
+      "id": "UNet2DHelaSegmentation",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_glioblastoma_segmentation/UNet2DHelaSegmentation.model.yaml",
+      "name": "U-Net Hela Cell Segmentation",
+      "description": "DeepImageJ compatible U-Net trained to segment Hela cells in 2D phase contrast microscopy images",
+      "cite": {
+        "text": "Biomedical Imaging Group, School of Engineering, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne, Lausanne, Switzerland",
+        "doi": "n/a"
+      },
+      "authors": [
+        "Jo\u00e3o Soares Lopes"
+      ],
+      "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
+      "covers": "n/a",
+      "tags": [
+        "deepimagej",
+        "hela cells",
+        "segmentation",
+        "phase contrast"
+      ],
+      "license": null,
+      "format_version": null,
+      "model": {
+        "source": "./saved_model.pb",
+        "sha256": "601830ca4462cc7b6d1047541bd2e6de105dbc92d6da42d840700eaf65aef0e7",
+        "v1": {
+          "source": "./variables",
+          "sha256": "n/a"
+        }
+      }
+    },
+    {
+      "type": "model",
       "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2",
       "id": "UNetDA",
-      "source": "src.utils.get_unet",
+      "source": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/UNetDA.model.yaml",
       "links": [
         "Ilastik Model Preview"
       ],
@@ -268,7 +354,7 @@
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2",
       "id": "2sUNetDA",
-      "source": "src.utils.get_2sunet",
+      "source": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/2sUNetDA.model.yaml",
       "links": [
         "Ilastik Model Preview"
       ],
@@ -303,7 +389,7 @@
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo",
       "id": "N2VSEMDemo",
-      "source": "de.csbdresden.n2v.train.N2VPrediction",
+      "source": "https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/v0.1.4/models/n2v-sem-demo/n2v-sem-demo.model.yaml",
       "links": [
         "Fiji Model Preview"
       ],
@@ -333,7 +419,7 @@
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
       "id": "HPAShuffleNetV2",
-      "source": "https://raw.githubusercontent.com/oeway/Anet-Model-Zoo/master/4_hpa_shufflenet_v2/model.json",
+      "source": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml",
       "links": [
         "HPA-Classification"
       ],
@@ -364,6 +450,53 @@
       "covers": [
         "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
       ]
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "weights": [
+          {
+            "id": "v1",
+            "name": "version 1",
+            "description": "weights trained for segmenting small extracellular vesicles",
+            "source": "./variables",
+            "sha256": null
+          }
+        ]
+      },
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/fru-net_sev_segmentation",
+      "id": "FRUNet2DsEVSegmentation",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/fru-net_sev_segmentation/FRUNet2DsEVSegmentation.model.yaml",
+      "download_url": "https://github.com/deepimagej/models/releases/download/0.1/fru-net_sev_segmentation.zip",
+      "name": "Fully Residual U-Net - TEM",
+      "description": "DeepImageJ compatible fully residual U-Net trained to segment small extracellular vesicles in 2D TEM images",
+      "cite": {
+        "text": "G\u00f3mez-de-Mariscal, E. et al., Deep-Learning-Based Segmentation of SmallExtracellular Vesicles in Transmission Electron Microscopy Images \nScientific Reports, (2019)",
+        "doi": "https://doi.org/10.1038/s41598-019-49431-3"
+      },
+      "authors": [
+        "Estibaliz G\u00f3mez-de-Mariscal",
+        "Martin Ma\u0161ka",
+        "Anna Kotrbov\u00e1",
+        "Vendula Posp\u00edchalov\u00e1",
+        "Pavel Matula and Arrate Mu\u00f1oz-Barrutia"
+      ],
+      "documentation": "https://cbia.fi.muni.cz/research/segmentation/fru-net.html",
+      "covers": [
+        "frunet_sev.jpg"
+      ],
+      "tags": [
+        "deepimagej",
+        "extracellular vesicles",
+        "segmentation",
+        "TEM"
+      ],
+      "license": "BSD 3",
+      "format_version": "0.2.0",
+      "model": {
+        "source": "./saved_model.pb",
+        "sha256": "9ccb79070f30813e7447342e3ab7f4107a314a1414c1541c79134ef950ac4a7f"
+      }
     },
     {
       "type": "dataset",
@@ -408,7 +541,7 @@
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model",
       "id": "UNet3DPlatyCellProbs",
-      "source": "mmpb.segmentation.network.models.UNetAnisotropic",
+      "source": "https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml",
       "links": [
         "Ilastik Model Preview"
       ],
@@ -444,7 +577,7 @@
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/fynnbe/pytorch-3dunet/eabf146079c5829f6c6fe0488595838e54887c06/bioimage-io/UNet3DArabidopsisOvules.model",
       "id": "UNet3DArabidopsisOvules",
-      "source": "pytorch3dunet.unet3d.model.UNet3D",
+      "source": "https://raw.githubusercontent.com/fynnbe/pytorch-3dunet/eabf146079c5829f6c6fe0488595838e54887c06/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml",
       "links": [
         "Ilastik Model Preview"
       ],
@@ -484,7 +617,7 @@
       "type": "model",
       "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad",
       "id": "UNet2DNucleiBroad",
-      "source": "pybio.torch.models.unet.UNet2d",
+      "source": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml",
       "links": [
         "Ilastik Model Preview"
       ],
