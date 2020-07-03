@@ -53,8 +53,10 @@ def parse_manifest(models_yaml):
             collection_yaml = yaml.safe_load(response.content)
             if "config" in collection_yaml:
                 collections.append(collection_yaml["config"])
-            # TODO: add tags automatically
-            parse_manifest(collection_yaml)
+            try:
+                parse_manifest(collection_yaml)
+            except Exception as e:
+                print("Failed to parse manifest " + item["source"], e)
 
     if "application" in models_yaml:
         for item in models_yaml["application"]:
