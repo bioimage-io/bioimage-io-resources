@@ -37,6 +37,13 @@ compiled_items = []
 
 
 def parse_manifest(models_yaml):
+    collection_tags = []
+    if models_yaml.get("config"):
+        cfg = models_yaml.get("config")
+        if cfg.get("tags"):
+            tags = cfg.get("tags")
+            if isinstance(tags, list):
+                collection_tags = cfg.get("tags")
     if "collection" in models_yaml:
         for item in models_yaml["collection"]:
             response = requests.get(item["source"])
@@ -56,11 +63,15 @@ def parse_manifest(models_yaml):
                 content = open(app_url, "r").read()
                 if not app_url.startswith("http"):
                     app_url = item["source"].strip("/").strip("./")
-                    app_url = models_yaml["config"]["url_root"].strip("/") + "/" + app_url
+                    app_url = (
+                        models_yaml["config"]["url_root"].strip("/") + "/" + app_url
+                    )
             else:
                 if not app_url.startswith("http"):
                     app_url = item["source"].strip("/").strip("./")
-                    app_url = models_yaml["config"]["url_root"].strip("/") + "/" + app_url
+                    app_url = (
+                        models_yaml["config"]["url_root"].strip("/") + "/" + app_url
+                    )
 
                 response = requests.get(app_url)
                 if response.status_code != 200:
@@ -125,6 +136,11 @@ def parse_manifest(models_yaml):
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
+            if "tags" in item:
+                item["tags"] += collection_tags
+            else:
+                item["tags"] = collection_tags
+
             if "source" in item:
                 source = item["source"]
                 root_url = "/".join(source.split("/")[:-1])
@@ -141,7 +157,7 @@ def parse_manifest(models_yaml):
             else:
                 root_url = None
             model_info = {"type": tp, "attachments": {}}
-            if root_url is not None: 
+            if root_url is not None:
                 model_info["root_url"] = root_url
             attachments = model_info["attachments"]
             if "files" in item:
@@ -181,11 +197,13 @@ with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
     resources = compiled_apps + compiled_items
     ids = []
     for res in resources:
-        if 'id' not in res:
-            res['id'] = res['name'].replace(' ', '-')
-        if res['id'] in ids:
-            raise Exception("Duplicated resource id found: " + res['id'])
-        ids.append(res['id'])
+        if "tags" in res:
+            res["tags"] = list(set(res["tags"]))
+        if "id" not in res:
+            res["id"] = res["name"].replace(" ", "-")
+        if res["id"] in ids:
+            raise Exception("Duplicated resource id found: " + res["id"])
+        ids.append(res["id"])
 
     new_model_yaml["resources"] = resources
     f.write(
