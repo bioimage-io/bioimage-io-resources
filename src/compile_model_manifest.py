@@ -197,6 +197,8 @@ with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
     resources = compiled_apps + compiled_items
     ids = []
     for res in resources:
+        if "tags" in res:
+            res["tags"] = list(set(res["tags"]))
         if "id" not in res:
             res["id"] = res["name"].replace(" ", "-")
         if res["id"] in ids:
