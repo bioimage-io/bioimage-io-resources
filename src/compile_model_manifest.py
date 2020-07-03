@@ -56,11 +56,11 @@ def parse_manifest(models_yaml):
                 content = open(app_url, "r").read()
                 if not app_url.startswith("http"):
                     app_url = item["source"].strip("/").strip("./")
-                    app_url = models_yaml["url_root"].strip("/") + "/" + app_url
+                    app_url = models_yaml["config"]["url_root"].strip("/") + "/" + app_url
             else:
                 if not app_url.startswith("http"):
                     app_url = item["source"].strip("/").strip("./")
-                    app_url = models_yaml["url_root"].strip("/") + "/" + app_url
+                    app_url = models_yaml["config"]["url_root"].strip("/") + "/" + app_url
 
                 response = requests.get(app_url)
                 if response.status_code != 200:
@@ -171,12 +171,7 @@ models_yaml = yaml.safe_load(models_yaml_file.read_text())
 parse_manifest(models_yaml)
 
 with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
-    new_model_yaml = {
-        "name": models_yaml["name"],
-        "description": models_yaml["description"],
-        "version": models_yaml["version"],
-        "url_root": models_yaml["url_root"],
-    }
+    new_model_yaml = models_yaml["config"]
     collections.sort(key=lambda m: m["name"], reverse=True)
     compiled_apps.sort(key=lambda m: m["name"], reverse=True)
     compiled_items.sort(key=lambda m: m["name"], reverse=True)
