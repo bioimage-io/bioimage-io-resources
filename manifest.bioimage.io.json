@@ -1,7 +1,25 @@
 {
-  "name": "BioImage.IO Repository",
-  "description": "BioImage.IO AI model repository.",
-  "version": "0.2.0",
+  "id": "bioimage.io",
+  "name": "BioImage.IO",
+  "tags": [],
+  "logo": "\ud83e\udd92",
+  "icon": "\ud83e\udd92",
+  "splash_title": "Bioimage Model Zoo",
+  "splash_subtitle": "Advanced AI models in one-click",
+  "splash_feature_list": [
+    "Integrate with Fiji, Ilastik, ImJoy",
+    "Try model instantly with BioEngine",
+    "Contribute your models via Github",
+    "Link models to datasets and applications"
+  ],
+  "explore_button_text": "Start Exploring",
+  "background_image": "static/img/zoo-background.svg",
+  "resource_types": [
+    "model",
+    "application",
+    "notebook",
+    "dataset"
+  ],
   "url_root": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master",
   "collections": [
     {
@@ -22,6 +40,25 @@
         "model",
         "notebook",
         "dataset"
+      ],
+      "url_root": "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master"
+    },
+    {
+      "id": "fiji",
+      "name": "Fiji",
+      "tags": [
+        "fiji"
+      ],
+      "logo": "https://fiji.sc/site/logo.png",
+      "icon": "https://fiji.sc/site/logo.png",
+      "splash_title": "Fiji",
+      "splash_subtitle": "Fiji is just ImageJ",
+      "splash_feature_list": [],
+      "explore_button_text": "Start Exploring",
+      "background_image": "static/img/zoo-background.svg",
+      "resource_types": [
+        "model",
+        "notebook"
       ],
       "url_root": "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master"
     }
