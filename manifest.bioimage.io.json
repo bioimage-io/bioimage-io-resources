@@ -257,14 +257,14 @@
       "description": "DeepImageJ compatible U-Net trained to segment phase contrast microscopy images of pancreatic stem cells on a 2D polystyrene substrate.",
       "cite": {
         "text": "G\u00f3mez-de-Mariscal E. et al., biorXiv 2019; Ulman V. et al., Nature Methods 2017; Ronneberger O. et al., MICCAI 2015",
-        "doi": "n/a"
+        "doi": null
       },
       "authors": [
         "DeepImageJ",
         "Ignacio Arganda-Carreras"
       ],
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
-      "covers": "n/a",
+      "covers": null,
       "tags": [
         "deepimagej",
         "pancreatic stem cells",
@@ -275,43 +275,10 @@
       "format_version": null,
       "model": {
         "source": "./saved_model.pb",
-        "sha256": "n/a",
+        "sha256": null,
         "v1": {
           "source": "./variables",
-          "sha256": "n/a"
-        }
-      }
-    },
-    {
-      "type": "model",
-      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_glioblastoma_segmentation",
-      "id": "UNet2DHelaSegmentation",
-      "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_glioblastoma_segmentation/UNet2DHelaSegmentation.model.yaml",
-      "name": "U-Net Hela Cell Segmentation",
-      "description": "DeepImageJ compatible U-Net trained to segment Hela cells in 2D phase contrast microscopy images",
-      "cite": {
-        "text": "Biomedical Imaging Group, School of Engineering, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne, Lausanne, Switzerland",
-        "doi": "n/a"
-      },
-      "authors": [
-        "Jo\u00e3o Soares Lopes"
-      ],
-      "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
-      "covers": "n/a",
-      "tags": [
-        "deepimagej",
-        "hela cells",
-        "segmentation",
-        "phase contrast"
-      ],
-      "license": null,
-      "format_version": null,
-      "model": {
-        "source": "./saved_model.pb",
-        "sha256": "601830ca4462cc7b6d1047541bd2e6de105dbc92d6da42d840700eaf65aef0e7",
-        "v1": {
-          "source": "./variables",
-          "sha256": "n/a"
+          "sha256": null
         }
       }
     },
