@@ -146,16 +146,20 @@ def parse_manifest(models_yaml):
             if "source" in item:
                 source = item["source"]
                 root_url = "/".join(source.split("/")[:-1])
-                response = requests.get(source)
-                if response.status_code != 200:
-                    print("Failed to fetch source from " + source)
-                    continue
-
-                model_config = yaml.safe_load(response.content)
-                # merge item from models.yaml to model config
-                item.update(model_config)
-                # recover source
-                item["source"] = source
+                try:
+                    response = requests.get(source)
+                    if response.status_code != 200:
+                        print("Failed to fetch source from " + source)
+                        continue
+                    if source.endswith('.yaml') or source.endswith('.yml'):
+                        model_config = yaml.safe_load(response.content)
+                        # merge item from models.yaml to model config
+                        item.update(model_config)
+                        # recover source
+                        item["source"] = source
+                except:
+                    print('Failed to download or parse source file from ' + source)
+                    raise
             else:
                 root_url = None
             model_info = {"type": tp, "attachments": {}}
