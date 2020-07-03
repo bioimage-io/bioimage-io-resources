@@ -205,8 +205,8 @@
         "Notebook Preview"
       ],
       "tags": [
-        "visualization",
-        "imjoy"
+        "imjoy",
+        "visualization"
       ],
       "name": "Vitessce Image Viewer",
       "description": "Use vitessce-image-viewer in Jupyter notebooks with ImJoy Jupyter Extension",
@@ -252,44 +252,11 @@
       ],
       "documentation": null,
       "tags": [
-        "segmentation",
         "UNet",
+        "segmentation",
         "ZeroCostDL4Mic"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
-    },
-    {
-      "type": "notebook",
-      "root_url": "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation",
-      "id": "unet-2d-pancreatic-cell-segmentation",
-      "name": "U-net (2D)",
-      "description": "Easy example to define a 2D U-Net for segmentation with Keras and import it into DeepImageJ format.",
-      "cite": {
-        "text": "Falk, T., Mai, D., Bensch, R. et al. U-Net: deep learning for cell counting, detection, and morphometry. Nat Methods 16, 67\u201370 (2019).",
-        "doi": "https://doi.org/10.1038/s41592-018-0261-2"
-      },
-      "authors": [
-        "Ignacio Arganda-Carreras and DeepImageJ"
-      ],
-      "covers": [
-        "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/notebook_intro.png",
-        "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/usecase.png"
-      ],
-      "badges": [
-        {
-          "label": "Open in Colab",
-          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
-          "url": "https://colab.research.google.com/github/deepimagej/models/blob/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
-        }
-      ],
-      "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
-      "tags": [
-        "segmentation",
-        "UNet",
-        "deepimagej",
-        "DeepImageJ"
-      ],
-      "source": "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     },
     {
       "type": "model",
@@ -297,13 +264,13 @@
       "id": "UNet2DPancreaticSegmentation",
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/UNet2DPancreaticSegmentation.model.yaml",
       "links": [
-        "unet-2d-pancreatic-cell-segmentation"
+        "unet-pancreaticcellsegmentation"
       ],
       "tags": [
-        "segmentation",
-        "deepimagej",
+        "pancreatic stem cells",
         "phase contrast",
-        "pancreatic stem cells"
+        "segmentation",
+        "deepimagej"
       ],
       "name": "U-Net Pancreatic Cell Segmentation",
       "description": "DeepImageJ compatible U-Net trained to segment phase contrast microscopy images of pancreatic stem cells on a 2D polystyrene substrate.",
@@ -337,8 +304,8 @@
       "id": "UNet2DHelaSegmentation",
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_hela_segmentation/UNet2DHelaSegmentation.model.yaml",
       "tags": [
-        "segmentation",
         "hela cells",
+        "segmentation",
         "deepimagej",
         "phase contrast"
       ],
@@ -374,11 +341,11 @@
       ],
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip",
       "tags": [
-        "brain",
-        "pytorch",
-        "unet2d",
-        "vasculature",
         "hbp",
+        "vasculature",
+        "unet2d",
+        "pytorch",
+        "brain",
         "sga2"
       ],
       "name": "U-Net DA (Domain Adaptation)",
@@ -409,11 +376,11 @@
       ],
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip",
       "tags": [
-        "brain",
-        "pytorch",
-        "unet2d",
-        "vasculature",
         "hbp",
+        "vasculature",
+        "unet2d",
+        "pytorch",
+        "brain",
         "sga2"
       ],
       "name": "Two Steam U-Net DA",
@@ -444,9 +411,9 @@
       ],
       "download_url": "https://github.com/bioimage-io/fiji-bioimage-io/releases/download/v0.1.4/n2v-sem-demo.zip",
       "tags": [
+        "n2v",
         "unet2d",
-        "denoising",
-        "n2v"
+        "denoising"
       ],
       "name": "N2V SEM Demo",
       "description": "Demo model for denoising trained on a single SEM image with Noise2Void",
@@ -474,9 +441,9 @@
       ],
       "tags": [
         "imjoy",
-        "shufflenet",
+        "tensorflow.js",
         "classification",
-        "tensorflow.js"
+        "shufflenet"
       ],
       "name": "HPA ShuffleNetV2",
       "description": "A light-weight model for HPA image classification competition",
@@ -519,9 +486,9 @@
       "download_url": "https://github.com/deepimagej/models/releases/download/0.1/fru-net_sev_segmentation.zip",
       "tags": [
         "segmentation",
+        "extracellular vesicles",
         "deepimagej",
-        "TEM",
-        "extracellular vesicles"
+        "TEM"
       ],
       "name": "Fully Residual U-Net - TEM",
       "description": "DeepImageJ compatible fully residual U-Net trained to segment small extracellular vesicles in 2D TEM images",
@@ -597,12 +564,12 @@
       ],
       "download_url": "https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip",
       "tags": [
-        "segmentation",
-        "EM",
-        "pytorch",
         "platynereis",
+        "cell membrane",
+        "pytorch",
+        "EM",
         "unet3d",
-        "cell membrane"
+        "segmentation"
       ],
       "name": "3D UNet Platynereis Cell Segmentation (Probabilities)",
       "description": "A 3d U-Net trained to predict the cell boundaries in a EM volume of a 6 day old Platynereis.",
@@ -633,13 +600,13 @@
       ],
       "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip",
       "tags": [
-        "segmentation",
-        "pytorch",
-        "ovuls",
-        "arabidopsis",
-        "unet3d",
         "cell membrane",
-        "plant tissue"
+        "arabidopsis",
+        "pytorch",
+        "plant tissue",
+        "unet3d",
+        "segmentation",
+        "ovuls"
       ],
       "name": "3D UNet Arabidopsis Ovules",
       "description": "A 3d U-Net trained to predict the cell boundaries in confocal stacks of Arabidopsis ovules. Voxel size: (0.235, 0.150, 0.150) microns ZYX",
@@ -695,6 +662,39 @@
       "covers": [
         "cover0.png"
       ]
+    },
+    {
+      "type": "notebook",
+      "root_url": "https://github.com/deepimagej/models/raw/master/u-net_pancreatic_segmentation",
+      "id": "unet-pancreaticcellsegmentation",
+      "name": "2D U-Net for binary segmentation",
+      "description": "Easy example to define a 2D U-Net for segmentation with Keras and import it into DeepImageJ format",
+      "cite": {
+        "text": "Falk, T., Mai, D., Bensch, R. et al. U-Net: deep learning for cell counting, detection, and morphometry. Nat Methods 16, 67\u201370 (2019).",
+        "doi": "https://doi.org/10.1038/s41592-018-0261-2"
+      },
+      "authors": [
+        "Ignacio Arganda-Carreras and DeepImageJ"
+      ],
+      "covers": [
+        "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/notebook_intro.png",
+        "https://github.com/deepimagej/models/blob/master/u-net_pancreatic_segmentation/usecase.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/deepimagej/models/blob/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
+      "tags": [
+        "UNet",
+        "segmentation",
+        "DeepImageJ",
+        "deepimagej"
+      ],
+      "source": "https://github.com/deepimagej/models/raw/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
   ]
 }
