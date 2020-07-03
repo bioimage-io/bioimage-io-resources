@@ -155,8 +155,6 @@ def parse_manifest(models_yaml):
                         model_config = yaml.safe_load(response.content)
                         # merge item from models.yaml to model config
                         item.update(model_config)
-                        # recover source
-                        item["source"] = source
                 except:
                     print('Failed to download or parse source file from ' + source)
                     raise
