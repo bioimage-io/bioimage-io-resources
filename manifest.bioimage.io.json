@@ -252,9 +252,9 @@
       ],
       "documentation": null,
       "tags": [
+        "UNet",
         "segmentation",
-        "ZeroCostDL4Mic",
-        "UNet"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
     },
@@ -267,10 +267,10 @@
         "unet-pancreaticcellsegmentation"
       ],
       "tags": [
-        "segmentation",
-        "phase contrast",
         "deepimagej",
-        "pancreatic stem cells"
+        "pancreatic stem cells",
+        "segmentation",
+        "phase contrast"
       ],
       "name": "U-Net Pancreatic Cell Segmentation",
       "description": "DeepImageJ compatible U-Net trained to segment phase contrast microscopy images of pancreatic stem cells on a 2D polystyrene substrate.",
@@ -304,10 +304,10 @@
       "id": "UNet2DHelaSegmentation",
       "source": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
       "tags": [
+        "deepimagej",
         "segmentation",
         "phase contrast",
-        "hela cells",
-        "deepimagej"
+        "hela cells"
       ],
       "name": "U-Net Hela Cell Segmentation",
       "description": "DeepImageJ compatible U-Net trained to segment Hela cells in 2D phase contrast microscopy images",
@@ -341,11 +341,11 @@
       ],
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip",
       "tags": [
-        "pytorch",
-        "sga2",
-        "unet2d",
         "hbp",
+        "unet2d",
         "brain",
+        "sga2",
+        "pytorch",
         "vasculature"
       ],
       "name": "U-Net DA (Domain Adaptation)",
@@ -376,11 +376,11 @@
       ],
       "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip",
       "tags": [
-        "pytorch",
-        "sga2",
-        "unet2d",
         "hbp",
+        "unet2d",
         "brain",
+        "sga2",
+        "pytorch",
         "vasculature"
       ],
       "name": "Two Steam U-Net DA",
@@ -440,10 +440,10 @@
         "HPA-Classification"
       ],
       "tags": [
-        "shufflenet",
-        "tensorflow.js",
+        "imjoy",
         "classification",
-        "imjoy"
+        "tensorflow.js",
+        "shufflenet"
       ],
       "name": "HPA ShuffleNetV2",
       "description": "A light-weight model for HPA image classification competition",
@@ -485,10 +485,10 @@
       "source": "https://cbia.fi.muni.cz/research/segmentation/fru-net.html",
       "download_url": "https://github.com/deepimagej/models/releases/download/0.1/fru-net_sev_segmentation.zip",
       "tags": [
-        "segmentation",
-        "extracellular vesicles",
+        "deepimagej",
         "TEM",
-        "deepimagej"
+        "segmentation",
+        "extracellular vesicles"
       ],
       "name": "Fully Residual U-Net - TEM",
       "description": "DeepImageJ compatible fully residual U-Net trained to segment small extracellular vesicles in 2D TEM images",
@@ -529,8 +529,8 @@
       "authors": [],
       "documentation": null,
       "tags": [
-        "zarr",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "zarr"
       ]
     },
     {
@@ -564,12 +564,12 @@
       ],
       "download_url": "https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip",
       "tags": [
-        "cell membrane",
+        "EM",
         "unet3d",
         "platynereis",
+        "segmentation",
         "pytorch",
-        "EM",
-        "segmentation"
+        "cell membrane"
       ],
       "name": "3D UNet Platynereis Cell Segmentation (Probabilities)",
       "description": "A 3d U-Net trained to predict the cell boundaries in a EM volume of a 6 day old Platynereis.",
@@ -600,13 +600,13 @@
       ],
       "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip",
       "tags": [
-        "cell membrane",
-        "unet3d",
-        "plant tissue",
-        "pytorch",
-        "segmentation",
+        "arabidopsis",
         "ovuls",
-        "arabidopsis"
+        "unet3d",
+        "segmentation",
+        "pytorch",
+        "plant tissue",
+        "cell membrane"
       ],
       "name": "3D UNet Arabidopsis Ovules",
       "description": "A 3d U-Net trained to predict the cell boundaries in confocal stacks of Arabidopsis ovules. Voxel size: (0.235, 0.150, 0.150) microns ZYX",
@@ -640,9 +640,9 @@
       ],
       "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip",
       "tags": [
-        "pytorch",
         "nucleus-segmentation",
-        "unet2d"
+        "unet2d",
+        "pytorch"
       ],
       "name": "2D UNet Nuclei Broad",
       "description": "A 2d U-Net pretrained on broad nucleus dataset.",
@@ -689,10 +689,10 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "segmentation",
-        "DeepImageJ",
+        "deepimagej",
         "UNet",
-        "deepimagej"
+        "segmentation",
+        "DeepImageJ"
       ],
       "source": "https://github.com/deepimagej/models/raw/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
