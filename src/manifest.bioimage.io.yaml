@@ -30,9 +30,9 @@ collection:
     source: https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/master/manifest.bioimage.io.yaml
 
 application:
-  - id: Ilastik Model Preview
+  - id: Ilastik
     source: src/Ilastik-app.imjoy.html
-  - id: Fiji Model Preview
+  - id: Fiji
     source: src/Fiji-app.imjoy.html
   - id: HPA-Classification
     source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
@@ -60,29 +60,29 @@ model:
   - id: UNet2DNucleiBroad
     source: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
     links:
-      - Ilastik Model Preview
+      - Ilastik
     download_url: https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip
 
   - id: UNet3DArabidopsisOvules
     source: https://raw.githubusercontent.com/wolny/pytorch-3dunet/37f186c80f4d64b1dab5d165d8c2aae15b5aede1/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml
     links:
-      - Ilastik Model Preview
+      - Ilastik
     download_url: https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip
 
   - id: UNet3DPlatyCellProbs
     source: https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml
     links:
-      - Ilastik Model Preview
+      - Ilastik
     download_url: https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip
 
   - id: UNetDA
     source: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/UNetDA.model.yaml
     links:
-      - Ilastik Model Preview
+      - Ilastik
     download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip
 
   - id: 2sUNetDA
     source: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/2sUNetDA.model.yaml
     links:
-      - Ilastik Model Preview
+      - Ilastik
     download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip
