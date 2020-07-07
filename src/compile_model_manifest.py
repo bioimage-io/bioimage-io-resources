@@ -32,7 +32,6 @@ assert "url" not in preserved_keys
 
 collections = []
 compiled_apps = []
-apps_names = []
 compiled_items = []
 
 
@@ -56,93 +55,95 @@ def parse_manifest(models_yaml):
             try:
                 parse_manifest(collection_yaml)
             except Exception as e:
-                print("Failed to parse manifest " + item["source"], e)
+                print("Failed to parse manifest " + str(item.get("source")), e)
 
     if "application" in models_yaml:
         for item in models_yaml["application"]:
-            app_url = item["source"]
-            if os.path.exists(app_url):
-                content = open(app_url, "r").read()
-                if not app_url.startswith("http"):
-                    app_url = item["source"].strip("/").strip("./")
-                    app_url = (
-                        models_yaml["config"]["url_root"].strip("/") + "/" + app_url
-                    )
+            app_url = item.get("source")
+            if not app_url:
+                continue
+            if app_url.endswith('.imjoy.html'):
+                if os.path.exists(app_url):
+                    content = open(app_url, "r").read()
+                    if not app_url.startswith("http"):
+                        app_url = item["source"].strip("/").strip("./")
+                        app_url = (
+                            models_yaml["config"]["url_root"].strip("/") + "/" + app_url
+                        )
+                else:
+                    
+                    if not app_url.startswith("http"):
+                        app_url = item["source"].strip("/").strip("./")
+                        app_url = (
+                            models_yaml["config"]["url_root"].strip("/") + "/" + app_url
+                        )
+
+                    response = requests.get(app_url)
+                    if response.status_code != 200:
+                        print("Failed to fetch model config from " + app_url)
+                        continue
+
+                    content = response.content.decode("utf-8")
+                found = re.findall("<config (.*)>(.*)</config>", content, re.DOTALL)[0]
+                if "json" in found[0]:
+                    plugin_config = json.loads(found[1])
+                elif "yaml" in found[0]:
+                    plugin_config = yaml.safe_load(found[1])
+                else:
+                    raise Exception("config not found in " + app_url)
+
+                app_config = {"id": item["id"], "type": "application", "source": app_url}
+                fields = [
+                    "icon",
+                    "name",
+                    "version",
+                    "api_version",
+                    "description",
+                    "license",
+                    "requirements",
+                    "dependencies",
+                    "env",
+                ]
+                for f in fields:
+                    if f in plugin_config:
+                        app_config[f] = plugin_config[f]
+                tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
+                app_config["tags"] = tags
+
+                app_config["covers"] = plugin_config.get("cover")
+                # make sure we have a list
+                if not app_config["covers"]:
+                    app_config["covers"] = []
+                elif type(app_config["covers"]) is not list:
+                    app_config["covers"] = [app_config["covers"]]
+
+                app_config["badges"] = plugin_config.get("badge")
+                if not app_config["badges"]:
+                    app_config["badges"] = []
+                elif type(app_config["badges"]) is not list:
+                    app_config["badges"] = [app_config["badges"]]
+
+                app_config["authors"] = plugin_config.get("author")
+                if not app_config["authors"]:
+                    app_config["authors"] = []
+                elif type(app_config["authors"]) is not list:
+                    app_config["authors"] = [app_config["authors"]]
+
+                assert item["id"] == plugin_config["name"], (
+                    "Please use the app name ("
+                    + plugin_config["name"]
+                    + ") as its application id."
+                )
             else:
-                if not app_url.startswith("http"):
-                    app_url = item["source"].strip("/").strip("./")
-                    app_url = (
-                        models_yaml["config"]["url_root"].strip("/") + "/" + app_url
-                    )
-
-                response = requests.get(app_url)
-                if response.status_code != 200:
-                    print("Failed to fetch model config from " + app_url)
-                    continue
-
-                content = response.content.decode("utf-8")
-            found = re.findall("<config (.*)>(.*)</config>", content, re.DOTALL)[0]
-            if "json" in found[0]:
-                plugin_config = json.loads(found[1])
-            elif "yaml" in found[0]:
-                plugin_config = yaml.safe_load(found[1])
-            else:
-                raise Exception("config not found in " + app_url)
-
-            app_config = {"id": item["id"], "type": "application", "source": app_url}
-            fields = [
-                "icon",
-                "name",
-                "version",
-                "api_version",
-                "description",
-                "license",
-                "requirements",
-                "dependencies",
-                "env",
-            ]
-            for f in fields:
-                if f in plugin_config:
-                    app_config[f] = plugin_config[f]
-            tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
-            app_config["tags"] = tags
-
-            app_config["covers"] = plugin_config.get("cover")
-            # make sure we have a list
-            if not app_config["covers"]:
-                app_config["covers"] = []
-            elif type(app_config["covers"]) is not list:
-                app_config["covers"] = [app_config["covers"]]
-
-            app_config["badges"] = plugin_config.get("badge")
-            if not app_config["badges"]:
-                app_config["badges"] = []
-            elif type(app_config["badges"]) is not list:
-                app_config["badges"] = [app_config["badges"]]
-
-            app_config["authors"] = plugin_config.get("author")
-            if not app_config["authors"]:
-                app_config["authors"] = []
-            elif type(app_config["authors"]) is not list:
-                app_config["authors"] = [app_config["authors"]]
-
-            assert item["id"] == plugin_config["name"], (
-                "Please use the app name ("
-                + plugin_config["name"]
-                + ") as its application id."
-            )
-            apps_names.append(plugin_config["name"])
+                item["type"] = "application"
+                app_config = item
+            
             compiled_apps.append(app_config)
 
     for tp in ["model", "dataset", "notebook"]:
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
-            if "tags" in item:
-                item["tags"] += collection_tags
-            else:
-                item["tags"] = collection_tags
-
             if "source" in item:
                 source = item["source"]
                 root_url = "/".join(source.split("/")[:-1])
@@ -185,6 +186,10 @@ def parse_manifest(models_yaml):
             if len(model_info["attachments"]) <= 0:
                 del model_info["attachments"]
 
+            if "tags" in model_info:
+                model_info["tags"] += collection_tags
+            else:
+                model_info["tags"] = collection_tags
             compiled_items.append(model_info)
 
 
