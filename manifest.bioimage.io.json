@@ -125,7 +125,7 @@
         "application"
       ],
       "default_type": "model",
-      "url_root": "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master"
+      "url_root": "https://raw.githubusercontent.com/CellProfiling/HPA-zoo/master"
     },
     {
       "id": "fiji",
@@ -157,9 +157,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "notebook",
         "jupyter",
-        "imjoy"
+        "imjoy",
+        "notebook"
       ],
       "covers": [],
       "badges": [],
@@ -320,8 +320,8 @@
       ],
       "documentation": null,
       "tags": [
-        "ZeroCostDL4Mic",
         "segmentation",
+        "ZeroCostDL4Mic",
         "UNet"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
@@ -350,10 +350,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "deepimagej",
-        "phase contrast",
+        "pancreatic stem cells",
         "segmentation",
-        "pancreatic stem cells"
+        "deepimagej",
+        "phase contrast"
       ],
       "license": null,
       "format_version": null,
@@ -383,10 +383,10 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "deepimagej",
-        "phase contrast",
         "segmentation",
-        "hela cells"
+        "hela cells",
+        "deepimagej",
+        "phase contrast"
       ],
       "license": null,
       "format_version": null,
@@ -421,10 +421,10 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "hbp",
-        "pytorch",
         "sga2",
+        "pytorch",
         "vasculature",
+        "hbp",
         "ilastik",
         "brain",
         "unet2d"
@@ -457,10 +457,10 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "hbp",
-        "pytorch",
         "sga2",
+        "pytorch",
         "vasculature",
+        "hbp",
         "ilastik",
         "brain",
         "unet2d"
@@ -494,13 +494,183 @@
         "thumbnail.png"
       ],
       "tags": [
-        "denoising",
-        "n2v",
         "unet2d",
-        "fiji"
+        "n2v",
+        "fiji",
+        "denoising"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-wienerschnitzelgemeinschaft",
+      "name": "HPA-wienerschnitzelgemeinschaft",
+      "tags": [
+        "resnet-18",
+        "classification",
+        "airnext-50",
+        "hill-climbing",
+        "cbam",
+        "preresnet-50",
+        "hpa",
+        "inception-v3",
+        "airnet-50",
+        "inception-resnet-v2",
+        "resnet-50",
+        "resnet-101",
+        "resnet-34",
+        "se-resnext-50"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wienerschnitzelgemeinschaft",
+      "description": "An ensemble of diverse and highly optimized CNN models, using hill climbing and weighted voting.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/wienerschnitzelgemeinschaft/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-vpp",
+      "name": "HPA-vpp",
+      "tags": [
+        "classification",
+        "inception-v4",
+        "hpa",
+        "xception",
+        "inception-v3",
+        "multilayer-perceptron"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp",
+      "description": "An ensemble of seven CNN models and a multi-layer perceptron network, using image augmentation, multi scales, weighted sampling and MultiLabelSoftMargin loss.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/vpp/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling",
+      "id": "HPA-pudae",
+      "name": "HPA-pudae",
+      "tags": [
+        "classification",
+        "hpa",
+        "inception-v3",
+        "resnet-34",
+        "se-resnext-50"
+      ],
+      "license": "BSD-2-Clause",
+      "source": "https://github.com/CellProfiling/pudae-kaggle-hpa",
+      "description": "An ensemble using focal loss, per image normalization and spatial attention.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/pudae-kaggle-hpa/master/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-conv",
+      "name": "HPA-conv is all you need",
+      "tags": [
+        "classification",
+        "hpa",
+        "xception",
+        "inception-v3",
+        "se-resnext-50"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need",
+      "description": "An ensemble of a cropping window CNN based on Xception, and two conventional CNNs based on SE-ResNext50 and InceptionV3.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/conv_is_all_you_need/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-bestfitting",
+      "name": "HPA-bestfitting",
+      "tags": [
+        "classification",
+        "hpa",
+        "densenet-121",
+        "inception-v3",
+        "resnet-50",
+        "resnet-34"
+      ],
+      "authors": [
+        "Shubin Dai"
+      ],
+      "cite": null,
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting",
+      "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-WAIR",
+      "name": "HPA-WAIR",
+      "tags": [
+        "scikit-learn",
+        "opencv",
+        "classification",
+        "hpa",
+        "ibn-densenet-121",
+        "densenet-121",
+        "xception",
+        "densenet-169",
+        "se-resnext-50"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair",
+      "description": "Seven CNN models, using multiple different architectures, ensembled through averaging.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/wair/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-Random-Walk",
+      "name": "HPA-Random Walk",
+      "tags": [
+        "resnet-18",
+        "attention-gate",
+        "classification",
+        "hpa"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/random_walk",
+      "description": "An ensemble model of three different resolutions based on single attention gated network.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/random_walk/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-One-More",
+      "name": "HPA-One More Layer Of Stacking",
+      "tags": [
+        "classification",
+        "lightgbm",
+        "inception-v4",
+        "hpa",
+        "xception",
+        "se-resnext-50",
+        "bn-inception"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/one_more_layer_of_stacking",
+      "description": "14 CNN models ensembled via LightGBM stacking, optimized with Wadam, using focal and LSEP loss.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/one_more_layer_of_stacking/README.md"
+    },
+    {
+      "type": "model",
+      "root_url": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master",
+      "id": "HPA-NTU_MiRA",
+      "name": "HPA-NTU_MiRA",
+      "tags": [
+        "hpa",
+        "classification",
+        "resnet-34"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/ntu_mira",
+      "description": "A CNN with large input size (1024 \u2a09 1024 px) using fixed batch-normalization and data distillation.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/ntu_mira/README.md"
     },
     {
       "type": "model",
@@ -520,10 +690,10 @@
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
         "classification",
+        "shufflenet",
         "hpa",
-        "imjoy",
         "tensorflow.js",
-        "shufflenet"
+        "imjoy"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -574,9 +744,9 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "deepimagej",
         "segmentation",
         "extracellular vesicles",
+        "deepimagej",
         "TEM"
       ],
       "license": "BSD 3",
@@ -629,13 +799,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "segmentation",
         "platynereis",
-        "cell membrane",
-        "pytorch",
         "EM",
-        "unet3d",
-        "ilastik"
+        "pytorch",
+        "ilastik",
+        "segmentation",
+        "cell membrane",
+        "unet3d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -666,14 +836,14 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "segmentation",
-        "arabidopsis",
-        "cell membrane",
         "pytorch",
-        "plant tissue",
-        "unet3d",
+        "ovuls",
         "ilastik",
-        "ovuls"
+        "segmentation",
+        "cell membrane",
+        "arabidopsis",
+        "plant tissue",
+        "unet3d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -695,8 +865,8 @@
       "authors": [],
       "documentation": null,
       "tags": [
-        "ZeroCostDL4Mic",
         "segmentation",
+        "ZeroCostDL4Mic",
         "UNet"
       ],
       "source": "https://github.com/zhixuhao/unet/tree/master/data/membrane"
@@ -724,10 +894,10 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "ilastik",
-        "nucleus-segmentation",
         "unet2d",
-        "pytorch"
+        "nucleus-segmentation",
+        "pytorch",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -761,10 +931,10 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "DeepImageJ",
         "segmentation",
-        "UNet",
-        "deepimagej"
+        "DeepImageJ",
+        "deepimagej",
+        "UNet"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
