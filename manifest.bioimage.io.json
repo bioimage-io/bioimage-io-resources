@@ -24,6 +24,26 @@
   "url_root": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master",
   "collections": [
     {
+      "id": "ilastik",
+      "name": "ilastik",
+      "tags": [
+        "ilastik"
+      ],
+      "logo": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/image/ilastik-fist-icon.png",
+      "icon": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/image/ilastik-fist-icon.png",
+      "splash_title": "ilastik",
+      "splash_subtitle": "the interactive learning and segmentation toolkit",
+      "splash_feature_list": null,
+      "explore_button_text": "Start Exploring",
+      "background_image": "static/img/zoo-background.svg",
+      "resource_types": [
+        "model",
+        "application"
+      ],
+      "default_type": "model",
+      "url_root": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master"
+    },
+    {
       "id": "deepimagej",
       "name": "deepImageJ",
       "tags": [
@@ -93,8 +113,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "notebook",
         "imjoy",
+        "notebook",
         "jupyter"
       ],
       "covers": [],
@@ -132,8 +152,8 @@
     {
       "id": "Ilastik",
       "type": "application",
-      "source": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/master/src/Ilastik-app.imjoy.html",
-      "icon": "https://raw.githubusercontent.com/bioimage-io/models/master/assets/icons/Ilastik-icon.png",
+      "source": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/src/Ilastik-app.imjoy.html",
+      "icon": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/image/ilastik-fist-icon.png",
       "name": "Ilastik",
       "version": "0.1.0",
       "api_version": "0.1.7",
@@ -227,8 +247,8 @@
         }
       ],
       "tags": [
-        "visualization",
-        "imjoy"
+        "imjoy",
+        "visualization"
       ]
     },
     {
@@ -256,9 +276,9 @@
       ],
       "documentation": null,
       "tags": [
-        "ZeroCostDL4Mic",
         "UNet",
-        "segmentation"
+        "segmentation",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
     },
@@ -286,9 +306,9 @@
         "resultImage.png"
       ],
       "tags": [
-        "segmentation",
         "deepimagej",
         "pancreatic stem cells",
+        "segmentation",
         "phase contrast"
       ],
       "license": null,
@@ -319,8 +339,8 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "deepimagej",
         "hela cells",
+        "deepimagej",
         "segmentation",
         "phase contrast"
       ],
@@ -357,12 +377,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "vasculature",
+        "sga2",
+        "ilastik",
         "hbp",
         "unet2d",
+        "pytorch",
         "brain",
-        "sga2",
-        "pytorch"
+        "vasculature"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -392,12 +413,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "vasculature",
+        "sga2",
+        "ilastik",
         "hbp",
         "unet2d",
+        "pytorch",
         "brain",
-        "sga2",
-        "pytorch"
+        "vasculature"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -428,10 +450,10 @@
         "thumbnail.png"
       ],
       "tags": [
-        "unet2d",
+        "n2v",
         "fiji",
         "denoising",
-        "n2v"
+        "unet2d"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
@@ -453,9 +475,9 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "shufflenet",
         "imjoy",
         "classification",
+        "shufflenet",
         "tensorflow.js"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
@@ -507,10 +529,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "TEM",
         "deepimagej",
         "extracellular vesicles",
-        "segmentation"
+        "segmentation",
+        "TEM"
       ],
       "license": "BSD 3",
       "format_version": "0.2.0",
@@ -562,12 +584,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "EM",
-        "unet3d",
         "segmentation",
+        "ilastik",
         "cell membrane",
+        "unet3d",
+        "pytorch",
         "platynereis",
-        "pytorch"
+        "EM"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -598,13 +621,14 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "unet3d",
-        "arabidopsis",
         "segmentation",
-        "plant tissue",
-        "ovuls",
+        "ilastik",
         "cell membrane",
-        "pytorch"
+        "plant tissue",
+        "unet3d",
+        "ovuls",
+        "pytorch",
+        "arabidopsis"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -626,9 +650,9 @@
       "authors": [],
       "documentation": null,
       "tags": [
-        "ZeroCostDL4Mic",
         "UNet",
-        "segmentation"
+        "segmentation",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://github.com/zhixuhao/unet/tree/master/data/membrane"
     },
@@ -655,9 +679,10 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "unet2d",
+        "pytorch",
         "nucleus-segmentation",
-        "pytorch"
+        "ilastik",
+        "unet2d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -693,8 +718,8 @@
       "tags": [
         "deepimagej",
         "UNet",
-        "DeepImageJ",
-        "segmentation"
+        "segmentation",
+        "DeepImageJ"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
