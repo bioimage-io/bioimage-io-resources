@@ -157,9 +157,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "jupyter",
+        "notebook",
         "imjoy",
-        "notebook"
+        "jupyter"
       ],
       "covers": [],
       "badges": [],
@@ -291,8 +291,8 @@
         }
       ],
       "tags": [
-        "visualization",
-        "imjoy"
+        "imjoy",
+        "visualization"
       ]
     },
     {
@@ -320,9 +320,9 @@
       ],
       "documentation": null,
       "tags": [
-        "UNet",
+        "segmentation",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "UNet"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
     },
@@ -350,8 +350,8 @@
         "resultImage.png"
       ],
       "tags": [
-        "pancreatic stem cells",
         "deepimagej",
+        "pancreatic stem cells",
         "segmentation",
         "phase contrast"
       ],
@@ -383,10 +383,10 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "segmentation",
         "deepimagej",
-        "hela cells",
-        "phase contrast"
+        "segmentation",
+        "phase contrast",
+        "hela cells"
       ],
       "license": null,
       "format_version": null,
@@ -421,11 +421,11 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
+        "pytorch",
+        "brain",
+        "sga2",
         "vasculature",
         "hbp",
-        "pytorch",
-        "sga2",
-        "brain",
         "ilastik",
         "unet2d"
       ],
@@ -457,11 +457,11 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
+        "pytorch",
+        "brain",
+        "sga2",
         "vasculature",
         "hbp",
-        "pytorch",
-        "sga2",
-        "brain",
         "ilastik",
         "unet2d"
       ],
@@ -494,10 +494,10 @@
         "thumbnail.png"
       ],
       "tags": [
-        "n2v",
         "fiji",
         "unet2d",
-        "denoising"
+        "denoising",
+        "n2v"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
@@ -508,20 +508,20 @@
       "id": "HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
+        "inception-resnet-v2",
+        "hill-climbing",
         "airnet-50",
+        "preresnet-50",
+        "resnet-50",
         "resnet-101",
+        "airnext-50",
+        "inception-v3",
         "resnet-18",
         "cbam",
-        "se-resnext-50",
-        "hpa",
-        "hill-climbing",
         "resnet-34",
-        "resnet-50",
-        "airnext-50",
-        "classification",
-        "inception-resnet-v2",
-        "inception-v3",
-        "preresnet-50"
+        "hpa",
+        "se-resnext-50",
+        "classification"
       ],
       "license": "MIT",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wienerschnitzelgemeinschaft",
@@ -541,12 +541,12 @@
       "id": "HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
-        "hpa",
+        "inception-v3",
+        "inception-v4",
         "xception",
         "multilayer-perceptron",
-        "inception-v4",
-        "classification",
-        "inception-v3"
+        "hpa",
+        "classification"
       ],
       "license": "MIT",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp",
@@ -566,11 +566,11 @@
       "id": "HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
-        "se-resnext-50",
-        "hpa",
+        "inception-v3",
         "resnet-34",
-        "classification",
-        "inception-v3"
+        "hpa",
+        "se-resnext-50",
+        "classification"
       ],
       "license": "BSD-2-Clause",
       "source": "https://github.com/CellProfiling/pudae-kaggle-hpa",
@@ -590,11 +590,11 @@
       "id": "HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "se-resnext-50",
-        "hpa",
+        "inception-v3",
         "xception",
-        "classification",
-        "inception-v3"
+        "hpa",
+        "se-resnext-50",
+        "classification"
       ],
       "license": "MIT",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need",
@@ -614,16 +614,17 @@
       "id": "HPA-bestfitting",
       "name": "HPA-bestfitting",
       "tags": [
-        "densenet-121",
-        "hpa",
-        "resnet-34",
         "resnet-50",
-        "classification",
-        "inception-v3"
+        "inception-v3",
+        "resnet-34",
+        "hpa",
+        "densenet-121",
+        "classification"
       ],
       "authors": [
         "Shubin Dai"
       ],
+      "license": "MIT",
       "cite": null,
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting",
       "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
@@ -634,6 +635,9 @@
           "ext": "1st",
           "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
         }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png"
       ]
     },
     {
@@ -643,14 +647,14 @@
       "name": "HPA-WAIR",
       "tags": [
         "opencv",
-        "densenet-121",
-        "se-resnext-50",
-        "hpa",
-        "xception",
-        "classification",
-        "densenet-169",
         "scikit-learn",
-        "ibn-densenet-121"
+        "hpa",
+        "densenet-169",
+        "xception",
+        "ibn-densenet-121",
+        "se-resnext-50",
+        "densenet-121",
+        "classification"
       ],
       "license": "MIT",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair",
@@ -670,10 +674,10 @@
       "id": "HPA-Random-Walk",
       "name": "HPA-Random Walk",
       "tags": [
-        "hpa",
-        "classification",
         "resnet-18",
-        "attention-gate"
+        "attention-gate",
+        "hpa",
+        "classification"
       ],
       "license": "MIT",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/random_walk",
@@ -693,13 +697,13 @@
       "id": "HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
-        "se-resnext-50",
-        "hpa",
-        "bn-inception",
-        "xception",
         "inception-v4",
-        "classification",
-        "lightgbm"
+        "xception",
+        "lightgbm",
+        "bn-inception",
+        "hpa",
+        "se-resnext-50",
+        "classification"
       ],
       "license": "MIT",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/one_more_layer_of_stacking",
@@ -752,11 +756,11 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
+        "tensorflow.js",
+        "imjoy",
         "hpa",
         "shufflenet",
-        "imjoy",
-        "classification",
-        "tensorflow.js"
+        "classification"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -807,9 +811,9 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "segmentation",
         "deepimagej",
         "extracellular vesicles",
+        "segmentation",
         "TEM"
       ],
       "license": "BSD 3",
@@ -862,13 +866,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "EM",
         "unet3d",
+        "platynereis",
         "pytorch",
         "cell membrane",
-        "segmentation",
         "ilastik",
-        "platynereis"
+        "segmentation",
+        "EM"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -899,14 +903,14 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "plant tissue",
-        "ovuls",
-        "arabidopsis",
         "unet3d",
         "pytorch",
         "cell membrane",
-        "segmentation",
-        "ilastik"
+        "arabidopsis",
+        "ovuls",
+        "plant tissue",
+        "ilastik",
+        "segmentation"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -928,9 +932,9 @@
       "authors": [],
       "documentation": null,
       "tags": [
-        "UNet",
+        "segmentation",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "UNet"
       ],
       "source": "https://github.com/zhixuhao/unet/tree/master/data/membrane"
     },
@@ -957,9 +961,9 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
+        "unet2d",
         "ilastik",
         "nucleus-segmentation",
-        "unet2d",
         "pytorch"
       ],
       "license": "MIT",
@@ -994,10 +998,10 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "UNet",
         "deepimagej",
+        "segmentation",
         "DeepImageJ",
-        "segmentation"
+        "UNet"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
