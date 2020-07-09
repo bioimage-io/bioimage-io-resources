@@ -108,6 +108,26 @@
       "url_root": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master"
     },
     {
+      "id": "hpa",
+      "name": "HPA",
+      "tags": [
+        "hpa"
+      ],
+      "logo": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/hpa-logo.gif",
+      "icon": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/hpa-logo.gif",
+      "splash_title": "The Human Protein Atlas",
+      "splash_subtitle": null,
+      "splash_feature_list": [],
+      "explore_button_text": "Start Exploring",
+      "background_image": "static/img/zoo-background.svg",
+      "resource_types": [
+        "model",
+        "application"
+      ],
+      "default_type": "model",
+      "url_root": "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master"
+    },
+    {
       "id": "fiji",
       "name": "Fiji",
       "tags": [
@@ -137,8 +157,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "jupyter",
         "notebook",
+        "jupyter",
         "imjoy"
       ],
       "covers": [],
@@ -271,8 +291,8 @@
         }
       ],
       "tags": [
-        "visualization",
-        "imjoy"
+        "imjoy",
+        "visualization"
       ]
     },
     {
@@ -300,9 +320,9 @@
       ],
       "documentation": null,
       "tags": [
+        "ZeroCostDL4Mic",
         "segmentation",
-        "UNet",
-        "ZeroCostDL4Mic"
+        "UNet"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
     },
@@ -330,10 +350,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "segmentation",
-        "pancreatic stem cells",
+        "deepimagej",
         "phase contrast",
-        "deepimagej"
+        "segmentation",
+        "pancreatic stem cells"
       ],
       "license": null,
       "format_version": null,
@@ -363,10 +383,10 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "segmentation",
+        "deepimagej",
         "phase contrast",
-        "hela cells",
-        "deepimagej"
+        "segmentation",
+        "hela cells"
       ],
       "license": null,
       "format_version": null,
@@ -401,13 +421,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "unet2d",
         "hbp",
+        "pytorch",
         "sga2",
+        "vasculature",
         "ilastik",
         "brain",
-        "vasculature",
-        "pytorch"
+        "unet2d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -437,13 +457,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "unet2d",
         "hbp",
+        "pytorch",
         "sga2",
+        "vasculature",
         "ilastik",
         "brain",
-        "vasculature",
-        "pytorch"
+        "unet2d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -474,13 +494,50 @@
         "thumbnail.png"
       ],
       "tags": [
-        "fiji",
-        "unet2d",
         "denoising",
-        "n2v"
+        "n2v",
+        "unet2d",
+        "fiji"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
+      "id": "HPAShuffleNetV2",
+      "source": "https://raw.githubusercontent.com/oeway/Anet-Model-Zoo/master/4_hpa_shufflenet_v2/model.json",
+      "links": [
+        "HPA-Classification"
+      ],
+      "name": "HPA ShuffleNetV2",
+      "description": "A light-weight model for HPA image classification competition",
+      "cite": null,
+      "authors": [
+        "Moshe Livne",
+        "Wei OUYANG"
+      ],
+      "documentation": "HPAShuffleNetV2.md",
+      "tags": [
+        "classification",
+        "hpa",
+        "imjoy",
+        "tensorflow.js",
+        "shufflenet"
+      ],
+      "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
+      "badges": [
+        {
+          "url": "https://imjoy.io",
+          "icon": "https://imjoy.io/static/badge/powered-by-imjoy-badge.svg",
+          "label": "Powered by ImJoy"
+        }
+      ],
+      "license": "Apache 2.0",
+      "format_version": "0.1.0",
+      "covers": [
+        "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
+      ]
     },
     {
       "type": "model",
@@ -517,10 +574,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
+        "deepimagej",
         "segmentation",
         "extracellular vesicles",
-        "TEM",
-        "deepimagej"
+        "TEM"
       ],
       "license": "BSD 3",
       "format_version": "0.2.0",
@@ -573,12 +630,12 @@
       "documentation": "README.md",
       "tags": [
         "segmentation",
-        "EM",
-        "ilastik",
-        "unet3d",
         "platynereis",
+        "cell membrane",
         "pytorch",
-        "cell membrane"
+        "EM",
+        "unet3d",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -609,14 +666,14 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "plant tissue",
         "segmentation",
-        "pytorch",
-        "ilastik",
-        "unet3d",
-        "ovuls",
         "arabidopsis",
-        "cell membrane"
+        "cell membrane",
+        "pytorch",
+        "plant tissue",
+        "unet3d",
+        "ilastik",
+        "ovuls"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -638,9 +695,9 @@
       "authors": [],
       "documentation": null,
       "tags": [
+        "ZeroCostDL4Mic",
         "segmentation",
-        "UNet",
-        "ZeroCostDL4Mic"
+        "UNet"
       ],
       "source": "https://github.com/zhixuhao/unet/tree/master/data/membrane"
     },
@@ -667,9 +724,9 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "unet2d",
-        "nucleus-segmentation",
         "ilastik",
+        "nucleus-segmentation",
+        "unet2d",
         "pytorch"
       ],
       "license": "MIT",
@@ -704,8 +761,8 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "segmentation",
         "DeepImageJ",
+        "segmentation",
         "UNet",
         "deepimagej"
       ],
