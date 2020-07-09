@@ -29,29 +29,15 @@ collection:
     source: https://raw.githubusercontent.com/deepimagej/models/master/manifest.bioimage.io.yaml
   - id: fiji
     source: https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/master/manifest.bioimage.io.yaml
+  - id: imjoy
+    source: https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/manifest.bioimage.io.yaml
   - id: ilastik
     source: https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/manifest.bioimage.io.yaml
 
-application:
-  - id: HPA-Classification
-    source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
-  - id: Kaibu
-    source: https://raw.githubusercontent.com/imjoy-team/kaibu/master/Kaibu.imjoy.html
-  - id: Notebook Preview
-    source: https://raw.githubusercontent.com/bioimage-io/nbpreview/master/notebook-preview.imjoy.html
+application: []
 
 dataset:
   - id: dummy_zarr
     source: https://gist.githubusercontent.com/oeway/3dcbd79cd29da42be13a7e3bc0f9ca12/raw/dummy_zarr.dataset.yaml
 
-notebook:
-  - id: vitessce-image-viewer
-    source: https://gist.githubusercontent.com/oeway/582856630a0aed4d4d221e54df1b3ece/raw/vitessce-image-viewer.notebook.yaml
-    links:
-      - Notebook Preview
-
-model:
-  - id: HPAShuffleNetV2
-    source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
-    links:
-      - HPA-Classification
+model: []
