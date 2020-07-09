@@ -84,6 +84,30 @@
       "url_root": "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master"
     },
     {
+      "id": "imjoy",
+      "name": "ImJoy",
+      "tags": [
+        "imjoy"
+      ],
+      "logo": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/asset/imjoy-icon.svg",
+      "icon": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/asset/imjoy-icon.svg",
+      "splash_title": "ImJoy",
+      "splash_subtitle": "Deep Learning Made Easy!",
+      "splash_feature_list": [
+        "Minimal and flexible plugin powered web application",
+        "Server-less progressive web application with offline support",
+        "Rich and interactive user interface powered by web technologies"
+      ],
+      "explore_button_text": "Start Exploring",
+      "background_image": "static/img/zoo-background.svg",
+      "resource_types": [
+        "notebook",
+        "application"
+      ],
+      "default_type": "application",
+      "url_root": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master"
+    },
+    {
       "id": "fiji",
       "name": "Fiji",
       "tags": [
@@ -306,10 +330,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "phase contrast",
         "pancreatic stem cells",
         "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "phase contrast"
       ],
       "license": null,
       "format_version": null,
@@ -339,10 +363,10 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "hela cells",
-        "phase contrast",
         "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "phase contrast",
+        "hela cells"
       ],
       "license": null,
       "format_version": null,
@@ -377,13 +401,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "brain",
+        "hbp",
+        "vasculature",
         "ilastik",
         "unet2d",
+        "pytorch",
         "sga2",
-        "vasculature",
-        "hbp",
-        "pytorch"
+        "brain"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -413,13 +437,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "brain",
+        "hbp",
+        "vasculature",
         "ilastik",
         "unet2d",
+        "pytorch",
         "sga2",
-        "vasculature",
-        "hbp",
-        "pytorch"
+        "brain"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -450,49 +474,13 @@
         "thumbnail.png"
       ],
       "tags": [
-        "n2v",
         "fiji",
-        "denoising",
-        "unet2d"
+        "n2v",
+        "unet2d",
+        "denoising"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
-    },
-    {
-      "type": "model",
-      "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
-      "id": "HPAShuffleNetV2",
-      "source": "https://raw.githubusercontent.com/oeway/Anet-Model-Zoo/master/4_hpa_shufflenet_v2/model.json",
-      "links": [
-        "HPA-Classification"
-      ],
-      "name": "HPA ShuffleNetV2",
-      "description": "A light-weight model for HPA image classification competition",
-      "cite": null,
-      "authors": [
-        "Moshe Livne",
-        "Wei OUYANG"
-      ],
-      "documentation": "HPAShuffleNetV2.md",
-      "tags": [
-        "shufflenet",
-        "tensorflow.js",
-        "imjoy",
-        "classification"
-      ],
-      "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
-      "badges": [
-        {
-          "url": "https://imjoy.io",
-          "icon": "https://imjoy.io/static/badge/powered-by-imjoy-badge.svg",
-          "label": "Powered by ImJoy"
-        }
-      ],
-      "license": "Apache 2.0",
-      "format_version": "0.1.0",
-      "covers": [
-        "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
-      ]
     },
     {
       "type": "model",
@@ -530,9 +518,9 @@
       ],
       "tags": [
         "TEM",
-        "extracellular vesicles",
+        "segmentation",
         "deepimagej",
-        "segmentation"
+        "extracellular vesicles"
       ],
       "license": "BSD 3",
       "format_version": "0.2.0",
@@ -586,11 +574,11 @@
       "tags": [
         "cell membrane",
         "platynereis",
-        "ilastik",
-        "unet3d",
-        "segmentation",
         "EM",
-        "pytorch"
+        "segmentation",
+        "ilastik",
+        "pytorch",
+        "unet3d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -622,13 +610,13 @@
       "documentation": "README.md",
       "tags": [
         "cell membrane",
-        "ilastik",
-        "plant tissue",
-        "unet3d",
         "arabidopsis",
         "segmentation",
+        "plant tissue",
         "ovuls",
-        "pytorch"
+        "ilastik",
+        "pytorch",
+        "unet3d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -679,10 +667,10 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "nucleus-segmentation",
         "pytorch",
+        "ilastik",
         "unet2d",
-        "ilastik"
+        "nucleus-segmentation"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -716,9 +704,9 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "deepimagej",
         "segmentation",
         "UNet",
+        "deepimagej",
         "DeepImageJ"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
