@@ -31,47 +31,13 @@ collection:
     source: https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/master/manifest.bioimage.io.yaml
   - id: imjoy
     source: https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/manifest.bioimage.io.yaml
+  - id: ilastik
+    source: https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/manifest.bioimage.io.yaml
 
-application:
-  - id: Ilastik
-    source: src/Ilastik-app.imjoy.html
+application: []
 
 dataset:
   - id: dummy_zarr
     source: https://gist.githubusercontent.com/oeway/3dcbd79cd29da42be13a7e3bc0f9ca12/raw/dummy_zarr.dataset.yaml
 
-model:
-  - id: HPAShuffleNetV2
-    source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
-    links:
-      - HPA-Classification
-
-  - id: UNet2DNucleiBroad
-    source: https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.1.1/specs/models/unet2d/nuclei_broad/UNet2DNucleiBroad.model.yaml
-    links:
-      - Ilastik
-    download_url: https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.1.1/UNet2DNucleiBroad.model.zip
-
-  - id: UNet3DArabidopsisOvules
-    source: https://raw.githubusercontent.com/wolny/pytorch-3dunet/37f186c80f4d64b1dab5d165d8c2aae15b5aede1/bioimage-io/UNet3DArabidopsisOvules.model/UNet3DArabidopsisOvules.model.yaml
-    links:
-      - Ilastik
-    download_url: https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip
-
-  - id: UNet3DPlatyCellProbs
-    source: https://raw.githubusercontent.com/platybrowser/platybrowser/3711f1c26e5db8c38c3faff4cccb3110560e3c67/segmentation/cells/UNet3DPlatyCellProbs.model/UNet3DPlatyCellProbs.model.yaml
-    links:
-      - Ilastik
-    download_url: https://github.com/platybrowser/platybrowser/releases/download/1.0.0/UNet3DPlatyCellProbs.model.zip
-
-  - id: UNetDA
-    source: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/UNetDA.model.yaml
-    links:
-      - Ilastik
-    download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip
-
-  - id: 2sUNetDA
-    source: https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2/2sUNetDA.model.yaml
-    links:
-      - Ilastik
-    download_url: https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip
+model: []
