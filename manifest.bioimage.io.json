@@ -93,9 +93,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "notebook",
+        "jupyter",
         "imjoy",
-        "jupyter"
+        "notebook"
       ],
       "covers": [],
       "badges": [],
@@ -227,8 +227,8 @@
         }
       ],
       "tags": [
-        "imjoy",
-        "visualization"
+        "visualization",
+        "imjoy"
       ]
     },
     {
@@ -256,9 +256,9 @@
       ],
       "documentation": null,
       "tags": [
-        "segmentation",
+        "ZeroCostDL4Mic",
         "UNet",
-        "ZeroCostDL4Mic"
+        "segmentation"
       ],
       "source": "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb"
     },
@@ -286,10 +286,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "pancreatic stem cells",
-        "segmentation",
         "deepimagej",
-        "phase contrast"
+        "pancreatic stem cells",
+        "phase contrast",
+        "segmentation"
       ],
       "license": null,
       "format_version": null,
@@ -319,10 +319,10 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "segmentation",
         "deepimagej",
         "hela cells",
-        "phase contrast"
+        "phase contrast",
+        "segmentation"
       ],
       "license": null,
       "format_version": null,
@@ -357,12 +357,12 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "unet2d",
-        "pytorch",
-        "brain",
         "hbp",
+        "pytorch",
+        "vasculature",
         "sga2",
-        "vasculature"
+        "brain",
+        "unet2d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -392,12 +392,12 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "unet2d",
-        "pytorch",
-        "brain",
         "hbp",
+        "pytorch",
+        "vasculature",
         "sga2",
-        "vasculature"
+        "brain",
+        "unet2d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -428,10 +428,10 @@
         "thumbnail.png"
       ],
       "tags": [
-        "denoising",
         "fiji",
-        "unet2d",
-        "n2v"
+        "denoising",
+        "n2v",
+        "unet2d"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
@@ -453,10 +453,10 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "classification",
-        "imjoy",
+        "tensorflow.js",
         "shufflenet",
-        "tensorflow.js"
+        "classification",
+        "imjoy"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -507,10 +507,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "TEM",
+        "deepimagej",
         "segmentation",
         "extracellular vesicles",
-        "deepimagej"
+        "TEM"
       ],
       "license": "BSD 3",
       "format_version": "0.2.0",
@@ -518,25 +518,6 @@
         "source": "./saved_model.pb",
         "sha256": "9ccb79070f30813e7447342e3ab7f4107a314a1414c1541c79134ef950ac4a7f"
       }
-    },
-    {
-      "type": "dataset",
-      "attachments": {
-        "files": [
-          "https://gist.githubusercontent.com/manzt/d16dbac0ea3adc3c7b9b61f54fa1f78d/raw/95854058512862accb0182d4a02f86a55ad19139/",
-          "https://gist.githubusercontent.com/manzt/d16dbac0ea3adc3c7b9b61f54fa1f78d/raw/95854058512862accb0182d4a02f86a55ad19139/"
-        ]
-      },
-      "id": "dummy-dataset",
-      "name": "Dummy Zarr",
-      "description": "A dummy zarr dataset",
-      "cite": null,
-      "authors": [],
-      "documentation": null,
-      "tags": [
-        "zarr",
-        "ZeroCostDL4Mic"
-      ]
     },
     {
       "type": "dataset",
@@ -581,12 +562,12 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "EM",
-        "pytorch",
+        "cell membrane",
         "unet3d",
         "segmentation",
-        "cell membrane",
-        "platynereis"
+        "platynereis",
+        "pytorch",
+        "EM"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -617,13 +598,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "pytorch",
-        "unet3d",
-        "segmentation",
         "cell membrane",
-        "ovuls",
+        "unet3d",
         "arabidopsis",
-        "plant tissue"
+        "plant tissue",
+        "segmentation",
+        "pytorch",
+        "ovuls"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -634,6 +615,22 @@
         "ilastik_7.png",
         "ilastik_8.png"
       ]
+    },
+    {
+      "type": "dataset",
+      "root_url": "https://github.com/zhixuhao/unet/tree/master/data",
+      "id": "ZeroCostDL4Mic_2D_Unet_dataset",
+      "name": "2D Unet Segmentation Dataset",
+      "description": "Segmentation Dataset from ISBI2012 segmentation challenge showing EM images of neuronal membranes and the associated segmentation maps",
+      "cite": "Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, J\u00fcrgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tasdizen, Lee Kamentsky, Radim Burget, Vaclav Uher, Xiao Tan, Chanming Sun, Tuan D. Pham, Eran Bas, Mustafa G. Uzunbas, Albert Cardona, Johannes Schindelin, and H. Sebastian Seung. Crowdsourcing the creation of image segmentation algorithms for connectomics. Frontiers in Neuroanatomy, vol. 9, no. 142, 2015.",
+      "authors": [],
+      "documentation": null,
+      "tags": [
+        "ZeroCostDL4Mic",
+        "UNet",
+        "segmentation"
+      ],
+      "source": "https://github.com/zhixuhao/unet/tree/master/data/membrane"
     },
     {
       "type": "model",
@@ -658,9 +655,9 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
+        "nucleus-segmentation",
         "pytorch",
-        "unet2d",
-        "nucleus-segmentation"
+        "unet2d"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -695,9 +692,9 @@
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
         "deepimagej",
-        "segmentation",
+        "DeepImageJ",
         "UNet",
-        "DeepImageJ"
+        "segmentation"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
