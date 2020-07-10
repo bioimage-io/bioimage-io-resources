@@ -3,6 +3,7 @@ import requests
 import yaml
 import re
 import json
+import traceback
 from pathlib import Path
 
 preserved_keys = [
@@ -45,24 +46,27 @@ def parse_manifest(models_yaml):
                 collection_tags = cfg.get("tags")
     if "collection" in models_yaml:
         for item in models_yaml["collection"]:
+            print("Loading collection from " + item["source"])
             response = requests.get(item["source"])
             if response.status_code != 200:
                 print("Failed to fetch collection manifest from " + item["id"])
                 continue
             collection_yaml = yaml.safe_load(response.content)
+            collection_yaml["parent_collection"] = item["source"]
             if "config" in collection_yaml:
                 collections.append(collection_yaml["config"])
             try:
                 parse_manifest(collection_yaml)
             except Exception as e:
-                print("Failed to parse manifest " + str(item.get("source")), e)
+                print("Failed to parse manifest " + str(item.get("source")))
+                print(traceback.format_exc())
 
     if "application" in models_yaml:
         for item in models_yaml["application"]:
             app_url = item.get("source")
             if not app_url:
                 continue
-            if app_url.endswith('.imjoy.html'):
+            if app_url.endswith(".imjoy.html"):
                 if os.path.exists(app_url):
                     content = open(app_url, "r").read()
                     if not app_url.startswith("http"):
@@ -71,7 +75,7 @@ def parse_manifest(models_yaml):
                             models_yaml["config"]["url_root"].strip("/") + "/" + app_url
                         )
                 else:
-                    
+
                     if not app_url.startswith("http"):
                         app_url = item["source"].strip("/").strip("./")
                         app_url = (
@@ -92,7 +96,11 @@ def parse_manifest(models_yaml):
                 else:
                     raise Exception("config not found in " + app_url)
 
-                app_config = {"id": item["id"], "type": "application", "source": app_url}
+                app_config = {
+                    "id": item["id"],
+                    "type": "application",
+                    "source": app_url,
+                }
                 fields = [
                     "icon",
                     "name",
@@ -137,8 +145,9 @@ def parse_manifest(models_yaml):
             else:
                 item["type"] = "application"
                 app_config = item
-            
+
             compiled_apps.append(app_config)
+            print("Added application: " + app_config["name"])
 
     for tp in ["model", "dataset", "notebook"]:
         if tp not in models_yaml:
@@ -152,12 +161,12 @@ def parse_manifest(models_yaml):
                     if response.status_code != 200:
                         print("Failed to fetch source from " + source)
                         continue
-                    if source.endswith('.yaml') or source.endswith('.yml'):
+                    if source.endswith(".yaml") or source.endswith(".yml"):
                         model_config = yaml.safe_load(response.content)
                         # merge item from models.yaml to model config
                         item.update(model_config)
                 except:
-                    print('Failed to download or parse source file from ' + source)
+                    print("Failed to download or parse source file from " + source)
                     raise
             else:
                 root_url = None
@@ -191,6 +200,7 @@ def parse_manifest(models_yaml):
             else:
                 model_info["tags"] = collection_tags
             compiled_items.append(model_info)
+            print("Added " + model_info["type"] + ": " + model_info["name"])
 
 
 models_yaml_file = Path(__file__).parent / "manifest.bioimage.io.yaml"
@@ -204,17 +214,29 @@ with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
     compiled_items.sort(key=lambda m: m["name"], reverse=True)
     new_model_yaml["collections"] = collections
     resources = compiled_apps + compiled_items
-    ids = []
+    unique_res = {}
+    duplicated = []
     for res in resources:
         if "tags" in res:
             res["tags"] = list(set(res["tags"]))
         if "id" not in res:
             res["id"] = res["name"].replace(" ", "-")
-        if res["id"] in ids:
-            raise Exception("Duplicated resource id found: " + res["id"])
-        ids.append(res["id"])
+        if res["id"] in unique_res:
+            old = unique_res[res["id"]]
+            for k in old:
+                if old[k] != res[k]:
+                    raise Exception("Duplicated resource id found: " + res["id"])
+            for k in res:
+                if old[k] != res[k]:
+                    raise Exception("Duplicated resource id found: " + res["id"])
+            duplicated.append(res)
 
+        unique_res[res["id"]] = res
+    for res in duplicated:
+        print("Removing duplicated item: " + res["name"])
+        resources.remove(res)
     new_model_yaml["resources"] = resources
+    print("Done! Successfully added " + str(len(resources)) + " items.")
     f.write(
         json.dumps(new_model_yaml, indent=2, separators=(",", ": ")).encode("utf-8")
     )
