@@ -158,8 +158,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "jupyter",
         "imjoy",
+        "jupyter",
         "notebook"
       ],
       "covers": [],
@@ -292,8 +292,8 @@
         }
       ],
       "tags": [
-        "visualization",
-        "imjoy"
+        "imjoy",
+        "visualization"
       ]
     },
     {
@@ -321,10 +321,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "segmentation",
         "UNet",
         "2D",
-        "segmentation"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-net_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -356,10 +356,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "deepimagej",
-        "pancreatic stem cells",
         "segmentation",
-        "phase contrast"
+        "phase contrast",
+        "deepimagej",
+        "pancreatic stem cells"
       ],
       "license": null,
       "format_version": null,
@@ -389,9 +389,9 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
-        "deepimagej",
         "hela cells",
         "segmentation",
+        "deepimagej",
         "phase contrast"
       ],
       "license": null,
@@ -427,13 +427,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "pytorch",
-        "vasculature",
         "unet2d",
-        "ilastik",
         "hbp",
+        "brain",
+        "vasculature",
         "sga2",
-        "brain"
+        "pytorch",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -463,13 +463,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "pytorch",
-        "vasculature",
         "unet2d",
-        "ilastik",
         "hbp",
+        "brain",
+        "vasculature",
         "sga2",
-        "brain"
+        "pytorch",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -502,15 +502,41 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
-        "3D",
+        "segmentation",
         "Stardist",
-        "segmentation"
+        "3D",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Stardist_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
         "Notebook Preview"
+      ]
+    },
+    {
+      "type": "dataset",
+      "root_url": "https://doi.org/10.5281",
+      "id": "Dataset_Stardist_2D_ZeroCostDL4Mic_2D",
+      "name": "Stardist (2D) example training and test dataset",
+      "description": "Fluorescence microscopy (SiR-DNA) and masks obtained via manual segmentation",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, Seamus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Florian Jug, Lo\u00efc Alain Royer, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to simplify access and use of Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Johanna Jukkala",
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3715492",
+      "tags": [
+        "segmentation",
+        "Stardist",
+        "2D",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3715492",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
       ]
     },
     {
@@ -538,16 +564,41 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "segmentation",
         "Stardist",
         "2D",
-        "segmentation"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Stardist_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
         "Notebook Preview",
         "Dataset_Stardist_2D_ZeroCostDL4Mic_2D"
+      ]
+    },
+    {
+      "type": "dataset",
+      "root_url": "https://doi.org/10.5281",
+      "id": "Dataset_Noise2VOID_3D_ZeroCostDL4Mic_3D",
+      "name": "Noise2VOID (3D) example training and test dataset",
+      "description": "Fluorescence microscopy (Lifeact-RFP)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, Seamus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Florian Jug, Lo\u00efc Alain Royer, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to simplify access and use of Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacqueme"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3713326",
+      "tags": [
+        "Noise2VOID",
+        "3D",
+        "denoising",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3713326",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
       ]
     },
     {
@@ -575,16 +626,43 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "denoising",
+        "Noise2VOID",
         "3D",
-        "ZeroCostDL4Mic",
-        "Noise2VOID"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2VOID_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
         "Notebook Preview",
         "Dataset_Noise2VOID_3D_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "dataset",
+      "root_url": "https://doi.org/10.5281",
+      "id": "Dataset_Noise2VOID_2D_ZeroCostDL4Mic",
+      "name": "Noise2VOID (2D) example training and test dataset",
+      "description": "Fluorescence microscopy (paxillin-GFP)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, Seamus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Florian Jug, Lo\u00efc Alain Royer, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to simplify access and use of Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Aki Stubb",
+        "Guillaume Jacquemet",
+        "Johanna Ivaska"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3713315",
+      "tags": [
+        "Noise2VOID",
+        "2D",
+        "denoising",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3713315",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
       ]
     },
     {
@@ -612,10 +690,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
         "Noise2VOID",
-        "2D"
+        "2D",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2VOID_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -647,10 +725,10 @@
         "thumbnail.png"
       ],
       "tags": [
-        "denoising",
-        "fiji",
         "unet2d",
-        "n2v"
+        "n2v",
+        "denoising",
+        "fiji"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
@@ -722,20 +800,20 @@
       "id": "HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "inception-v3",
-        "preresnet-50",
-        "hpa",
-        "airnet-50",
-        "resnet-101",
-        "classification",
-        "hill-climbing",
         "resnet-34",
-        "inception-resnet-v2",
+        "airnext-50",
         "se-resnext-50",
-        "cbam",
         "resnet-50",
+        "cbam",
+        "inception-v3",
         "resnet-18",
-        "airnext-50"
+        "resnet-101",
+        "hpa",
+        "inception-resnet-v2",
+        "classification",
+        "preresnet-50",
+        "hill-climbing",
+        "airnet-50"
       ],
       "authors": [
         "Shaikat Mahmood Galib",
@@ -767,10 +845,10 @@
       "tags": [
         "inception-v3",
         "hpa",
-        "classification",
-        "xception",
+        "inception-v4",
         "multilayer-perceptron",
-        "inception-v4"
+        "classification",
+        "xception"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -797,11 +875,11 @@
       "id": "HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
-        "hpa",
-        "inception-v3",
-        "classification",
         "resnet-34",
-        "se-resnext-50"
+        "se-resnext-50",
+        "inception-v3",
+        "hpa",
+        "classification"
       ],
       "authors": [
         "Park Jinmo"
@@ -826,11 +904,11 @@
       "id": "HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "hpa",
+        "se-resnext-50",
         "inception-v3",
+        "hpa",
         "classification",
-        "xception",
-        "se-resnext-50"
+        "xception"
       ],
       "authors": [
         "Xuan Cao",
@@ -858,12 +936,12 @@
       "id": "HPA-bestfitting",
       "name": "HPA-bestfitting",
       "tags": [
+        "resnet-34",
+        "resnet-50",
         "inception-v3",
         "hpa",
         "classification",
-        "densenet-121",
-        "resnet-34",
-        "resnet-50"
+        "densenet-121"
       ],
       "authors": [
         "Shubin Dai"
@@ -890,15 +968,15 @@
       "id": "HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
+        "se-resnext-50",
+        "densenet-169",
+        "scikit-learn",
         "opencv",
         "hpa",
         "classification",
-        "densenet-169",
-        "scikit-learn",
         "densenet-121",
         "xception",
-        "ibn-densenet-121",
-        "se-resnext-50"
+        "ibn-densenet-121"
       ],
       "authors": [
         "Jun Lan"
@@ -923,10 +1001,10 @@
       "id": "HPA-Random-Walk",
       "name": "HPA-Random Walk",
       "tags": [
-        "resnet-18",
+        "attention-gate",
         "classification",
         "hpa",
-        "attention-gate"
+        "resnet-18"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -954,13 +1032,13 @@
       "id": "HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
+        "bn-inception",
+        "se-resnext-50",
         "lightgbm",
         "hpa",
+        "inception-v4",
         "classification",
-        "xception",
-        "se-resnext-50",
-        "bn-inception",
-        "inception-v4"
+        "xception"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -1027,11 +1105,11 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "shufflenet",
-        "tensorflow.js",
+        "imjoy",
         "hpa",
+        "tensorflow.js",
         "classification",
-        "imjoy"
+        "shufflenet"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -1082,10 +1160,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "extracellular vesicles",
+        "segmentation",
         "deepimagej",
         "TEM",
-        "segmentation"
+        "extracellular vesicles"
       ],
       "license": "BSD 3",
       "format_version": "0.2.0",
@@ -1130,10 +1208,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
-        "CARE",
         "3D",
-        "ZeroCostDL4Mic",
-        "denoising"
+        "CARE",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713337",
       "covers": [
@@ -1165,10 +1243,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "CARE",
         "3D",
-        "ZeroCostDL4Mic",
-        "denoising"
+        "CARE",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1192,10 +1270,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
-        "CARE",
-        "ZeroCostDL4Mic",
         "2D",
-        "denoising"
+        "CARE",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713330",
       "covers": [
@@ -1227,10 +1305,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "CARE",
-        "ZeroCostDL4Mic",
         "2D",
-        "denoising"
+        "CARE",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1261,12 +1339,12 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "pytorch",
-        "EM",
-        "segmentation",
-        "cell membrane",
         "platynereis",
+        "EM",
+        "cell membrane",
+        "pytorch",
         "ilastik",
+        "segmentation",
         "unet3d"
       ],
       "license": "MIT",
@@ -1298,13 +1376,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "pytorch",
-        "segmentation",
         "cell membrane",
+        "pytorch",
         "ilastik",
+        "arabidopsis",
+        "segmentation",
         "unet3d",
         "ovuls",
-        "arabidopsis",
         "plant tissue"
       ],
       "license": "MIT",
@@ -1340,10 +1418,10 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "pytorch",
+        "unet2d",
         "nucleus-segmentation",
-        "ilastik",
-        "unet2d"
+        "pytorch",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -1377,10 +1455,10 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "DeepImageJ",
-        "UNet",
         "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "UNet",
+        "DeepImageJ"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
     }
