@@ -175,9 +175,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
         "jupyter",
-        "notebook"
+        "notebook",
+        "imjoy"
       ],
       "covers": [],
       "badges": [],
@@ -297,7 +297,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_pix2pix_ZeroCostDL4Mic",
       "name": "pix2pix example training and test dataset - ZeroCostDL4Mic",
       "description": "Paired microscopy images (fluorescence) of lifeact-RFP and sir-DNA",
@@ -320,7 +319,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_pix2pix_2D_ZeroCostDL4Mic",
       "name": "pix2pix (2D) - ZeroCostDL4Mic",
       "description": "pix2pix is a deep-learning method that can be used to translate one type of images into another. While pix2pix can potentially be used for any type of image-to-image translation, we demonstrate that it can be used to predict a fluorescent image from another fluorescent image. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -343,8 +341,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "pix2pix",
+        "2D",
         "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/pix2pix_ZeroCostDL4Mic.ipynb",
@@ -356,7 +354,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_YOLOv2_ZeroCostDL4Mic",
       "name": "YoloV2 example training and test dataset - ZeroCostDL4Mic",
       "description": "2D grayscale .png images with corresponding bounding box annotations in .xml  PASCAL Voc format.",
@@ -370,8 +367,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941908",
       "tags": [
-        "YOLOv2",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "YOLOv2"
       ],
       "source": "https://doi.org/10.5281/zenodo.3941908",
       "covers": [
@@ -405,8 +402,8 @@
         }
       ],
       "tags": [
-        "imjoy",
-        "visualization"
+        "visualization",
+        "imjoy"
       ]
     },
     {
@@ -433,10 +430,10 @@
         "resultImage.png"
       ],
       "tags": [
+        "phase contrast",
         "segmentation",
-        "pancreatic stem cells",
         "deepimagej",
-        "phase contrast"
+        "pancreatic stem cells"
       ],
       "license": null,
       "format_version": null,
@@ -466,10 +463,10 @@
       "documentation": "https://deepimagej.github.io/deepimagej/models_documentation.html",
       "covers": null,
       "tags": [
+        "phase contrast",
         "segmentation",
-        "deepimagej",
         "hela cells",
-        "phase contrast"
+        "deepimagej"
       ],
       "license": null,
       "format_version": null,
@@ -504,13 +501,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "hbp",
-        "brain",
         "vasculature",
-        "pytorch",
         "sga2",
+        "hbp",
+        "ilastik",
         "unet2d",
-        "ilastik"
+        "pytorch",
+        "brain"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -520,7 +517,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_U-Net_3D_ZeroCostDL4Mic",
       "name": "U-Net (3D) - ZeroCostDL4Mic",
       "description": "The 3D U-Net was first introduced by \u00c7i\u00e7ek et al for learning dense volumetric segmentations from sparsely annotated ground-truth data building upon the original U-Net architecture by Ronneberger et al. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -544,9 +540,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "segmentation",
+        "3D",
         "ZeroCostDL4Mic",
-        "U-Net",
-        "3D"
+        "U-Net"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -556,7 +552,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_U-Net_2D_ZeroCostDL4Mic",
       "name": "U-Net (2D) - ZeroCostDL4Mic",
       "description": "U-Net is an encoder-decoder architecture originally used for image segmentation. The first half of the U-Net architecture is a downsampling convolutional neural network which acts as a feature extractor from input images. The other half upsamples these results and restores an image by combining results from downsampling with the upsampled images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -579,8 +574,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "segmentation",
+        "2D",
         "ZeroCostDL4Mic",
         "U-Net"
       ],
@@ -612,13 +607,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "hbp",
-        "brain",
         "vasculature",
-        "pytorch",
         "sga2",
+        "hbp",
+        "ilastik",
         "unet2d",
-        "ilastik"
+        "pytorch",
+        "brain"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -628,7 +623,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_StarDist_3D_ZeroCostDL4Mic",
       "name": "StarDist (3D) - ZeroCostDL4Mic",
       "description": "StarDist is a deep-learning method that can be used to segment cell nuclei in 3D (xyz) images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -651,10 +645,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
         "segmentation",
-        "ZeroCostDL4Mic",
-        "3D"
+        "StarDist",
+        "3D",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -664,7 +658,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_StarDist_2D_ZeroCostDL4Mic_2D",
       "name": "StarDist (2D) example training and test dataset - ZeroCostDL4Mic",
       "description": "Fluorescence microscopy (SiR-DNA) and masks obtained via manual segmentation",
@@ -678,10 +671,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3715492",
       "tags": [
-        "StarDist",
         "segmentation",
-        "ZeroCostDL4Mic",
-        "2D"
+        "StarDist",
+        "2D",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3715492",
       "covers": [
@@ -690,7 +683,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_StarDist_2D_ZeroCostDL4Mic",
       "name": "StarDist (2D) - ZeroCostDL4Mic",
       "description": "StarDist is a deep-learning method that can be used to segment cell nuclei in 2D (xy) single images or in stacks (xyz). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -713,10 +705,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
         "segmentation",
-        "ZeroCostDL4Mic",
-        "2D"
+        "StarDist",
+        "2D",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -727,7 +719,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_Noise2Void_3D_ZeroCostDL4Mic",
       "name": "Noise2Void (3D) example training and test dataset - ZeroCostDL4Mic",
       "description": "Fluorescence microscopy (Lifeact-RFP)",
@@ -740,10 +731,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713326",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
         "Noise2Void",
-        "3D"
+        "3D",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713326",
       "covers": [
@@ -752,7 +743,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_Noise2Void_2D_ZeroCostDL4Mic",
       "name": "Noise2Void (2D) example training and test dataset - ZeroCostDL4Mic",
       "description": "Fluorescence microscopy (paxillin-GFP)",
@@ -767,10 +757,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713315",
       "tags": [
+        "Noise2Void",
         "2D",
         "denoising",
-        "ZeroCostDL4Mic",
-        "Noise2Void"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713315",
       "covers": [
@@ -779,7 +769,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_Noise2Void_2D_ZeroCostDL4Mic",
       "name": "Noise2Void (2D) - ZeroCostDL4Mic",
       "description": "Noise2Void 2D is deep-learning method that can be used to denoise 2D microscopy images. By running this notebook, you can train your own network and denoise your images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -802,10 +791,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "2D",
         "denoising",
-        "Noise2VOID",
         "ZeroCostDL4Mic",
-        "2D"
+        "Noise2VOID"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -816,7 +805,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_Noise2Void_3D_ZeroCostDL4Mic",
       "name": "Noise2VOID (3D) - ZeroCostDL4Mic",
       "description": "Noise2VOID 3D is deep-learning method that can be used to denoise 3D microscopy images. By running this notebook, you can train your own network and denoise your images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -839,10 +827,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
         "Noise2Void",
-        "3D"
+        "3D",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -874,17 +862,38 @@
         "thumbnail.png"
       ],
       "tags": [
-        "n2v",
-        "denoising",
+        "fiji",
         "unet2d",
-        "fiji"
+        "denoising",
+        "n2v"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
+      "id": "LuCa-7color",
+      "name": "LuCa-7color",
+      "description": "Sample PerkinElmer Vectra QPTIFF files (c) PerkinElmer (http://www.perkinelmer.com)",
+      "authors": [
+        "Perkin Elmer"
+      ],
+      "tags": [
+        "imjoy",
+        "OME-TIFF"
+      ],
+      "license": "CC-BY 4.0",
+      "download_url": "https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_scans/LuCa-7color_Scan1.qptiff",
+      "source": "https://viv-demo.storage.googleapis.com/LuCa-7color_Scan1/data.zarr/0",
+      "covers": [
+        "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/asset/LuCa-7color_Scan1.png"
+      ],
+      "links": [
+        "vizarr"
+      ]
+    },
+    {
+      "type": "dataset",
       "id": "Dataset_fnet_3D_ZeroCostDL4Mic",
       "name": "Label-free prediction (fnet) example training and test dataset - ZeroCostDL4Mic",
       "description": "Confocal microscopy data (TOM20 labeled with Alexa Fluor 594)",
@@ -897,10 +906,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3748967",
       "tags": [
+        "3D",
         "labelling",
         "fnet",
-        "ZeroCostDL4Mic",
-        "3D"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3748967",
       "covers": [
@@ -909,7 +918,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_fnet_ZeroCostDL4Mic",
       "name": "Label-free Prediction - fnet - (3D) ZeroCostDL4Mic",
       "description": "Label-free Prediction (fnet) is a neural network used to infer the features of cellular structures from brightfield or EM images without coloured labels. The network is trained using paired training images from the same field of view, imaged in a label-free (e.g. brightfield) and labelled condition (e.g. fluorescent protein). When trained, this allows the user to identify certain structures from brightfield images alone. The performance of fnet may depend significantly on the structure at hand. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -932,10 +940,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "3D",
         "labelling",
         "fnet",
-        "ZeroCostDL4Mic",
-        "3D"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/fnet_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -949,20 +957,20 @@
       "id": "HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "inception-v3",
-        "se-resnext-50",
-        "hpa",
-        "hill-climbing",
         "resnet-34",
-        "inception-resnet-v2",
-        "resnet-50",
-        "resnet-101",
-        "cbam",
-        "resnet-18",
-        "preresnet-50",
         "airnet-50",
+        "hpa",
+        "resnet-50",
+        "se-resnext-50",
+        "hill-climbing",
+        "classification",
+        "cbam",
+        "resnet-101",
+        "inception-v3",
+        "preresnet-50",
+        "resnet-18",
         "airnext-50",
-        "classification"
+        "inception-resnet-v2"
       ],
       "authors": [
         "Shaikat Mahmood Galib",
@@ -992,12 +1000,12 @@
       "id": "HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
-        "inception-v3",
         "hpa",
-        "multilayer-perceptron",
         "inception-v4",
         "xception",
-        "classification"
+        "classification",
+        "inception-v3",
+        "multilayer-perceptron"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -1024,11 +1032,11 @@
       "id": "HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
-        "inception-v3",
+        "resnet-34",
         "hpa",
         "se-resnext-50",
-        "resnet-34",
-        "classification"
+        "classification",
+        "inception-v3"
       ],
       "authors": [
         "Park Jinmo"
@@ -1053,11 +1061,11 @@
       "id": "HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "inception-v3",
-        "se-resnext-50",
         "hpa",
+        "se-resnext-50",
         "xception",
-        "classification"
+        "classification",
+        "inception-v3"
       ],
       "authors": [
         "Xuan Cao",
@@ -1085,12 +1093,12 @@
       "id": "HPA-bestfitting",
       "name": "HPA-bestfitting",
       "tags": [
-        "inception-v3",
-        "hpa",
         "resnet-34",
-        "densenet-121",
+        "hpa",
         "resnet-50",
-        "classification"
+        "classification",
+        "inception-v3",
+        "densenet-121"
       ],
       "authors": [
         "Shubin Dai"
@@ -1117,15 +1125,15 @@
       "id": "HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
-        "se-resnext-50",
+        "ibn-densenet-121",
+        "opencv",
         "hpa",
+        "se-resnext-50",
         "scikit-learn",
-        "densenet-121",
+        "classification",
         "xception",
         "densenet-169",
-        "ibn-densenet-121",
-        "classification",
-        "opencv"
+        "densenet-121"
       ],
       "authors": [
         "Jun Lan"
@@ -1150,10 +1158,10 @@
       "id": "HPA-Random-Walk",
       "name": "HPA-Random Walk",
       "tags": [
-        "attention-gate",
-        "classification",
         "hpa",
-        "resnet-18"
+        "attention-gate",
+        "resnet-18",
+        "classification"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -1181,13 +1189,13 @@
       "id": "HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
+        "hpa",
         "se-resnext-50",
         "lightgbm",
-        "hpa",
-        "bn-inception",
         "inception-v4",
         "xception",
-        "classification"
+        "classification",
+        "bn-inception"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -1215,9 +1223,9 @@
       "id": "HPA-NTU_MiRA",
       "name": "HPA-NTU_MiRA",
       "tags": [
-        "classification",
+        "resnet-34",
         "hpa",
-        "resnet-34"
+        "classification"
       ],
       "authors": [
         "Kuan-Lun Tseng"
@@ -1254,11 +1262,11 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "hpa",
         "imjoy",
-        "shufflenet",
+        "hpa",
         "classification",
-        "tensorflow.js"
+        "tensorflow.js",
+        "shufflenet"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -1309,10 +1317,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "TEM",
         "segmentation",
-        "deepimagej",
-        "extracellular vesicles"
+        "extracellular vesicles",
+        "TEM",
+        "deepimagej"
       ],
       "license": "BSD 3",
       "format_version": "0.2.0",
@@ -1323,7 +1331,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks",
       "id": "Notebook_DenoiSeg_2D_ZeroCostDL4Mic",
       "name": "DenoiSeg (2D) - ZeroCostDL4Mic",
       "description": "DenoiSeg 2D is deep-learning method that can be used to jointly denoise and segment 2D microscopy images. The benefits of using DenoiSeg (compared to other Deep Learning-based segmentation methods) are more prononced when only a few annotated images are available. However, the denoising part requires many images to perform well. All the noisy images don't need to be labeled to train DenoiSeg. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -1346,8 +1353,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "CycleGAN",
+        "2D",
         "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/DenoiSeg_2D_ZeroCostDL4Mic.ipynb",
@@ -1358,7 +1365,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_Deep-STORM_ZeroCostDL4Mic",
       "name": "Deep-STORM training and example dataset - ZeroCostDL4Mic",
       "description": "Time-series of simulated, randomly distributed single-molecule localization (SMLM) data (Training dataset). Experimental time-series dSTORM acquisition of Glial cells stained with phalloidin for actin (Example dataset).",
@@ -1372,9 +1378,9 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3959089",
       "tags": [
-        "2D",
-        "SMLM",
         "ZeroCostDL4Mic",
+        "SMLM",
+        "2D",
         "Deep-STORM"
       ],
       "source": "https://doi.org/10.5281/zenodo.3959089",
@@ -1384,7 +1390,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_Deep-STORM_2D_ZeroCostDL4Mic",
       "name": "Deep-STORM (2D) - ZeroCostDL4Mic",
       "description": "Deep-STORM is a neural network capable of image reconstruction from high-density single-molecule localization microscopy (SMLM), first published in 2018 by Nehme et al. in Optica. This network allows image reconstruction of 2D super-resolution images, in a supervised training manner. The network is trained using simulated high-density SMLM data for which the ground-truth is available. These simulations are obtained from random distribution of single molecules in a field-of-view and therefore do not imprint structural priors during training. The network output a super-resolution image with increased pixel density (typically upsampling factor of 8 in each dimension). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -1407,9 +1412,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "labelling",
         "ZeroCostDL4Mic",
+        "2D",
         "Deep-STORM"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Deep-STORM_2D_ZeroCostDL4Mic.ipynb",
@@ -1421,7 +1426,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_CycleGAN_ZeroCostDL4Mic",
       "name": "CycleGAN example training and test dataset - ZeroCostDL4Mic",
       "description": "Unpaired microscopy images (fluorescence) of microtubules (Spinning-disk and SRRF reconstructed images)",
@@ -1444,7 +1448,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_CycleGAN_2D_ZeroCostDL4Mic",
       "name": "CycleGAN (2D) - ZeroCostDL4Mic",
       "description": "CycleGAN is a method that can capture the characteristics of one image domain and figure out how these characteristics could be translated into another image domain, all in the absence of any paired training examples (ie transform a horse into zebra or apples into oranges). While CycleGAN can potentially be used for any type of image-to-image translation, we illustrate that it can be used to predict what a fluorescent label would look like when imaged using another imaging modalities. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -1467,8 +1470,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "CycleGAN",
+        "2D",
         "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CycleGAN_ZeroCostDL4Mic.ipynb",
@@ -1480,7 +1483,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_CARE_3D_ZeroCostDL4Mic",
       "name": "CARE (3D) example training and test dataset - ZeroCostDL4Mic",
       "description": "Fluorescence microscopy (Lifeact-RFP)",
@@ -1493,10 +1495,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
+        "3D",
         "CARE",
-        "3D"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713337",
       "covers": [
@@ -1505,7 +1507,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_CARE_3D_ZeroCostDL4Mic",
       "name": "CARE (3D) - ZeroCostDL4Mic",
       "description": "CARE is a neural network capable of image restoration from corrupted bio-images, first published in 2018 by Weigert et al. in Nature Methods. The network allows image denoising and resolution improvement in 2D and 3D images, in a supervised training manner. The function of the network is essentially determined by the set of images provided in the training dataset. For instance, if noisy images are provided as input and high signal-to-noise ratio images are provided as targets, the network will perform denoising. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -1528,10 +1529,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
+        "3D",
         "CARE",
-        "3D"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1542,7 +1543,6 @@
     },
     {
       "type": "dataset",
-      "root_url": "https://doi.org/10.5281",
       "id": "Dataset_CARE_2D_ZeroCostDL4Mic",
       "name": "CARE (2D) example training and test dataset - ZeroCostDL4Mic",
       "description": "Fluorescence microscopy (Lifeact-RFP)",
@@ -1555,10 +1555,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
         "CARE",
-        "2D"
+        "2D",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713330",
       "covers": [
@@ -1567,7 +1567,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks",
       "id": "Notebook_CARE_2D_ZeroCostDL4Mic",
       "name": "CARE (2D) - ZeroCostDL4Mic",
       "description": "CARE is a neural network capable of image restoration from corrupted bio-images, first published in 2018 by Weigert et al. in Nature Methods. The network allows image denoising and resolution improvement in 2D and 3D images, in a supervised training manner. The function of the network is essentially determined by the set of images provided in the training dataset. For instance, if noisy images are provided as input and high signal-to-noise ratio images are provided as targets, the network will perform denoising. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -1590,10 +1589,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "denoising",
-        "ZeroCostDL4Mic",
         "CARE",
-        "2D"
+        "2D",
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1604,7 +1603,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Tools",
       "id": "Notebook_Augmentor_ZeroCostDL4Mic",
       "name": "Augmentor - ZeroCostDL4Mic",
       "description": "Augmentor is a data augmentation library. Data augmentation can improve training progress by amplifying differences in the dataset. This can be useful if the available dataset is small since, in this case, it is possible that a network could quickly learn every example in the dataset (overfitting), without augmentation. Augmentation can be especially valuable when training dataset need to be manually labelled. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
@@ -1627,8 +1625,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Data Augmentation",
         "Augmentor",
+        "Data Augmentation",
         "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Tools/Augmentor_ZeroCostDL4Mic.ipynb",
@@ -1659,13 +1657,13 @@
       ],
       "documentation": "README.md",
       "tags": [
+        "platynereis",
+        "segmentation",
+        "EM",
+        "ilastik",
         "unet3d",
         "pytorch",
-        "EM",
-        "platynereis",
-        "cell membrane",
-        "segmentation",
-        "ilastik"
+        "cell membrane"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -1696,14 +1694,14 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "unet3d",
-        "ovuls",
         "arabidopsis",
-        "pytorch",
-        "cell membrane",
-        "segmentation",
         "plant tissue",
-        "ilastik"
+        "ovuls",
+        "segmentation",
+        "ilastik",
+        "unet3d",
+        "pytorch",
+        "cell membrane"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -1738,10 +1736,10 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "ilastik",
         "unet2d",
+        "nucleus-segmentation",
         "pytorch",
-        "nucleus-segmentation"
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -1751,7 +1749,6 @@
     },
     {
       "type": "notebook",
-      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation",
       "id": "unet-pancreaticcellsegmentation",
       "name": "2D U-Net for binary segmentation",
       "description": "Easy example to define a 2D U-Net for segmentation with Keras and import it into DeepImageJ format",
