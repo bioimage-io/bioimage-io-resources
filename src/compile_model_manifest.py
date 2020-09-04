@@ -95,7 +95,7 @@ def parse_manifest(models_yaml):
                     plugin_config = yaml.safe_load(found[1])
                 else:
                     raise Exception("config not found in " + app_url)
-
+                
                 app_config = {
                     "id": item["id"],
                     "type": "application",
@@ -117,7 +117,7 @@ def parse_manifest(models_yaml):
                         app_config[f] = plugin_config[f]
                 tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
                 app_config["tags"] = tags
-
+                app_config["documentation"] = plugin_config.get("docs")
                 app_config["covers"] = plugin_config.get("cover")
                 # make sure we have a list
                 if not app_config["covers"]:
