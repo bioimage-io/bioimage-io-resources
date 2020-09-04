@@ -153,7 +153,7 @@ def parse_manifest(models_yaml):
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
-            if "source" in item:
+            if "source" in item and len(item.keys())<=3:
                 source = item["source"]
                 root_url = "/".join(source.split("/")[:-1])
                 try:
