@@ -391,8 +391,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "ZeroCostDL4Mic",
+        "2D",
         "pix2pix"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/pix2pix_ZeroCostDL4Mic.ipynb",
@@ -417,13 +417,142 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941908",
       "tags": [
-        "YOLOv2",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "YOLOv2"
       ],
       "source": "https://doi.org/10.5281/zenodo.3941908",
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
       ]
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "weights": {
+          "tensorflow_saved_model_bundle": {
+            "source": "https://zenodo.org/record/4290871/files/txred_tensorflow_saved_model_bundle.zip",
+            "sha256": "5aceebca9742c0239de62e38013a223c811cc87e582406b935011eeb92464fe9",
+            "test_inputs": "./exampleImage.tiff",
+            "test_outputs": "./resultImage.tiff"
+          }
+        }
+      },
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/widefield_txred_super-resolution",
+      "id": "WidefieldTxredSuperResolution",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/widefield_txred_super-resolution/model.yaml",
+      "download_url": "https://zenodo.org/record/4290871/files/widefield_txred_superresolution.bioimage.io.model.zip",
+      "format_version": "0.3.0",
+      "name": "Widefield TxRed super-resolution",
+      "description": "A trained GAN to transform diffraction-limited input images into super-resolved ones.",
+      "cite": [
+        {
+          "text": "Hongda Wang, Yair Rivenson, et al., Nature Methods 2019",
+          "doi": "https://doi.org/10.1038/s41592-018-0239-0"
+        }
+      ],
+      "authors": [
+        "Hongda Wang",
+        "Yair Rivenson",
+        "Aydogan Ozcan"
+      ],
+      "covers": [
+        "exampleImage.png",
+        "resultImage.png"
+      ],
+      "tags": [
+        "Super resolution",
+        "GAN",
+        "Fluorescence microscopy",
+        "deepimagej"
+      ],
+      "documentation": "https://innovate.ee.ucla.edu",
+      "license": null
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "weights": {
+          "tensorflow_saved_model_bundle": {
+            "source": "https://zenodo.org/record/4290871/files/fitc_tensorflow_saved_model_bundle.zip?download=1",
+            "sha256": "df70826cfe40306f3631360260fd2c520e763d4a130700de05d85e79cdc5a553",
+            "test_inputs": "./exampleImage.tiff",
+            "test_outputs": "./resultImage.tiff"
+          }
+        }
+      },
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/widefield_fitc_super-resolution",
+      "id": "WidefieldFitcSuperResolution",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/widefield_fitc_super-resolution/model.yaml",
+      "download_url": "https://zenodo.org/record/4290871/files/widefield_fitc_superresolution.bioimage.io.model.zip",
+      "format_version": "0.3.0",
+      "name": "Widefield FITC super-resolution",
+      "description": "A trained GAN to transform diffraction-limited input images into super-resolved ones.",
+      "cite": [
+        {
+          "text": "Hongda Wang, Yair Rivenson, et al., Nature Methods 2019",
+          "doi": "https://doi.org/10.1038/s41592-018-0239-0"
+        }
+      ],
+      "authors": [
+        "Hongda Wang",
+        "Yair Rivenson",
+        "Aydogan Ozcan"
+      ],
+      "covers": [
+        "exampleImage.png",
+        "resultImage.png"
+      ],
+      "tags": [
+        "Super resolution",
+        "GAN",
+        "Fluorescence microscopy",
+        "deepimagej"
+      ],
+      "documentation": "https://innovate.ee.ucla.edu",
+      "license": null
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "weights": {
+          "tensorflow_saved_model_bundle": {
+            "source": "https://zenodo.org/record/4290871/files/txred_tensorflow_saved_model_bundle.zip",
+            "sha256": "68f57fa211524fa258c3212f04e67c668a73c757033f3d0fbca69c2b1539c7cf",
+            "test_inputs": "./exampleImage.tiff",
+            "test_outputs": "./resultImage.tiff"
+          }
+        }
+      },
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/widefield_dapi_super-resolution",
+      "id": "WidefieldDapiSuperResolution",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/widefield_dapi_super-resolution/model.yaml",
+      "download_url": "https://zenodo.org/record/4290871/files/widefield_dapi_superresolution.bioimage.io.model.zip",
+      "format_version": "0.3.0",
+      "name": "Widefield DAPI super-resolution",
+      "description": "A trained GAN to transform diffraction-limited input images into super-resolved ones.",
+      "cite": [
+        {
+          "text": "Hongda Wang, Yair Rivenson, et al., Nature Methods 2019",
+          "doi": "https://doi.org/10.1038/s41592-018-0239-0"
+        }
+      ],
+      "authors": [
+        "Hongda Wang",
+        "Yair Rivenson",
+        "Aydogan Ozcan"
+      ],
+      "covers": [
+        "exampleImage.png",
+        "resultImage.png"
+      ],
+      "tags": [
+        "Super resolution",
+        "GAN",
+        "Fluorescence microscopy",
+        "deepimagej"
+      ],
+      "documentation": "https://innovate.ee.ucla.edu",
+      "license": null
     },
     {
       "type": "notebook",
@@ -452,8 +581,8 @@
         }
       ],
       "tags": [
-        "visualization",
-        "imjoy"
+        "imjoy",
+        "visualization"
       ]
     },
     {
@@ -507,10 +636,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "phase contrast",
         "segmentation",
-        "pancreatic stem cells",
-        "deepimagej"
+        "deepimagej",
+        "phase contrast",
+        "pancreatic stem cells"
       ],
       "license": "BSD-2"
     },
@@ -557,10 +686,10 @@
         "unet_hela_seg.jpg"
       ],
       "tags": [
-        "phase contrast",
         "segmentation",
         "hela cells",
-        "deepimagej"
+        "deepimagej",
+        "phase contrast"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet"
@@ -612,10 +741,10 @@
         "cover_image.jpg"
       ],
       "tags": [
-        "phase contrast",
-        "segmentation",
         "glioblastoma cells",
-        "deepimagej"
+        "segmentation",
+        "deepimagej",
+        "phase contrast"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet"
@@ -642,13 +771,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "pytorch",
-        "vasculature",
-        "ilastik",
         "brain",
-        "hbp",
         "sga2",
-        "unet2d"
+        "pytorch",
+        "ilastik",
+        "hbp",
+        "unet2d",
+        "vasculature"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -680,10 +809,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "segmentation",
-        "3D",
         "U-Net",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "segmentation",
+        "3D"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -715,9 +844,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "segmentation",
         "U-Net",
         "ZeroCostDL4Mic",
+        "segmentation",
         "2D"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_2D_ZeroCostDL4Mic.ipynb",
@@ -748,13 +877,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "pytorch",
-        "vasculature",
-        "ilastik",
         "brain",
-        "hbp",
         "sga2",
-        "unet2d"
+        "pytorch",
+        "ilastik",
+        "hbp",
+        "unet2d",
+        "vasculature"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -787,8 +916,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "StarDist",
-        "3D",
         "segmentation",
+        "3D",
         "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_3D_ZeroCostDL4Mic.ipynb",
@@ -812,8 +941,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3715492",
       "tags": [
-        "StarDist",
         "2D",
+        "StarDist",
         "segmentation",
         "ZeroCostDL4Mic"
       ],
@@ -846,8 +975,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
         "2D",
+        "StarDist",
         "segmentation",
         "ZeroCostDL4Mic"
       ],
@@ -875,10 +1004,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713326",
       "tags": [
-        "3D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "Noise2Void"
+        "Noise2Void",
+        "3D",
+        "denoising"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713326",
       "covers": [
@@ -901,10 +1030,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713315",
       "tags": [
-        "2D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "Noise2Void"
+        "2D",
+        "Noise2Void",
+        "denoising"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713315",
       "covers": [
@@ -937,8 +1066,8 @@
       "tags": [
         "Noise2VOID",
         "2D",
-        "ZeroCostDL4Mic",
-        "denoising"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -971,10 +1100,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "Noise2Void"
+        "Noise2Void",
+        "3D",
+        "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1006,13 +1135,56 @@
         "thumbnail.png"
       ],
       "tags": [
-        "unet2d",
-        "n2v",
+        "fiji",
         "denoising",
-        "fiji"
+        "unet2d",
+        "n2v"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0"
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "weights": {
+          "tensorflow_saved_model_bundle": {
+            "source": "https://zenodo.org/record/4290839/files/mt3_vstain_tensorflow_saved_model_bundle.zip",
+            "sha256": "9c20009f5eb0f751dcd4b9f1d43ef7b7ec989b41d6edd080804595aa436b6201",
+            "test_inputs": "./exampleImage.tiff",
+            "test_outputs": "./resultImage.tiff"
+          }
+        }
+      },
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/mt3_virtual_staining",
+      "id": "Mt3VirtualStaining",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/mt3_virtual_staining/model.yaml",
+      "download_url": "https://zenodo.org/record/4290839/files/mt3_virtual_staining.bioimage.io.model.zip",
+      "format_version": "0.3.0",
+      "name": "Masson\u2019s trichrome (MT3) virtual staining",
+      "description": "A trained GAN to transform wide-field autofluorescence images of unlabelled tissue sections into images that are equivalent to the bright-field images of histologically stained versions of the same samples.",
+      "cite": [
+        {
+          "text": "Hongda Wang, Yair Rivenson, et al., Nature Biomedical Engineering, 2019",
+          "doi": "https://doi.org/10.1038/s41551-019-0362-y"
+        }
+      ],
+      "authors": [
+        "Yair Rivenson",
+        "Hongda Wang",
+        "Aydogan Ozcan"
+      ],
+      "covers": [
+        "exampleImage.png",
+        "resultImage.png"
+      ],
+      "tags": [
+        "histology",
+        "GAN",
+        "deepimagej",
+        "Virtual staining"
+      ],
+      "documentation": "https://innovate.ee.ucla.edu",
+      "license": null
     },
     {
       "type": "model",
@@ -1035,7 +1207,7 @@
       "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/mu-lux_ctc_phc-c2dl-psc",
       "id": "MU-Lux_CTC_PhC-C2DL-PSC",
       "source": "http://public.celltrackingchallenge.net/participants/MU-Lux-CZ.zip",
-      "download_url": "https://zenodo.org/record/4155785/files/MU-Lux_CTC_PhC-C2DL-PSC.bioimage.io.model..zip",
+      "download_url": "https://zenodo.org/record/4155785/files/MU-Lux_CTC_PhC-C2DL-PSC.bioimage.io.model.zip",
       "format_version": "0.3.0",
       "name": "MU-Lux-CZ CTC submission - PhC-C2DL-PSC dataset",
       "description": "The method combines deep learning with watershed segmentation. For each frame, the convolutional neural network of U-Net shape detects all cells by markers and recognizes the foreground and the background of the frame. Then, the final segmentation is generated by a Marker-Controlled Watershed transformation.",
@@ -1059,12 +1231,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "segmentation",
-        "cell tracking challenge",
-        "watershed",
         "deepwater",
+        "phase contrast",
+        "cell tracking challenge",
         "deepimagej",
-        "phase contrast"
+        "segmentation",
+        "watershed"
       ],
       "license": null
     },
@@ -1104,10 +1276,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3748967",
       "tags": [
-        "labelling",
-        "3D",
+        "fnet",
         "ZeroCostDL4Mic",
-        "fnet"
+        "labelling",
+        "3D"
       ],
       "source": "https://doi.org/10.5281/zenodo.3748967",
       "covers": [
@@ -1138,10 +1310,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "labelling",
-        "3D",
+        "fnet",
         "ZeroCostDL4Mic",
-        "fnet"
+        "labelling",
+        "3D"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/fnet_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1152,23 +1324,66 @@
     },
     {
       "type": "model",
+      "attachments": {
+        "weights": {
+          "tensorflow_saved_model_bundle": {
+            "source": "https://zenodo.org/record/4290839/files/jones_vstaining_tensorflow_saved_model_bundle.zip",
+            "sha256": "ec37989b50017f53c3cb9cb3ff1a302ee3b7ed50ab6d8ba34264f10a64ad551a",
+            "test_inputs": "./exampleImage.tiff",
+            "test_outputs": "./resultImage.tiff"
+          }
+        }
+      },
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/jones_virtual_staining",
+      "id": "JonesVirtualStaining",
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/jones_virtual_staining/model.yaml",
+      "download_url": "https://zenodo.org/record/4290839/files/jones_virtual_staining.bioimage.io.model.zip",
+      "format_version": "0.3.0",
+      "name": "Jones Virtual Staining",
+      "description": "A trained GAN to transform wide-field autofluorescence images of unlabelled tissue sections into images that are equivalent to the bright-field images of histologically stained versions of the same samples.",
+      "cite": [
+        {
+          "text": "Hongda Wang, Yair Rivenson, et al., Nature Biomedical Engineering, 2019",
+          "doi": "https://doi.org/10.1038/s41551-019-0362-y"
+        }
+      ],
+      "authors": [
+        "Yair Rivenson",
+        "Hongda Wang",
+        "Aydogan Ozcan"
+      ],
+      "covers": [
+        "exampleImage.png",
+        "resultImage.png"
+      ],
+      "tags": [
+        "histology",
+        "GAN",
+        "deepimagej",
+        "Virtual staining"
+      ],
+      "documentation": "https://innovate.ee.ucla.edu",
+      "license": null
+    },
+    {
+      "type": "model",
       "id": "HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "resnet-34",
-        "cbam",
-        "hill-climbing",
-        "airnext-50",
+        "resnet-18",
         "classification",
         "preresnet-50",
-        "resnet-18",
-        "inception-resnet-v2",
-        "airnet-50",
-        "resnet-101",
-        "inception-v3",
-        "resnet-50",
         "hpa",
-        "se-resnext-50"
+        "airnext-50",
+        "inception-resnet-v2",
+        "inception-v3",
+        "airnet-50",
+        "resnet-34",
+        "se-resnext-50",
+        "resnet-101",
+        "resnet-50",
+        "hill-climbing",
+        "cbam"
       ],
       "authors": [
         "Shaikat Mahmood Galib",
@@ -1198,12 +1413,12 @@
       "id": "HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
-        "classification",
-        "inception-v4",
         "xception",
-        "multilayer-perceptron",
+        "classification",
+        "hpa",
         "inception-v3",
-        "hpa"
+        "multilayer-perceptron",
+        "inception-v4"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -1230,10 +1445,10 @@
       "id": "HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
-        "resnet-34",
         "classification",
-        "inception-v3",
         "hpa",
+        "inception-v3",
+        "resnet-34",
         "se-resnext-50"
       ],
       "authors": [
@@ -1259,10 +1474,10 @@
       "id": "HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "classification",
         "xception",
-        "inception-v3",
+        "classification",
         "hpa",
+        "inception-v3",
         "se-resnext-50"
       ],
       "authors": [
@@ -1291,12 +1506,12 @@
       "id": "HPA-bestfitting",
       "name": "HPA-bestfitting",
       "tags": [
-        "resnet-34",
         "densenet-121",
         "classification",
+        "hpa",
         "inception-v3",
-        "resnet-50",
-        "hpa"
+        "resnet-34",
+        "resnet-50"
       ],
       "authors": [
         "Shubin Dai"
@@ -1323,15 +1538,15 @@
       "id": "HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
-        "densenet-169",
         "densenet-121",
         "classification",
-        "scikit-learn",
+        "densenet-169",
         "xception",
-        "opencv",
+        "scikit-learn",
         "hpa",
         "ibn-densenet-121",
-        "se-resnext-50"
+        "se-resnext-50",
+        "opencv"
       ],
       "authors": [
         "Jun Lan"
@@ -1356,10 +1571,10 @@
       "id": "HPA-Random-Walk",
       "name": "HPA-Random Walk",
       "tags": [
-        "attention-gate",
-        "hpa",
+        "resnet-18",
         "classification",
-        "resnet-18"
+        "hpa",
+        "attention-gate"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -1387,13 +1602,13 @@
       "id": "HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
-        "bn-inception",
-        "lightgbm",
-        "classification",
-        "inception-v4",
         "xception",
+        "classification",
         "hpa",
-        "se-resnext-50"
+        "lightgbm",
+        "se-resnext-50",
+        "inception-v4",
+        "bn-inception"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -1421,9 +1636,9 @@
       "id": "HPA-NTU_MiRA",
       "name": "HPA-NTU_MiRA",
       "tags": [
-        "resnet-34",
+        "classification",
         "hpa",
-        "classification"
+        "resnet-34"
       ],
       "authors": [
         "Kuan-Lun Tseng"
@@ -1460,11 +1675,11 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "shufflenet",
-        "tensorflow.js",
-        "imjoy",
         "classification",
-        "hpa"
+        "hpa",
+        "shufflenet",
+        "imjoy",
+        "tensorflow.js"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -1531,10 +1746,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "TEM",
         "extracellular vesicles",
         "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "TEM"
       ],
       "license": "BSD 3"
     },
@@ -1588,9 +1803,9 @@
       "documentation": "https://doi.org/10.5281/zenodo.3959089",
       "tags": [
         "2D",
-        "Deep-STORM",
+        "ZeroCostDL4Mic",
         "SMLM",
-        "ZeroCostDL4Mic"
+        "Deep-STORM"
       ],
       "source": "https://doi.org/10.5281/zenodo.3959089",
       "covers": [
@@ -1651,10 +1866,10 @@
         "zoom.png"
       ],
       "tags": [
+        "zerocostdl4mic",
         "SMLM",
         "image reconstruction",
         "deepimagej",
-        "zerocostdl4mic",
         "super-resolution"
       ],
       "license": "MIT"
@@ -1683,10 +1898,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "labelling",
-        "Deep-STORM",
         "ZeroCostDL4Mic",
-        "2D"
+        "2D",
+        "labelling",
+        "Deep-STORM"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Deep-STORM_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1745,8 +1960,8 @@
       "tags": [
         "defcon",
         "smlm",
-        "density estimation",
-        "deepimagej"
+        "deepimagej",
+        "density estimation"
       ],
       "license": "BSD 3",
       "git_repo": "https://github.com/LEB-EPFL/DEFCoN"
@@ -1890,10 +2105,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
-        "3D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "CARE"
+        "CARE",
+        "3D",
+        "denoising"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713337",
       "covers": [
@@ -1924,10 +2139,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "CARE"
+        "CARE",
+        "3D",
+        "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1950,10 +2165,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
-        "2D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "CARE"
+        "2D",
+        "CARE",
+        "denoising"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713330",
       "covers": [
@@ -1984,10 +2199,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "ZeroCostDL4Mic",
-        "denoising",
-        "CARE"
+        "2D",
+        "CARE",
+        "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2020,8 +2235,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Data Augmentation",
         "ZeroCostDL4Mic",
+        "Data Augmentation",
         "Augmentor"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Tools/Augmentor_ZeroCostDL4Mic.ipynb",
@@ -2052,13 +2267,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "segmentation",
         "pytorch",
         "ilastik",
-        "cell membrane",
         "unet3d",
         "platynereis",
-        "EM"
+        "segmentation",
+        "EM",
+        "cell membrane"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -2089,14 +2304,14 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "plant tissue",
-        "segmentation",
         "pytorch",
         "ilastik",
-        "cell membrane",
-        "unet3d",
         "ovuls",
-        "arabidopsis"
+        "arabidopsis",
+        "plant tissue",
+        "unet3d",
+        "segmentation",
+        "cell membrane"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -2131,9 +2346,9 @@
       ],
       "documentation": "UNet2DNucleiBroad.md",
       "tags": [
-        "nucleus-segmentation",
-        "ilastik",
         "pytorch",
+        "ilastik",
+        "nucleus-segmentation",
         "unet2d"
       ],
       "license": "MIT",
@@ -2229,8 +2444,8 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "unet",
         "segmentation",
+        "unet",
         "deepimagej"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb"
