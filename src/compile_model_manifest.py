@@ -5,6 +5,8 @@ import re
 import json
 import traceback
 from pathlib import Path
+from pybio.spec import __main__ as spec
+from marshmallow import ValidationError
 
 preserved_keys = [
     "api_version",
@@ -28,6 +30,7 @@ preserved_keys = [
     "source",
     "tags",
     "version",
+    "error"
 ]
 assert "url" not in preserved_keys
 
@@ -165,6 +168,15 @@ def parse_manifest(models_yaml):
                         model_config = yaml.safe_load(response.content)
                         # merge item from models.yaml to model config
                         item.update(model_config)
+                        if tp == 'model':
+                            try:
+                                spec.verify_model_data(model_config)
+                            except ValidationError as e:
+                                print(f'Error when verifying {item["id"]}: {e.messages}')
+                                if 'error' not in item:
+                                    item['error'] = {}
+                                item['error'] = {'spec': e.messages}
+                        
                 except:
                     print("Failed to download or parse source file from " + source)
                     raise
