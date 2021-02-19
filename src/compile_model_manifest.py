@@ -30,7 +30,7 @@ preserved_keys = [
     "source",
     "tags",
     "version",
-    "error"
+    "error",
 ]
 assert "url" not in preserved_keys
 
@@ -98,7 +98,7 @@ def parse_manifest(models_yaml):
                     plugin_config = yaml.safe_load(found[1])
                 else:
                     raise Exception("config not found in " + app_url)
-                
+
                 app_config = {
                     "id": item["id"],
                     "type": "application",
@@ -148,6 +148,15 @@ def parse_manifest(models_yaml):
             else:
                 item["type"] = "application"
                 app_config = item
+            if "id" not in app_config:
+                app_config["id"] = app_config["name"].replace(" ", "-")
+            app_config["id"] = models_yaml["config"]["id"] + "/" + app_config["id"]
+            if "links" in app_config:
+                for i in range(len(app_config["links"])):
+                    if "/" not in app_config["links"][i]:
+                        app_config["links"][i] = (
+                            models_yaml["config"]["id"] + "/" + app_config["links"][i]
+                        )
 
             compiled_apps.append(app_config)
             print("Added application: " + app_config["name"])
@@ -156,7 +165,9 @@ def parse_manifest(models_yaml):
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
-            if "source" in item and (item["source"].endswith("yaml") or item["source"].endswith("yml")):
+            if "source" in item and (
+                item["source"].endswith("yaml") or item["source"].endswith("yml")
+            ):
                 source = item["source"]
                 root_url = "/".join(source.split("/")[:-1])
                 try:
@@ -168,15 +179,17 @@ def parse_manifest(models_yaml):
                         model_config = yaml.safe_load(response.content)
                         # merge item from models.yaml to model config
                         item.update(model_config)
-                        if tp == 'model':
+                        if tp == "model":
+                            if "error" not in item:
+                                item["error"] = {}
                             try:
                                 spec.verify_model_data(model_config)
                             except ValidationError as e:
-                                print(f'Error when verifying {item["id"]}: {e.messages}')
-                                if 'error' not in item:
-                                    item['error'] = {}
-                                item['error'] = {'spec': e.messages}
-                        
+                                print(
+                                    f'Error when verifying {item["id"]}: {e.messages}'
+                                )
+                                item["error"] = {"spec": e.messages}
+
                 except:
                     print("Failed to download or parse source file from " + source)
                     raise
@@ -211,6 +224,16 @@ def parse_manifest(models_yaml):
                 model_info["tags"] += collection_tags
             else:
                 model_info["tags"] = collection_tags
+            if "id" not in model_info:
+                model_info["id"] = model_info["name"].replace(" ", "-")
+            model_info["id"] = models_yaml["config"]["id"] + "/" + model_info["id"]
+            if "links" in model_info:
+                for i in range(len(model_info["links"])):
+                    if "/" not in model_info["links"][i]:
+                        model_info["links"][i] = (
+                            models_yaml["config"]["id"] + "/" + model_info["links"][i]
+                        )
+
             compiled_items.append(model_info)
             print("Added " + model_info["type"] + ": " + model_info["name"])
 
@@ -231,8 +254,6 @@ with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
     for res in resources:
         if "tags" in res:
             res["tags"] = list(set(res["tags"]))
-        if "id" not in res:
-            res["id"] = res["name"].replace(" ", "-")
         if res["id"] in unique_res:
             old = unique_res[res["id"]]
             for k in old:
