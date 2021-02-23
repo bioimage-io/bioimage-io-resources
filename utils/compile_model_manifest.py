@@ -201,7 +201,9 @@ def parse_manifest(models_yaml):
                         except ValidationError as e:
                             print(f'Error when verifying {item["id"]}: {e.messages}')
                             item["error"] = {"spec": e.messages}
-
+                        except Exception as e:
+                            print(f'Failed to verify the model: {item["id"]}: {e}')
+                            item["error"] = {"spec": f"Failed to verify the model: {e}"}
                 except:
                     print("Failed to download or parse source file from " + source)
                     raise
