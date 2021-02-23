@@ -4,6 +4,7 @@ import yaml
 import re
 import json
 import traceback
+import argparse
 from pathlib import Path
 from pybio.spec import __main__ as spec
 from marshmallow import ValidationError
@@ -171,24 +172,29 @@ def parse_manifest(models_yaml):
                 source = item["source"]
                 root_url = "/".join(source.split("/")[:-1])
                 try:
-                    response = requests.get(source)
-                    if response.status_code != 200:
-                        print("Failed to fetch source from " + source)
-                        continue
-                    if source.endswith(".yaml") or source.endswith(".yml"):
-                        model_config = yaml.safe_load(response.content)
-                        # merge item from models.yaml to model config
-                        item.update(model_config)
-                        if tp == "model":
-                            if "error" not in item:
-                                item["error"] = {}
-                            try:
-                                spec.verify_model_data(model_config)
-                            except ValidationError as e:
-                                print(
-                                    f'Error when verifying {item["id"]}: {e.messages}'
-                                )
-                                item["error"] = {"spec": e.messages}
+                    if source.startswith("http"):
+                        response = requests.get(source)
+                        if response.status_code != 200:
+                            print("Failed to fetch source from " + source)
+                            continue
+                        if source.endswith(".yaml") or source.endswith(".yml"):
+                            model_config = yaml.safe_load(response.content)
+                    else:
+                        with open(source, "rb") as fil:
+                            model_config = yaml.safe_load(fil)
+                        item["source"] = (
+                            models_yaml["config"]["url_root"].strip("/") + "/" + source
+                        )
+                    # merge item from models.yaml to model config
+                    item.update(model_config)
+                    if tp == "model":
+                        if "error" not in item:
+                            item["error"] = {}
+                        try:
+                            spec.verify_model_data(model_config)
+                        except ValidationError as e:
+                            print(f'Error when verifying {item["id"]}: {e.messages}')
+                            item["error"] = {"spec": e.messages}
 
                 except:
                     print("Failed to download or parse source file from " + source)
@@ -238,11 +244,26 @@ def parse_manifest(models_yaml):
             print("Added " + model_info["type"] + ": " + model_info["name"])
 
 
-models_yaml_file = Path(__file__).parent / "../manifest.bioimage.io.yaml"
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--manifest",
+    type=str,
+    default="manifest.bioimage.io.yaml",
+    help="Path to the input manifest yaml file",
+)
+parser.add_argument(
+    "--output",
+    type=str,
+    default="manifest.bioimage.io.json",
+    help="Output file path for the compiled json file",
+)
+args = parser.parse_args()
+
+models_yaml_file = Path(args.manifest)
 models_yaml = yaml.safe_load(models_yaml_file.read_text())
 parse_manifest(models_yaml)
 
-with (Path(__file__).parent / "../manifest.bioimage.io.json").open("wb") as f:
+with Path(args.output).open("wb") as f:
     new_model_yaml = models_yaml["config"]
     collections.sort(key=lambda m: m["name"], reverse=True)
     compiled_apps.sort(key=lambda m: m["name"], reverse=True)
