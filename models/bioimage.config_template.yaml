@@ -1,0 +1,58 @@
+format_version: 0.3.0
+name:
+description:
+date:
+# we allow for multiple citations. Each citation contains TEXT, DOI and URL. One of DOI or URL needs to be given.
+cite:
+    - text:
+      doi: https://
+authors:
+documentation:
+source:
+parent:
+license:
+language: Java
+framework:
+git_repo:
+covers:
+tags:
+test_inputs:
+test_outputs:
+sample_inputs:
+sample_outputs:
+packaged_by:
+
+weights:
+  tensorflow_saved_model_bundle:
+    source:
+    sha256:
+    description:
+  tensorflow_js:
+    source: 
+    sha256:
+
+inputs:
+  - name: raw
+    axes:
+    data_type:
+    data_range:
+    shape:
+    preprocessing:
+
+outputs:
+  - name: 
+    axes: 
+    data_type: 
+    data_range:
+    halo:
+    shape:
+      reference_input: raw
+      scale:
+      offset:
+    postprocessing:
+run_mode:
+config:
+# custom config for DeepImageJ, see https://github.com/bioimage-io/configuration/issues/23
+  deepimagej:
+  ilastik:
+  fiji:
