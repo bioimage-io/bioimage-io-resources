@@ -1,0 +1,15 @@
+// Postprocessing macro
+print("Postprocessing");
+
+setThreshold(0.5000, 1.0);
+setOption("BlackBackground", true);
+run("Convert to Mask");
+
+/*Watershed*/
+run("Watershed");
+run("Fill Holes");
+run("Open");
+run("Analyze Particles...", "size=&minsize-Infinity show=[Count Masks] clear add");
+run("16-bit");
+run("Fire");
+

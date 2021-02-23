@@ -36,7 +36,9 @@ collection:
   - id: hpa
     source: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/manifest.bioimage.io.yaml
 
-model: []
+model:
+  - id: 2dunet-pancreatic-segmentation
+    source: models/u-net_pancreatic_segmentation/model.yaml
 
 application: []
 
