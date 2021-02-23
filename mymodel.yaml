@@ -1,0 +1,109 @@
+format_version: 0.3.0
+name: 2D UNet - ZeroCostDL4Mic
+description: 2D U-Net trained for binary segmentation using the EM images of neuronal membranes and segmentation masks from the ISBI segmentation challenge 2012.
+timestamp: 2021-02-17T10:13:32.618903
+cite:
+  - text: Ronneberger O. et al., MICCAI 2015
+    doi: https://doi.org/10.1007/978-3-319-24574-4_28
+  - text: Lucas von Chamier et al. bioRxiv 2020
+    doi: https://doi.org/10.1101/2020.03.20.000133
+  - text: Gómez de Mariscal et al. bioRxiv 2019
+    doi: https://doi.org/10.1101/799270
+authors:
+  - ZeroCostDL4Mic team
+  - DeepImageJ team
+git_repo: https://github.com/HenriquesLab/ZeroCostDL4Mic
+documentation: https://deepimagej.github.io/deepimagej/
+covers: [./cover.png]
+tags:
+  - zerocostdl4mic
+  - deepimagej
+  - segmentation
+  - unet
+license: MIT
+language: java
+framework: tensorflow
+test_inputs:
+  - ./exampleImage.tiff
+test_outputs:
+  - ./resultImage.tiff
+sample_inputs:
+  - ./exampleImage.npy
+sample_outputs:
+  - ./resultImage.npy
+weights:
+  tensorflow_saved_model_bundle:
+    source: https://zenodo.org/record/4155785/files/2du-net_zerocostdl4mic_tf_model.zip
+    sha256: 167a552f5b97b5bf5e3da2c44755a5c6f5e4d2b019ef9151627495e9f91434ef
+    tensorflow_version: 1.15
+  keras_hdf5:
+    source: https://raw.githubusercontent.com/deepimagej/models/master/2du-net_zerocostdl4mic/weights_best.hdf5
+    sha256: 52f4065fe49f3e3bbd21bf36c815f6431042a1d6699b3caea40572cae833c893
+
+inputs:
+  - name: raw
+    axes: byxc
+    data_type: float32
+    data_range: [-inf, inf]
+    shape: [1, 2048, 2048, 1]
+    preprocessing:
+      - name: scale_range
+        kwargs:
+          mode: per_sample
+          axes: xy
+          min_percentile: 0
+          max_percentile: 99.85
+outputs:
+  - name: localizations
+    axes: byxc
+    data_type: float32
+    data_range: [-inf, inf]
+    halo: [0, 25, 25, 0]
+    shape:
+        reference_input: raw
+        scale: [1, 1, 1, 1]
+        offset: [0, 0, 0, 0]
+    postprocessing:
+      - name: scale_range
+        kwargs:
+          mode: per_sample
+          axes: xy
+          min_percentile: 0
+          max_percentile: 100
+      - name: scale_linear
+        kwargs:
+          gain: 255
+          offset: 0
+          axes: xy
+      - name: binarize
+        kwargs:
+          threshold: 71
+config:
+# custom config for DeepImageJ, see https://github.com/bioimage-io/configuration/issues/23
+  deepimagej:
+    pyramidal_model: false
+    allow_tiling: true
+    model_keys:
+      tensorflow_model_tag: tf.saved_model.tag_constants.SERVING
+      tensorflow_siganture_def: tf.saved_model.signature_constants.DEFAULT_SERVING_SIGNATURE_DEF_KEY
+    test_information:
+      inputs:
+        - name: exampleImage.tiff
+          size: 512 x 512 x 1 x 1
+          pixel_size:
+            x: 0.0004 µm
+            y: 0.0004 µm
+            z: 1.0 pixel
+      outputs:
+        - name: 2D UNet - ZeroCostDL4Mic of exampleImage.tiff
+          type: image
+          size: 512 x 512 x 1 x 1
+      memory_peak: 99.2 Mb
+      runtime: 9.9 s
+    prediction:
+      preprocess:
+      -   spec: ij.IJ::runMacroFile
+          kwargs: preprocessing.ijm
+      postprocess:
+      -   spec: ij.IJ::runMacroFile
+          kwargs: postprocessing.ijm

@@ -29,9 +29,8 @@ jobs:
           pip install -r requirements.txt
       - name: Compile manifest file
         run: |
-          python utils/compile_model_manifest.py
           mkdir dist
-          cp ./manifest.bioimage.io.json ./dist/
+          python utils/compile_model_manifest.py --manifest=./manifest.bioimage.io.yaml --output=./dist/manifest.bioimage.io.json
 
       - name: Save build output
         uses: actions/upload-artifact@v1
