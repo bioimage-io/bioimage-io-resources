@@ -5,7 +5,7 @@
 
 ## Models
 
-A list of models can be found [here](./src/manifest.bioimage.io.yaml).
+A list of models can be found [here](manifest.bioimage.io.yaml).
 
 ## How to contribute?
 

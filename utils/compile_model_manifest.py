@@ -238,7 +238,7 @@ def parse_manifest(models_yaml):
             print("Added " + model_info["type"] + ": " + model_info["name"])
 
 
-models_yaml_file = Path(__file__).parent / "manifest.bioimage.io.yaml"
+models_yaml_file = Path(__file__).parent / "../manifest.bioimage.io.yaml"
 models_yaml = yaml.safe_load(models_yaml_file.read_text())
 parse_manifest(models_yaml)
 
