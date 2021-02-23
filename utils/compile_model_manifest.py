@@ -170,7 +170,7 @@ def parse_manifest(models_yaml):
                 item["source"].endswith("yaml") or item["source"].endswith("yml")
             ):
                 source = item["source"]
-                root_url = "/".join(source.split("/")[:-1])
+
                 try:
                     if source.startswith("http"):
                         response = requests.get(source)
@@ -179,11 +179,17 @@ def parse_manifest(models_yaml):
                             continue
                         if source.endswith(".yaml") or source.endswith(".yml"):
                             model_config = yaml.safe_load(response.content)
+                        root_url = "/".join(source.split("/")[:-1])
                     else:
                         with open(source, "rb") as fil:
                             model_config = yaml.safe_load(fil)
                         item["source"] = (
                             models_yaml["config"]["url_root"].strip("/") + "/" + source
+                        )
+                        root_url = (
+                            models_yaml["config"]["url_root"].strip("/")
+                            + "/"
+                            + "/".join(source.split("/")[:-1])
                         )
                     # merge item from models.yaml to model config
                     item.update(model_config)
