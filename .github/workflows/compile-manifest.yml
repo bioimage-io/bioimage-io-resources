@@ -38,21 +38,21 @@ jobs:
           name: built-output
           path: ./dist
     
-   deploy-manifest:
-     runs-on: ubuntu-latest
-     needs: build-manifest
-     if: github.ref == 'refs/heads/master' && github.repository == 'bioimage-io/bioimage-io-models'
-     steps:
-       - name: Load saved build output
-         uses: actions/download-artifact@v1
-         with:
-           name: built-output
-           path: ./dist
-       - name: Deploy to GitHub Pages
-         uses: peaceiris/actions-gh-pages@v3.5.0
-         env:
-           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-         with:
-           deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
-           publish_dir: ./dist
-           commit_message: Deploy to GitHub Pages
+  deploy-manifest:
+    runs-on: ubuntu-latest
+    needs: build-manifest
+    if: (github.ref == 'refs/heads/master') && (github.repository == 'bioimage-io/bioimage-io-models')
+    steps:
+      - name: Load saved build output
+        uses: actions/download-artifact@v1
+        with:
+          name: built-output
+          path: ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3.5.0
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        with:
+          deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
+          publish_dir: ./dist
+          commit_message: Deploy to GitHub Pages
