@@ -41,7 +41,7 @@ jobs:
   deploy-manifest:
     runs-on: ubuntu-latest
     needs: build-manifest
-    if: github.ref == 'refs/heads/master'
+    if: (github.ref == 'refs/heads/master') && (github.repository == 'bioimage-io/bioimage-io-models')
     steps:
       - name: Load saved build output
         uses: actions/download-artifact@v1
