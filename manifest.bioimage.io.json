@@ -177,9 +177,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "jupyter",
         "notebook",
-        "imjoy"
+        "imjoy",
+        "jupyter"
       ],
       "documentation": null,
       "covers": [],
@@ -195,9 +195,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "jupyter",
         "notebook",
-        "imjoy"
+        "imjoy",
+        "jupyter"
       ],
       "documentation": null,
       "covers": [],
@@ -398,8 +398,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941889",
       "tags": [
-        "ZeroCostDL4Mic",
-        "pix2pix"
+        "pix2pix",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3941889",
       "covers": [
@@ -430,9 +430,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "2D",
         "pix2pix",
-        "2D"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/pix2pix_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -488,8 +488,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "object detection",
+        "ZeroCostDL4Mic",
         "YOLOv2"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/YOLOv2_ZeroCostDL4Mic.ipynb",
@@ -536,10 +536,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Super resolution",
-        "GAN",
+        "Fluorescence microscopy",
         "deepimagej",
-        "Fluorescence microscopy"
+        "GAN",
+        "Super resolution"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -584,10 +584,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Super resolution",
-        "GAN",
+        "Fluorescence microscopy",
         "deepimagej",
-        "Fluorescence microscopy"
+        "GAN",
+        "Super resolution"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -632,10 +632,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Super resolution",
-        "GAN",
+        "Fluorescence microscopy",
         "deepimagej",
-        "Fluorescence microscopy"
+        "GAN",
+        "Super resolution"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -702,10 +702,10 @@
       ],
       "git_repo": "https://github.com/bioimage-io/pytorch-bioimage-io/tree/master/specs/models/unet2d",
       "tags": [
-        "dsb2018",
-        "ilastik",
         "unet2d",
+        "ilastik",
         "pytorch",
+        "dsb2018",
         "segmentation",
         "nucleus"
       ],
@@ -760,10 +760,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "phase contrast",
         "segmentation",
         "pancreatic stem cells",
-        "deepimagej"
+        "deepimagej",
+        "phase contrast"
       ],
       "license": "BSD-2",
       "error": {
@@ -813,10 +813,10 @@
         "unet_hela_seg.jpg"
       ],
       "tags": [
-        "phase contrast",
         "segmentation",
         "hela cells",
-        "deepimagej"
+        "deepimagej",
+        "phase contrast"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
@@ -867,10 +867,10 @@
         "cover_image.jpg"
       ],
       "tags": [
-        "phase contrast",
         "segmentation",
+        "deepimagej",
         "glioblastoma cells",
-        "deepimagej"
+        "phase contrast"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
@@ -900,12 +900,12 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "ilastik",
-        "sga2",
         "hbp",
-        "unet2d",
-        "pytorch",
         "brain",
+        "unet2d",
+        "ilastik",
+        "pytorch",
+        "sga2",
         "vasculature"
       ],
       "license": "MIT",
@@ -915,11 +915,8 @@
       ],
       "error": {
         "spec": {
-          "weights": [
-            "Missing data for required field."
-          ],
-          "timestamp": [
-            "Missing data for required field."
+          "format_version": [
+            "Must be one of: 0.3.0."
           ],
           "test_outputs": [
             "Missing data for required field."
@@ -927,10 +924,13 @@
           "test_inputs": [
             "Missing data for required field."
           ],
-          "format_version": [
-            "Must be one of: 0.3.0."
+          "timestamp": [
+            "Missing data for required field."
           ],
-          "test_output": [
+          "weights": [
+            "Missing data for required field."
+          ],
+          "optional_kwargs": [
             "Unknown field."
           ],
           "test_input": [
@@ -939,7 +939,7 @@
           "prediction": [
             "Unknown field."
           ],
-          "optional_kwargs": [
+          "test_output": [
             "Unknown field."
           ]
         }
@@ -969,10 +969,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "U-Net",
         "segmentation",
+        "3D",
         "ZeroCostDL4Mic",
-        "3D"
+        "U-Net"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1004,10 +1004,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "U-Net",
         "segmentation",
+        "2D",
         "ZeroCostDL4Mic",
-        "2D"
+        "U-Net"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1039,10 +1039,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "U-Net",
         "segmentation",
+        "2D",
         "ZeroCostDL4Mic",
-        "2D"
+        "U-Net"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1072,12 +1072,12 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "ilastik",
-        "sga2",
         "hbp",
-        "unet2d",
-        "pytorch",
         "brain",
+        "unet2d",
+        "ilastik",
+        "pytorch",
+        "sga2",
         "vasculature"
       ],
       "license": "MIT",
@@ -1087,11 +1087,8 @@
       ],
       "error": {
         "spec": {
-          "weights": [
-            "Missing data for required field."
-          ],
-          "timestamp": [
-            "Missing data for required field."
+          "format_version": [
+            "Must be one of: 0.3.0."
           ],
           "test_outputs": [
             "Missing data for required field."
@@ -1099,10 +1096,13 @@
           "test_inputs": [
             "Missing data for required field."
           ],
-          "format_version": [
-            "Must be one of: 0.3.0."
+          "timestamp": [
+            "Missing data for required field."
           ],
-          "test_output": [
+          "weights": [
+            "Missing data for required field."
+          ],
+          "optional_kwargs": [
             "Unknown field."
           ],
           "test_input": [
@@ -1111,7 +1111,7 @@
           "prediction": [
             "Unknown field."
           ],
-          "optional_kwargs": [
+          "test_output": [
             "Unknown field."
           ]
         }
@@ -1141,10 +1141,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "segmentation",
-        "StarDist",
-        "3D"
+        "3D",
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1167,10 +1167,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3715492",
       "tags": [
-        "ZeroCostDL4Mic",
         "segmentation",
-        "StarDist",
-        "2D"
+        "2D",
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "source": "https://doi.org/10.5281/zenodo.3715492",
       "covers": [
@@ -1201,10 +1201,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "segmentation",
-        "StarDist",
-        "2D"
+        "2D",
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1240,9 +1240,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "segmentation",
         "SplineDist",
+        "ZeroCostDL4Mic",
         "StarDist"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/SplineDist_2D_ZeroCostDL4Mic.ipynb",
@@ -1279,10 +1279,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CARE",
+        "3D",
         "denoising",
-        "3D"
+        "ZeroCostDL4Mic",
+        "CARE"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/3D-RCAN_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1305,10 +1305,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713326",
       "tags": [
-        "ZeroCostDL4Mic",
-        "denoising",
+        "3D",
         "Noise2Void",
-        "3D"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713326",
       "covers": [
@@ -1331,10 +1331,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713315",
       "tags": [
-        "ZeroCostDL4Mic",
-        "denoising",
+        "2D",
         "Noise2Void",
-        "2D"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713315",
       "covers": [
@@ -1365,10 +1365,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
-        "Noise2VOID",
+        "2D",
         "denoising",
-        "2D"
+        "ZeroCostDL4Mic",
+        "Noise2VOID"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1401,10 +1401,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
-        "denoising",
+        "3D",
         "Noise2Void",
-        "3D"
+        "denoising",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1436,8 +1436,8 @@
         "thumbnail.png"
       ],
       "tags": [
-        "unet2d",
         "fiji",
+        "unet2d",
         "denoising",
         "n2v"
       ],
@@ -1445,7 +1445,16 @@
       "format_version": "0.1.0",
       "error": {
         "spec": {
-          "weights": [
+          "cite": [
+            "Invalid type."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0."
+          ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "test_inputs": [
             "Missing data for required field."
           ],
           "timestamp": [
@@ -1458,25 +1467,16 @@
               ]
             }
           },
-          "test_outputs": [
+          "weights": [
             "Missing data for required field."
-          ],
-          "cite": [
-            "Invalid type."
-          ],
-          "test_inputs": [
-            "Missing data for required field."
-          ],
-          "format_version": [
-            "Must be one of: 0.3.0."
-          ],
-          "test_output": [
-            "Unknown field."
           ],
           "test_input": [
             "Unknown field."
           ],
           "prediction": [
+            "Unknown field."
+          ],
+          "test_output": [
             "Unknown field."
           ],
           "training": [
@@ -1522,10 +1522,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "histology",
-        "GAN",
         "Virtual staining",
-        "deepimagej"
+        "deepimagej",
+        "histology",
+        "GAN"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -1578,12 +1578,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "cell tracking challenge",
-        "phase contrast",
         "watershed",
+        "deepwater",
         "deepimagej",
+        "phase contrast",
         "segmentation",
-        "deepwater"
+        "cell tracking challenge"
       ],
       "license": "MIT",
       "error": {
@@ -1630,10 +1630,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3748967",
       "tags": [
-        "ZeroCostDL4Mic",
+        "fnet",
         "3D",
-        "labelling",
-        "fnet"
+        "ZeroCostDL4Mic",
+        "labelling"
       ],
       "source": "https://doi.org/10.5281/zenodo.3748967",
       "covers": [
@@ -1664,10 +1664,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "fnet",
         "3D",
-        "labelling",
-        "fnet"
+        "ZeroCostDL4Mic",
+        "labelling"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/fnet_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1713,10 +1713,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "histology",
-        "GAN",
         "Virtual staining",
-        "deepimagej"
+        "deepimagej",
+        "histology",
+        "GAN"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -1729,20 +1729,20 @@
       "id": "hpa/HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "inception-v3",
-        "airnext-50",
-        "preresnet-50",
-        "resnet-50",
-        "cbam",
-        "se-resnext-50",
-        "resnet-18",
-        "hpa",
-        "airnet-50",
-        "inception-resnet-v2",
-        "resnet-34",
-        "hill-climbing",
         "classification",
-        "resnet-101"
+        "inception-v3",
+        "preresnet-50",
+        "airnet-50",
+        "resnet-18",
+        "resnet-50",
+        "se-resnext-50",
+        "cbam",
+        "airnext-50",
+        "resnet-34",
+        "inception-resnet-v2",
+        "resnet-101",
+        "hpa",
+        "hill-climbing"
       ],
       "authors": [
         "Shaikat Mahmood Galib",
@@ -1772,12 +1772,12 @@
       "id": "hpa/HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
+        "classification",
         "inception-v3",
-        "hpa",
         "inception-v4",
-        "multilayer-perceptron",
         "xception",
-        "classification"
+        "multilayer-perceptron",
+        "hpa"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -1804,11 +1804,11 @@
       "id": "hpa/HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
+        "classification",
         "inception-v3",
-        "hpa",
         "se-resnext-50",
         "resnet-34",
-        "classification"
+        "hpa"
       ],
       "authors": [
         "Park Jinmo"
@@ -1833,11 +1833,11 @@
       "id": "hpa/HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
+        "classification",
         "inception-v3",
-        "hpa",
         "se-resnext-50",
         "xception",
-        "classification"
+        "hpa"
       ],
       "authors": [
         "Xuan Cao",
@@ -1866,11 +1866,11 @@
       "name": "HPA-bestfitting",
       "tags": [
         "inception-v3",
-        "hpa",
+        "classification",
         "resnet-50",
         "densenet-121",
         "resnet-34",
-        "classification"
+        "hpa"
       ],
       "authors": [
         "Shubin Dai"
@@ -1897,15 +1897,15 @@
       "id": "hpa/HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
-        "opencv",
-        "hpa",
-        "se-resnext-50",
-        "densenet-169",
-        "densenet-121",
         "scikit-learn",
+        "classification",
+        "opencv",
+        "se-resnext-50",
+        "densenet-121",
         "ibn-densenet-121",
+        "densenet-169",
         "xception",
-        "classification"
+        "hpa"
       ],
       "authors": [
         "Jun Lan"
@@ -1931,9 +1931,9 @@
       "name": "HPA-Random Walk",
       "tags": [
         "attention-gate",
+        "classification",
         "resnet-18",
-        "hpa",
-        "classification"
+        "hpa"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -1961,13 +1961,13 @@
       "id": "hpa/HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
-        "lightgbm",
+        "classification",
         "bn-inception",
+        "lightgbm",
         "se-resnext-50",
-        "hpa",
         "inception-v4",
         "xception",
-        "classification"
+        "hpa"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -1995,9 +1995,9 @@
       "id": "hpa/HPA-NTU_MiRA",
       "name": "HPA-NTU_MiRA",
       "tags": [
-        "resnet-34",
+        "classification",
         "hpa",
-        "classification"
+        "resnet-34"
       ],
       "authors": [
         "Kuan-Lun Tseng"
@@ -2034,11 +2034,11 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "hpa",
+        "classification",
         "tensorflow.js",
-        "shufflenet",
         "imjoy",
-        "classification"
+        "shufflenet",
+        "hpa"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -2055,25 +2055,22 @@
       ],
       "error": {
         "spec": {
-          "weights": [
-            "Missing data for required field."
-          ],
-          "framework": [
-            "Must be one of: scikit-learn, pytorch, tensorflow."
-          ],
-          "timestamp": [
-            "Missing data for required field."
+          "cite": [
+            "Field may not be null."
           ],
           "language": [
             "Must be one of: python, java."
           ],
+          "format_version": [
+            "Must be one of: 0.3.0."
+          ],
           "test_outputs": [
             "Missing data for required field."
           ],
-          "cite": [
-            "Field may not be null."
-          ],
           "test_inputs": [
+            "Missing data for required field."
+          ],
+          "timestamp": [
             "Missing data for required field."
           ],
           "outputs": {
@@ -2083,8 +2080,11 @@
               ]
             }
           },
-          "format_version": [
-            "Must be one of: 0.3.0."
+          "framework": [
+            "Must be one of: scikit-learn, pytorch, tensorflow."
+          ],
+          "weights": [
+            "Missing data for required field."
           ],
           "optional_kwargs": [
             "Unknown field."
@@ -2092,13 +2092,13 @@
           "test_output": [
             "Unknown field."
           ],
-          "test_input": [
+          "prediction": [
             "Unknown field."
           ],
           "badges": [
             "Unknown field."
           ],
-          "prediction": [
+          "test_input": [
             "Unknown field."
           ]
         }
@@ -2185,9 +2185,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "object detection",
         "Detectron2",
-        "object detection"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Detectron2_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2220,9 +2220,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "2D",
         "CycleGAN",
-        "2D"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/DenoiSeg_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2245,10 +2245,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3959089",
       "tags": [
-        "ZeroCostDL4Mic",
         "2D",
-        "SMLM",
-        "Deep-STORM"
+        "Deep-STORM",
+        "ZeroCostDL4Mic",
+        "SMLM"
       ],
       "source": "https://doi.org/10.5281/zenodo.3959089",
       "covers": [
@@ -2307,11 +2307,11 @@
         "zoom.png"
       ],
       "tags": [
-        "image reconstruction",
-        "deepimagej",
+        "SMLM",
         "super-resolution",
+        "deepimagej",
         "zerocostdl4mic",
-        "SMLM"
+        "image reconstruction"
       ],
       "license": "MIT",
       "error": {
@@ -2346,9 +2346,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "DeepImageJ",
         "2D",
+        "ZeroCostDL4Mic",
         "Deep-STORM"
       ],
       "source": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb",
@@ -2382,9 +2382,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "2D",
         "ZeroCostDL4Mic",
         "labelling",
-        "2D",
         "Deep-STORM"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Deep-STORM_2D_ZeroCostDL4Mic.ipynb",
@@ -2418,9 +2418,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "DRMIME",
         "image registration",
-        "ZeroCostDL4Mic",
-        "DRMIME"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/DRMIME_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2463,8 +2463,8 @@
         "cover_image.jpg"
       ],
       "tags": [
-        "defcon",
         "smlm",
+        "defcon",
         "density estimation",
         "deepimagej"
       ],
@@ -2492,8 +2492,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CycleGAN"
+        "CycleGAN",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3941884",
       "covers": [
@@ -2524,9 +2524,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "2D",
         "CycleGAN",
-        "2D"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CycleGAN_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2628,8 +2628,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "Cellpose",
-        "Segmentation",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "Segmentation"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2655,10 +2655,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CARE",
+        "3D",
         "denoising",
-        "3D"
+        "ZeroCostDL4Mic",
+        "CARE"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713337",
       "covers": [
@@ -2689,10 +2689,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CARE",
+        "3D",
         "denoising",
-        "3D"
+        "ZeroCostDL4Mic",
+        "CARE"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2715,10 +2715,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CARE",
+        "2D",
         "denoising",
-        "2D"
+        "ZeroCostDL4Mic",
+        "CARE"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713330",
       "covers": [
@@ -2749,10 +2749,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CARE",
+        "2D",
         "denoising",
-        "2D"
+        "ZeroCostDL4Mic",
+        "CARE"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2785,9 +2785,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "Augmentor",
         "ZeroCostDL4Mic",
-        "Data Augmentation",
-        "Augmentor"
+        "Data Augmentation"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Tools/Augmentor_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2826,12 +2826,12 @@
       ],
       "git_repo": "https://github.com/mobie/platybrowser-datasets/tree/master/segmentation/cells/UNet3DPlatyCellProbs.model",
       "tags": [
-        "cell membrane",
-        "platynereis",
         "ilastik",
-        "unet3d",
         "pytorch",
+        "unet3d",
+        "platynereis",
         "segmentation",
+        "cell membrane",
         "EM"
       ],
       "license": "MIT",
@@ -2864,13 +2864,13 @@
       ],
       "documentation": "README.md",
       "tags": [
-        "cell membrane",
         "ilastik",
-        "unet3d",
         "pytorch",
-        "plant tissue",
         "ovuls",
+        "plant tissue",
+        "unet3d",
         "segmentation",
+        "cell membrane",
         "arabidopsis"
       ],
       "license": "MIT",
@@ -2884,11 +2884,8 @@
       ],
       "error": {
         "spec": {
-          "weights": [
-            "Missing data for required field."
-          ],
-          "timestamp": [
-            "Missing data for required field."
+          "format_version": [
+            "Must be one of: 0.3.0."
           ],
           "test_outputs": [
             "Missing data for required field."
@@ -2896,10 +2893,13 @@
           "test_inputs": [
             "Missing data for required field."
           ],
-          "format_version": [
-            "Must be one of: 0.3.0."
+          "timestamp": [
+            "Missing data for required field."
           ],
-          "test_output": [
+          "weights": [
+            "Missing data for required field."
+          ],
+          "optional_kwargs": [
             "Unknown field."
           ],
           "test_input": [
@@ -2908,7 +2908,7 @@
           "prediction": [
             "Unknown field."
           ],
-          "optional_kwargs": [
+          "test_output": [
             "Unknown field."
           ]
         }
@@ -2964,10 +2964,10 @@
         "cover.png"
       ],
       "tags": [
-        "unet",
-        "zerocostdl4mic",
         "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "zerocostdl4mic",
+        "unet"
       ],
       "license": "MIT",
       "error": {}
@@ -3000,8 +3000,8 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "deepimagej",
         "segmentation",
+        "deepimagej",
         "unet"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb",
