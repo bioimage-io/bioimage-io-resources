@@ -6,7 +6,7 @@ import json
 import traceback
 import argparse
 from pathlib import Path
-from pybio.spec import __main__ as spec
+from bioimageio.spec import __main__ as spec
 from marshmallow import ValidationError
 
 preserved_keys = [
