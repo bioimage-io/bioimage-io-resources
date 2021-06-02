@@ -151,6 +151,148 @@
   ],
   "resources": [
     {
+      "id": "imjoy/vizarr",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/src/vizarr.imjoy.html",
+      "passive": false,
+      "icon": "extension",
+      "name": "vizarr",
+      "version": "0.0.1",
+      "api_version": "0.1.8",
+      "description": "A minimal, purely client-side program for viewing Zarr-based images with Viv & ImJoy",
+      "requirements": [],
+      "dependencies": [],
+      "env": "",
+      "tags": [],
+      "documentation": "https://raw.githubusercontent.com/hms-dbmi/vizarr/master/README.md",
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "zero/Notebook Preview",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/bioimage-io/nbpreview/master/notebook-preview.imjoy.html",
+      "passive": false,
+      "name": "Notebook Preview",
+      "version": "0.1.0",
+      "api_version": "0.2.3",
+      "description": "Previewing Jupyter notebook without a Jupyter server",
+      "tags": [
+        "jupyter",
+        "imjoy",
+        "notebook"
+      ],
+      "documentation": null,
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "imjoy/Notebook Preview",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/bioimage-io/nbpreview/master/notebook-preview.imjoy.html",
+      "passive": false,
+      "name": "Notebook Preview",
+      "version": "0.1.0",
+      "api_version": "0.2.3",
+      "description": "Previewing Jupyter notebook without a Jupyter server",
+      "tags": [
+        "jupyter",
+        "imjoy",
+        "notebook"
+      ],
+      "documentation": null,
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "imjoy/ImageJ.JS",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/src/imagej-js.imjoy.html",
+      "passive": false,
+      "name": "ImageJ.JS",
+      "version": "0.1.6",
+      "api_version": "0.2.3",
+      "description": "ImageJ running in the browser",
+      "tags": [],
+      "documentation": "https://raw.githubusercontent.com/imjoy-team/imagej.js/master/README.md",
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "imjoy/ImJoyFiddle",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/src/imjoy-fiddle.imjoy.html",
+      "passive": false,
+      "name": "ImJoyFiddle",
+      "version": "0.1.0",
+      "api_version": "0.2.3",
+      "description": "ImJoyFiddle -- a playground for ImJoy plugins",
+      "tags": [],
+      "documentation": null,
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "ilastik/Ilastik",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/src/Ilastik-app.imjoy.html",
+      "passive": false,
+      "icon": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/image/ilastik-fist-icon.png",
+      "name": "Ilastik",
+      "version": "0.1.1",
+      "api_version": "0.1.7",
+      "description": "Ilastik Model Preview for BioImage.io",
+      "requirements": [
+        "https://static.imjoy.io/spectre.css/spectre.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-exp.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-icons.min.css"
+      ],
+      "dependencies": [
+        "https://gist.githubusercontent.com/oeway/2d4b5899424a14d8e90ad908d4cec364/raw/TiktorchModelLoader.imjoy.html",
+        "https://gist.githubusercontent.com/oeway/f09955746ec01a20053793aba83c3545/raw/CompareImages.imjoy.html"
+      ],
+      "env": "",
+      "tags": [],
+      "documentation": null,
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "hpa/HPA-Classification",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html",
+      "passive": false,
+      "icon": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/hpa-logo.gif",
+      "name": "HPA-Classification",
+      "version": "0.2.1",
+      "api_version": "0.1.7",
+      "description": "ShuffleNetV2 for HPA.",
+      "requirements": [
+        "https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.13.1/js-yaml.min.js",
+        "https://cdn.jsdelivr.net/npm/apexcharts",
+        "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs",
+        "https://cdn.jsdelivr.net/npm/simpleheat@0.4.0/simpleheat.min.js",
+        "https://cdn.jsdelivr.net/gh/photopea/UTIF.js@4f1b10cb09e244cfd4f9631245d2231537148be7/UTIF.js"
+      ],
+      "dependencies": [
+        "https://raw.githubusercontent.com/imjoy-team/example-plugins/master/imjoy-plugins/HPA-Image-Selection.imjoy.html"
+      ],
+      "env": null,
+      "tags": [],
+      "documentation": null,
+      "covers": [
+        "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
+      ],
+      "badges": [],
+      "authors": []
+    },
+    {
       "id": "fiji/Fiji",
       "name": "Fiji",
       "description": "Fiji is an image processing package \u2014 a \"batteries-included\" distribution of ImageJ, bundling many plugins which facilitate scientific image analysis.",
@@ -213,6 +355,163 @@
       ]
     },
     {
+      "id": "imjoy/CellPose",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/src/cellpose.imjoy.html",
+      "passive": false,
+      "name": "CellPose",
+      "version": "0.1.0",
+      "api_version": "0.2.3",
+      "description": "a generalist algorithm for cellular segmentation",
+      "tags": [],
+      "documentation": "https://cellpose.readthedocs.io/en/latest/",
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "id": "imjoy/BioImageIO-Packager",
+      "type": "application",
+      "source": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/src/bioimageio-packager.imjoy.html",
+      "passive": false,
+      "icon": "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/asset/package-icon.png",
+      "name": "BioImageIO-Packager",
+      "version": "0.1.7",
+      "api_version": "0.1.7",
+      "description": "Exporting BioImage.IO model packages from the model description file",
+      "requirements": [
+        "https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js",
+        "https://static.imjoy.io/spectre.css/spectre.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-exp.min.css",
+        "https://static.imjoy.io/spectre.css/spectre-icons.min.css",
+        "https://stuk.github.io/jszip/dist/jszip.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+      ],
+      "dependencies": [],
+      "env": "",
+      "tags": [],
+      "documentation": null,
+      "covers": [],
+      "badges": [],
+      "authors": []
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_pix2pix_ZeroCostDL4Mic",
+      "name": "pix2pix example training and test dataset - ZeroCostDL4Mic",
+      "description": "Paired microscopy images (fluorescence) of lifeact-RFP and sir-DNA",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3941889",
+      "tags": [
+        "pix2pix",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3941889",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/paired-image_translation.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_pix2pix_2D_ZeroCostDL4Mic",
+      "name": "pix2pix (2D) - ZeroCostDL4Mic",
+      "description": "pix2pix is a deep-learning method that can be used to translate one type of images into another. While pix2pix can potentially be used for any type of image-to-image translation, we demonstrate that it can be used to predict a fluorescent image from another fluorescent image. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/pix2pix_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "pix2pix",
+        "2D",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/pix2pix_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_pix2pix_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_YOLOv2_ZeroCostDL4Mic",
+      "name": "YoloV2 example training and test dataset - ZeroCostDL4Mic",
+      "description": "2D grayscale .png images with corresponding bounding box annotations in .xml  PASCAL Voc format.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet",
+        "Lucas von Chamier"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3941908",
+      "tags": [
+        "ZeroCostDL4Mic",
+        "YOLOv2"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3941908",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_YOLOv2_ZeroCostDL4Mic",
+      "name": "YOLOv2 - ZeroCostDL4Mic",
+      "description": "YOLOv2 is an object detection network developed by Redmon & Farhadi, which identifies objects in images and draws bounding boxes around them.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Lucas von Chamier and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/YOLOv2_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "ZeroCostDL4Mic",
+        "object detection",
+        "YOLOv2"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/YOLOv2_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_YOLOv2_ZeroCostDL4Mic"
+      ]
+    },
+    {
       "type": "model",
       "attachments": {
         "files": [
@@ -249,10 +548,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Fluorescence microscopy",
-        "Super resolution",
         "deepimagej",
-        "GAN"
+        "GAN",
+        "Super resolution",
+        "Fluorescence microscopy"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -295,10 +594,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Fluorescence microscopy",
-        "Super resolution",
         "deepimagej",
-        "GAN"
+        "GAN",
+        "Super resolution",
+        "Fluorescence microscopy"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -341,14 +640,432 @@
         "resultImage.png"
       ],
       "tags": [
-        "Fluorescence microscopy",
-        "Super resolution",
         "deepimagej",
-        "GAN"
+        "GAN",
+        "Super resolution",
+        "Fluorescence microscopy"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
       "error": {}
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/pytorch-bioimage-io/v0.3.0/specs/models/unet2d_nuclei_broad",
+      "id": "ilastik/UNet2DNucleiBroad",
+      "source": "pybio.torch.models.unet2d.UNet2d",
+      "links": [
+        "ilastik/Ilastik",
+        "imjoy/BioImageIO-Packager"
+      ],
+      "download_url": "https://github.com/bioimage-io/pytorch-bioimage-io/releases/download/v0.3.0/UNet2DNucleiBroad.model.zip",
+      "format_version": "0.3.0",
+      "name": "UNet 2D Nuclei Broad",
+      "description": "A 2d U-Net trained on the nuclei broad dataset.",
+      "authors": [
+        "Constantin Pape;@bioimage-io",
+        "Fynn Beuttenm\u00fcller"
+      ],
+      "cite": [
+        {
+          "text": "Ronneberger, Olaf et al. U-net: Convolutional networks for biomedical image segmentation. MICCAI 2015.",
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28"
+        },
+        {
+          "text": "2018 Data Science Bowl",
+          "url": "https://www.kaggle.com/c/data-science-bowl-2018"
+        }
+      ],
+      "git_repo": "https://github.com/bioimage-io/pytorch-bioimage-io/tree/master/specs/models/unet2d",
+      "tags": [
+        "nucleus",
+        "pytorch",
+        "unet2d",
+        "ilastik",
+        "dsb2018",
+        "segmentation"
+      ],
+      "license": "MIT",
+      "documentation": "UNet2DNucleiBroad.md",
+      "covers": [],
+      "error": {}
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2",
+      "id": "ilastik/UNetDA",
+      "source": "src.utils.get_unet",
+      "links": [
+        "ilastik/Ilastik"
+      ],
+      "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/UNetDA.model.zip",
+      "name": "U-Net DA (Domain Adaptation)",
+      "description": "U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
+      "cite": [
+        {
+          "text": "Ronneberger, Olaf et al. U-net: Convolutional networks for biomedical image segmentation. MICCAI 2015.",
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28"
+        }
+      ],
+      "authors": [
+        "Vasu Subeesh"
+      ],
+      "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
+      "tags": [
+        "pytorch",
+        "unet2d",
+        "hbp",
+        "sga2",
+        "ilastik",
+        "brain",
+        "vasculature"
+      ],
+      "license": "MIT",
+      "format_version": "0.1.0",
+      "covers": [
+        "documentation/covers/UNetCover.png"
+      ],
+      "error": {
+        "spec": {
+          "test_inputs": [
+            "Missing data for required field."
+          ],
+          "weights": [
+            "Missing data for required field."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1."
+          ],
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "optional_kwargs": [
+            "Unknown field."
+          ],
+          "test_input": [
+            "Unknown field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ],
+          "prediction": [
+            "Unknown field."
+          ]
+        }
+      }
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_U-Net_3D_ZeroCostDL4Mic",
+      "name": "U-Net (3D) - ZeroCostDL4Mic",
+      "description": "The 3D U-Net was first introduced by \u00c7i\u00e7ek et al for learning dense volumetric segmentations from sparsely annotated ground-truth data building upon the original U-Net architecture by Ronneberger et al. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Daniel Krentzel and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "ZeroCostDL4Mic",
+        "U-Net",
+        "segmentation"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_U-Net_2D_ZeroCostDL4Mic_DeepImageJ",
+      "name": "U-Net (2D) - ZeroCostDL4Mic - DeepImageJ",
+      "description": "U-Net is an encoder-decoder architecture originally used for image segmentation. The first half of the U-Net architecture is a downsampling convolutional neural network which acts as a feature extractor from input images. The other half upsamples these results and restores an image by combining results from downsampling with the upsampled images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via DeepImageJ.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Estibaliz G\u00f3mez de Mariscal and the DeepImageJ and the ZeroCostDL4Mic teams"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "2D",
+        "ZeroCostDL4Mic",
+        "U-Net",
+        "segmentation"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_U-Net_2D_ZeroCostDL4Mic",
+      "name": "U-Net (2D) - ZeroCostDL4Mic",
+      "description": "U-Net is an encoder-decoder architecture originally used for image segmentation. The first half of the U-Net architecture is a downsampling convolutional neural network which acts as a feature extractor from input images. The other half upsamples these results and restores an image by combining results from downsampling with the upsampled images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Romain Laine and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "2D",
+        "ZeroCostDL4Mic",
+        "U-Net",
+        "segmentation"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/subeeshvasu/hbp-DL-seg-codes/0.1.2",
+      "id": "ilastik/2sUNetDA",
+      "source": "src.utils.get_2sunet",
+      "links": [
+        "ilastik/Ilastik"
+      ],
+      "download_url": "https://github.com/subeeshvasu/hbp-DL-seg-codes/releases/download/0.1.2/2sUNetDA.model.zip",
+      "name": "Two Steam U-Net DA",
+      "description": "Two Steam U-Net trained on brain vasculature segmentation data from Ludovico Silvestri's European Laboratory for Non-linear Spectroscopy (LENS). Two Steam U-Net is used as the segmentation network that takes up the inputs from source and target domain, and generate the respective segmentation results at the output. Two Steam U-Net uses differet encoders to process inputs from source and target, and use a common decoder to generate the respective segmentation outputs. To train the network, cross entropy loss between the prediction and ground truth labels is used for the source data. For the target data, image reconstrcution constraints are enforced on the segmentation outputs. Furthermore, source domain images are translated into the target domain using an adverserial paradigm, to generate auxiliary labelled data for the target domain. The labelled data thus generated are used to establish a supervised loss in the target domain.",
+      "cite": [
+        {
+          "text": "Roger Bermudez et al. A domain-adaptive two-stream U-Net for electron microscopy image segmentation. ISBI 2018.",
+          "doi": "https://doi.org/10.1109/ISBI.2018.8363602"
+        }
+      ],
+      "authors": [
+        "Roger Bermudez, Vasu Subeesh"
+      ],
+      "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
+      "tags": [
+        "pytorch",
+        "unet2d",
+        "hbp",
+        "sga2",
+        "ilastik",
+        "brain",
+        "vasculature"
+      ],
+      "license": "MIT",
+      "format_version": "0.1.0",
+      "covers": [
+        "documentation/covers/2sUNetCover.png"
+      ],
+      "error": {
+        "spec": {
+          "test_inputs": [
+            "Missing data for required field."
+          ],
+          "weights": [
+            "Missing data for required field."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1."
+          ],
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "optional_kwargs": [
+            "Unknown field."
+          ],
+          "test_input": [
+            "Unknown field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ],
+          "prediction": [
+            "Unknown field."
+          ]
+        }
+      }
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_StarDist_3D_ZeroCostDL4Mic",
+      "name": "StarDist (3D) - ZeroCostDL4Mic",
+      "description": "StarDist is a deep-learning method that can be used to segment cell nuclei in 3D (xyz) images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/StarDist_3D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "StarDist",
+        "ZeroCostDL4Mic",
+        "segmentation"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_3D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_StarDist_2D_ZeroCostDL4Mic_2D",
+      "name": "StarDist (2D) example training and test dataset - ZeroCostDL4Mic",
+      "description": "Fluorescence microscopy (SiR-DNA) and masks obtained via manual segmentation",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Johanna Jukkala",
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3715492",
+      "tags": [
+        "2D",
+        "StarDist",
+        "ZeroCostDL4Mic",
+        "segmentation"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3715492",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/Stardist_nuclei_masks.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_StarDist_2D_ZeroCostDL4Mic",
+      "name": "StarDist (2D) - ZeroCostDL4Mic",
+      "description": "StarDist is a deep-learning method that can be used to segment cell nuclei in 2D (xy) single images or in stacks (xyz). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/StarDist_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "2D",
+        "StarDist",
+        "ZeroCostDL4Mic",
+        "segmentation"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_StarDist_2D_ZeroCostDL4Mic_2D",
+        "zero/Dataset_StarDist_Fluo_ZeroCostDL4Mic",
+        "zero/Dataset_StarDist_brightfield_ZeroCostDL4Mic",
+        "zero/Dataset_StarDist_brightfield2_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_SplineDist_2D_ZeroCostDL4Mic",
+      "name": "SplineDist (2D) - ZeroCostDL4Mic",
+      "description": "SplineDist is a neural network inspired by StarDist, capable of performing image instance segmentation. Unlike StarDist, SplineDist uses cubic splines to describe the contour of each object and therefore can potentially segment objects of any shapes. This version is only for 2D dataset. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Romain F. Laine and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/SplineDist_overlay_cropped.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/SplineDist_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "StarDist",
+        "ZeroCostDL4Mic",
+        "SplineDist",
+        "segmentation"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/SplineDist_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_StarDist_2D_ZeroCostDL4Mic_2D",
+        "zero/Dataset_StarDist_Fluo_ZeroCostDL4Mic",
+        "zero/Dataset_StarDist_brightfield_ZeroCostDL4Mic",
+        "zero/Dataset_StarDist_brightfield2_ZeroCostDL4Mic"
+      ]
     },
     {
       "type": "notebook",
@@ -381,10 +1098,10 @@
       ],
       "documentation": "https://cbia.fi.muni.cz/research/segmentation/fru-net.html",
       "tags": [
-        "extracellular vesicles",
-        "segmentation",
+        "TEM",
         "deepimagej",
-        "TEM"
+        "segmentation",
+        "extracellular vesicles"
       ],
       "source": "https://raw.githubusercontent.com/BIIG-UC3M/FRU-Net-TEM-segmentation/master/FRUnet_TEM_Exosomes_sEV.ipynb",
       "links": [
@@ -432,10 +1149,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "extracellular vesicles",
-        "segmentation",
+        "TEM",
         "deepimagej",
-        "TEM"
+        "segmentation",
+        "extracellular vesicles"
       ],
       "license": "BSD 3",
       "error": {
@@ -477,25 +1194,25 @@
         "cover.jpg"
       ],
       "tags": [
+        "deepimagej-beta",
         "pytorch",
         "classification",
-        "skin lesions",
-        "deepimagej",
         "melanoma",
-        "deepimagej-beta"
+        "skin lesions",
+        "deepimagej"
       ],
       "license": "BSD2",
       "git_repo": "https://gist.github.com/esgomezm/72b584887ca5ed5ed0231c47fff9aa9b#file-skin_lession_classification_pytorch_adapted-ipynb",
       "error": {
         "spec": {
+          "cite": [
+            "Missing data for required field."
+          ],
           "run_mode": {
             "_schema": [
               "Invalid input type."
             ]
           },
-          "cite": [
-            "Missing data for required field."
-          ],
           "documentation": [
             "Invalid URI: https://gist.github.com/esgomezm/7398a83321ae589bafadb0392c7b78ef#file-skin_lession_classification_pytorch_original-ipynb. We do not support fragment: file-skin_lession_classification_pytorch_original-ipynb"
           ]
@@ -534,10 +1251,10 @@
         "cover_image.jpg"
       ],
       "tags": [
-        "smlm",
         "density estimation",
+        "defcon",
         "deepimagej",
-        "defcon"
+        "smlm"
       ],
       "license": "BSD 3",
       "git_repo": "https://github.com/LEB-EPFL/DEFCoN",
@@ -548,6 +1265,42 @@
           ]
         }
       }
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_RCAN_3D_ZeroCostDL4Mic",
+      "name": "RCAN (3D) - ZeroCostDL4Mic",
+      "description": "RCAN is a neural network capable of image restoration from corrupted bio-images. The network allows image denoising and resolution improvement in 3D images, in a supervised training manner. The function of the network is essentially determined by the set of images provided in the training dataset. For instance, if noisy images are provided as input and high signal-to-noise ratio images are provided as targets, the network will perform denoising. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/3D-RCAN_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "CARE",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/3D-RCAN_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_CARE_3D_ZeroCostDL4Mic"
+      ]
     },
     {
       "type": "model",
@@ -596,10 +1349,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "pancreatic stem cells",
         "phase contrast",
-        "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "pancreatic stem cells",
+        "segmentation"
       ],
       "license": "BSD-2",
       "error": {}
@@ -646,11 +1399,11 @@
       ],
       "tags": [
         "phase contrast",
-        "segmentation",
+        "watershed",
+        "cell tracking challenge",
         "deepwater",
         "deepimagej",
-        "cell tracking challenge",
-        "watershed"
+        "segmentation"
       ],
       "license": "MIT",
       "error": {
@@ -662,6 +1415,128 @@
           }
         }
       }
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_Noise2Void_3D_ZeroCostDL4Mic",
+      "name": "Noise2Void (3D) example training and test dataset - ZeroCostDL4Mic",
+      "description": "Fluorescence microscopy (Lifeact-RFP)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacqueme"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3713326",
+      "tags": [
+        "3D",
+        "Noise2Void",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3713326",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_Noise2Void_2D_ZeroCostDL4Mic",
+      "name": "Noise2Void (2D) example training and test dataset - ZeroCostDL4Mic",
+      "description": "Fluorescence microscopy (paxillin-GFP)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Aki Stubb",
+        "Guillaume Jacquemet",
+        "Johanna Ivaska"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3713315",
+      "tags": [
+        "Noise2Void",
+        "ZeroCostDL4Mic",
+        "2D",
+        "denoising"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3713315",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/N2V_wiki.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Noise2Void_2D_ZeroCostDL4Mic",
+      "name": "Noise2Void (2D) - ZeroCostDL4Mic",
+      "description": "Noise2Void 2D is deep-learning method that can be used to denoise 2D microscopy images. By running this notebook, you can train your own network and denoise your images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Romain Laine and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Noise2Void_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "2D",
+        "Noise2VOID",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_Noise2Void_2D_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Noise2Void_3D_ZeroCostDL4Mic",
+      "name": "Noise2VOID (3D) - ZeroCostDL4Mic",
+      "description": "Noise2VOID 3D is deep-learning method that can be used to denoise 3D microscopy images. By running this notebook, you can train your own network and denoise your images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Romain Laine and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Noise2Void_3D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "Noise2Void",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_3D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_Noise2Void_3D_ZeroCostDL4Mic"
+      ]
     },
     {
       "type": "model",
@@ -705,29 +1580,29 @@
         "MAX_finalMask.tif"
       ],
       "tags": [
-        "phase contrast",
-        "fibroblasts",
-        "segmentation",
         "2D",
-        "deepimagej",
-        "usiigaci",
         "deepimagej-beta",
-        "maskrcnn"
+        "phase contrast",
+        "maskrcnn",
+        "fibroblasts",
+        "usiigaci",
+        "deepimagej",
+        "segmentation"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/oist/Usiigaci",
       "error": {
         "spec": {
+          "documentation": [
+            "Missing data for required field."
+          ],
           "outputs": {
             "0": {
               "postprocessing": [
                 "Field may not be null."
               ]
             }
-          },
-          "documentation": [
-            "Missing data for required field."
-          ]
+          }
         }
       }
     },
@@ -754,32 +1629,32 @@
         "thumbnail.png"
       ],
       "tags": [
+        "fiji",
         "n2v",
         "unet2d",
-        "fiji",
         "denoising"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0",
       "error": {
         "spec": {
-          "weights": [
-            "Missing data for required field."
-          ],
-          "timestamp": [
-            "Missing data for required field."
-          ],
           "test_inputs": [
             "Missing data for required field."
           ],
-          "test_outputs": [
+          "cite": [
+            "Invalid type."
+          ],
+          "weights": [
             "Missing data for required field."
           ],
           "format_version": [
             "Must be one of: 0.3.0, 0.3.1."
           ],
-          "cite": [
-            "Invalid type."
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_outputs": [
+            "Missing data for required field."
           ],
           "inputs": {
             "0": {
@@ -842,12 +1717,94 @@
       ],
       "tags": [
         "histology",
+        "Virtual staining",
         "deepimagej",
-        "GAN",
-        "Virtual staining"
+        "GAN"
       ],
       "license": "CC BY 4.0",
       "error": {}
+    },
+    {
+      "type": "dataset",
+      "id": "imjoy/LuCa-7color",
+      "name": "LuCa-7color",
+      "description": "Sample PerkinElmer Vectra QPTIFF files (c) PerkinElmer (http://www.perkinelmer.com)",
+      "authors": [
+        "Perkin Elmer"
+      ],
+      "tags": [
+        "OME-TIFF",
+        "imjoy"
+      ],
+      "license": "CC-BY 4.0",
+      "download_url": "https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_scans/LuCa-7color_Scan1.qptiff",
+      "source": "https://viv-demo.storage.googleapis.com/LuCa-7color_Scan1/data.zarr/0",
+      "covers": [
+        "https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/asset/LuCa-7color_Scan1.png"
+      ],
+      "links": [
+        "imjoy/vizarr"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_fnet_3D_ZeroCostDL4Mic",
+      "name": "Label-free prediction (fnet) example training and test dataset - ZeroCostDL4Mic",
+      "description": "Confocal microscopy data (TOM20 labeled with Alexa Fluor 594)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Christoph Spahn"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3748967",
+      "tags": [
+        "3D",
+        "labelling",
+        "fnet",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3748967",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/Fnet_exemplary_data_mitochondria.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_fnet_ZeroCostDL4Mic",
+      "name": "Label-free Prediction - fnet - (3D) ZeroCostDL4Mic",
+      "description": "Label-free Prediction (fnet) is a neural network used to infer the features of cellular structures from brightfield or EM images without coloured labels. The network is trained using paired training images from the same field of view, imaged in a label-free (e.g. brightfield) and labelled condition (e.g. fluorescent protein). When trained, this allows the user to identify certain structures from brightfield images alone. The performance of fnet may depend significantly on the structure at hand. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Lucas von Chamier and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/fnet_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "labelling",
+        "fnet",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/fnet_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_fnet_3D_ZeroCostDL4Mic"
+      ]
     },
     {
       "type": "model",
@@ -887,9 +1844,9 @@
       ],
       "tags": [
         "histology",
+        "Virtual staining",
         "deepimagej",
-        "GAN",
-        "Virtual staining"
+        "GAN"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -936,13 +1893,393 @@
       ],
       "tags": [
         "phase contrast",
-        "segmentation",
+        "hela cells",
         "deepimagej",
-        "hela cells"
+        "segmentation"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
       "error": {}
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-wienerschnitzelgemeinschaft",
+      "name": "HPA-wienerschnitzelgemeinschaft",
+      "tags": [
+        "resnet-101",
+        "hpa",
+        "inception-v3",
+        "se-resnext-50",
+        "airnext-50",
+        "preresnet-50",
+        "resnet-34",
+        "hill-climbing",
+        "airnet-50",
+        "classification",
+        "resnet-18",
+        "resnet-50",
+        "inception-resnet-v2",
+        "cbam"
+      ],
+      "authors": [
+        "Shaikat Mahmood Galib",
+        "Christof Henkel",
+        "Kevin Hwang",
+        "Dmytro Poplavskiy",
+        "Bojan Tunguz",
+        "Russ Wolfinger"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wienerschnitzelgemeinschaft",
+      "description": "An ensemble of diverse and highly optimized CNN models, using hill climbing and weighted voting.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/wienerschnitzelgemeinschaft/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "4th",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-vpp",
+      "name": "HPA-vpp",
+      "tags": [
+        "multilayer-perceptron",
+        "hpa",
+        "inception-v3",
+        "inception-v4",
+        "classification",
+        "xception"
+      ],
+      "authors": [
+        "Yinzheng Gu",
+        "Chuanpeng Li",
+        "Jinbin Xie"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp",
+      "description": "An ensemble of seven CNN models and a multi-layer perceptron network, using image augmentation, multi scales, weighted sampling and MultiLabelSoftMargin loss.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/vpp/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "5th",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-pudae",
+      "name": "HPA-pudae",
+      "tags": [
+        "hpa",
+        "inception-v3",
+        "se-resnext-50",
+        "resnet-34",
+        "classification"
+      ],
+      "authors": [
+        "Park Jinmo"
+      ],
+      "license": "BSD-2-Clause",
+      "git_repo": "https://github.com/CellProfiling/pudae-kaggle-hpa",
+      "description": "An ensemble using focal loss, per image normalization and spatial attention.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/pudae-kaggle-hpa/master/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "3rd",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-conv",
+      "name": "HPA-conv is all you need",
+      "tags": [
+        "hpa",
+        "inception-v3",
+        "se-resnext-50",
+        "classification",
+        "xception"
+      ],
+      "authors": [
+        "Xuan Cao",
+        "Runmin Wei",
+        "Yuanhao Wu",
+        "Xun Zhu"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need",
+      "description": "An ensemble of a cropping window CNN based on Xception, and two conventional CNNs based on SE-ResNext50 and InceptionV3.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/conv_is_all_you_need/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "10th",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-bestfitting",
+      "name": "HPA-bestfitting",
+      "tags": [
+        "hpa",
+        "inception-v3",
+        "densenet-121",
+        "resnet-34",
+        "classification",
+        "resnet-50"
+      ],
+      "authors": [
+        "Shubin Dai"
+      ],
+      "license": "MIT",
+      "cite": null,
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting",
+      "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "1st",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png",
+        "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-WAIR",
+      "name": "HPA-WAIR",
+      "tags": [
+        "hpa",
+        "opencv",
+        "densenet-169",
+        "se-resnext-50",
+        "densenet-121",
+        "scikit-learn",
+        "classification",
+        "xception",
+        "ibn-densenet-121"
+      ],
+      "authors": [
+        "Jun Lan"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair",
+      "description": "Seven CNN models, using multiple different architectures, ensembled through averaging.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/wair/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "2nd",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-Random-Walk",
+      "name": "HPA-Random Walk",
+      "tags": [
+        "resnet-18",
+        "hpa",
+        "classification",
+        "attention-gate"
+      ],
+      "authors": [
+        "Zhifeng Gao",
+        "Cheng Ju",
+        "Xiaohan Yi",
+        "Hongdong Zheng"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/random_walk",
+      "description": "An ensemble model of three different resolutions based on single attention gated network.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/random_walk/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "38th",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-One-More",
+      "name": "HPA-One More Layer Of Stacking",
+      "tags": [
+        "hpa",
+        "bn-inception",
+        "se-resnext-50",
+        "inception-v4",
+        "classification",
+        "xception",
+        "lightgbm"
+      ],
+      "authors": [
+        "Dmitry Buslov",
+        "Sergei Fironov",
+        "Alexander Kiselev",
+        "Dmytro Panchenko"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/one_more_layer_of_stacking",
+      "description": "14 CNN models ensembled via LightGBM stacking, optimized with Wadam, using focal and LSEP loss.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/one_more_layer_of_stacking/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "8th",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "id": "hpa/HPA-NTU_MiRA",
+      "name": "HPA-NTU_MiRA",
+      "tags": [
+        "hpa",
+        "resnet-34",
+        "classification"
+      ],
+      "authors": [
+        "Kuan-Lun Tseng"
+      ],
+      "license": "MIT",
+      "git_repo": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/ntu_mira",
+      "description": "A CNN with large input size (1024 \u2a09 1024 px) using fixed batch-normalization and data distillation.",
+      "documentation": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/ntu_mira/README.md",
+      "badges": [
+        {
+          "label": "HPA Competition",
+          "ext": "16th",
+          "url": "https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard"
+        }
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png"
+      ]
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2",
+      "id": "hpa/HPAShuffleNetV2",
+      "source": "https://raw.githubusercontent.com/oeway/Anet-Model-Zoo/master/4_hpa_shufflenet_v2/model.json",
+      "links": [
+        "hpa/HPA-Classification"
+      ],
+      "name": "HPA ShuffleNetV2",
+      "description": "A light-weight model for HPA image classification competition",
+      "cite": null,
+      "authors": [
+        "Moshe Livne",
+        "Wei OUYANG"
+      ],
+      "documentation": "HPAShuffleNetV2.md",
+      "tags": [
+        "hpa",
+        "classification",
+        "tensorflow.js",
+        "shufflenet",
+        "imjoy"
+      ],
+      "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
+      "badges": [
+        {
+          "url": "https://imjoy.io",
+          "icon": "https://imjoy.io/static/badge/powered-by-imjoy-badge.svg",
+          "label": "Powered by ImJoy"
+        }
+      ],
+      "license": "Apache 2.0",
+      "format_version": "0.1.0",
+      "covers": [
+        "https://imjoy-team.github.io/imjoy-plugins/hpa-classification/hpa-classification-cover.gif"
+      ],
+      "error": {
+        "spec": {
+          "framework": [
+            "Must be one of: scikit-learn, pytorch, tensorflow."
+          ],
+          "test_inputs": [
+            "Missing data for required field."
+          ],
+          "cite": [
+            "Field may not be null."
+          ],
+          "outputs": {
+            "0": {
+              "axes": [
+                "Field may not be null."
+              ]
+            }
+          },
+          "weights": [
+            "Missing data for required field."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1."
+          ],
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "language": [
+            "Must be one of: python, java."
+          ],
+          "badges": [
+            "Unknown field."
+          ],
+          "test_input": [
+            "Unknown field."
+          ],
+          "prediction": [
+            "Unknown field."
+          ],
+          "optional_kwargs": [
+            "Unknown field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ]
+        }
+      }
     },
     {
       "type": "model",
@@ -986,8 +2323,8 @@
       "tags": [
         "phase contrast",
         "glioblastoma cells",
-        "segmentation",
-        "deepimagej"
+        "deepimagej",
+        "segmentation"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
@@ -1044,25 +2381,661 @@
         "zoom.png"
       ],
       "tags": [
-        "super-resolution",
         "SMLM",
         "zerocostdl4mic",
-        "deepimagej",
-        "image reconstruction"
+        "image reconstruction",
+        "super-resolution",
+        "deepimagej"
       ],
       "license": "MIT",
       "error": {
         "spec": {
+          "test_inputs": [
+            "Missing data for required field."
+          ],
           "run_mode": {
             "_schema": [
               "Invalid input type."
             ]
           },
+          "test_outputs": [
+            "Missing data for required field."
+          ]
+        }
+      }
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Detectron2_ZeroCostDL4Mic",
+      "name": "Detectron2 - ZeroCostDL4Mic",
+      "description": "Detectron2 is an object detection network developed by Facebook AI Research, which identifies objects in images and draws bounding boxes around them.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Detectron2_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "Detectron2",
+        "object detection",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Detectron2_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_YOLOv2_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_DenoiSeg_2D_ZeroCostDL4Mic",
+      "name": "DenoiSeg (2D) - ZeroCostDL4Mic",
+      "description": "DenoiSeg 2D is deep-learning method that can be used to jointly denoise and segment 2D microscopy images. The benefits of using DenoiSeg (compared to other Deep Learning-based segmentation methods) are more prononced when only a few annotated images are available. However, the denoising part requires many images to perform well. All the noisy images don't need to be labeled to train DenoiSeg. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/DenoiSeg_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "CycleGAN",
+        "2D",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/DenoiSeg_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_Deep-STORM_ZeroCostDL4Mic",
+      "name": "Deep-STORM training and example dataset - ZeroCostDL4Mic",
+      "description": "Time-series of simulated, randomly distributed single-molecule localization (SMLM) data (Training dataset). Experimental time-series dSTORM acquisition of Glial cells stained with phalloidin for actin (Example dataset).",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Christophe Leterrier",
+        "Romain F. Laine"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3959089",
+      "tags": [
+        "Deep-STORM",
+        "2D",
+        "SMLM",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3959089",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Deep-STORM_2D_ZeroCostDL4Mic_DeepImageJ",
+      "name": "Deep-STORM (2D) - ZeroCostDL4Mic - DeepImageJ",
+      "description": "Deep-STORM is a neural network capable of image reconstruction from high-density single-molecule localization microscopy (SMLM), first published in 2018 by Nehme et al. in Optica. This network allows image reconstruction of 2D super-resolution images, in a supervised training manner. The network is trained using simulated high-density SMLM data for which the ground-truth is available. These simulations are obtained from random distribution of single molecules in a field-of-view and therefore do not imprint structural priors during training. The network output a super-resolution image with increased pixel density (typically upsampling factor of 8 in each dimension). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via DeepImageJ.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Estibaliz G\u00f3mez de Mariscal and the DeepImageJ and the ZeroCostDL4Mic teams"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "Deep-STORM",
+        "2D",
+        "DeepImageJ",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_Deep-STORM_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Deep-STORM_2D_ZeroCostDL4Mic",
+      "name": "Deep-STORM (2D) - ZeroCostDL4Mic",
+      "description": "Deep-STORM is a neural network capable of image reconstruction from high-density single-molecule localization microscopy (SMLM), first published in 2018 by Nehme et al. in Optica. This network allows image reconstruction of 2D super-resolution images, in a supervised training manner. The network is trained using simulated high-density SMLM data for which the ground-truth is available. These simulations are obtained from random distribution of single molecules in a field-of-view and therefore do not imprint structural priors during training. The network output a super-resolution image with increased pixel density (typically upsampling factor of 8 in each dimension). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Romain Laine and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Deep-STORM_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "Deep-STORM",
+        "2D",
+        "labelling",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Deep-STORM_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_Deep-STORM_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_DRMIME_ZeroCostDL4Mic",
+      "name": "DRMIME - ZeroCostDL4Mic",
+      "description": "DRMIME is an network that can be used to register microscopy images (affine and perspective registration).",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/DRMIME_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "image registration",
+        "ZeroCostDL4Mic",
+        "DRMIME"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/DRMIME_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_CycleGAN_ZeroCostDL4Mic",
+      "name": "CycleGAN example training and test dataset - ZeroCostDL4Mic",
+      "description": "Unpaired microscopy images (fluorescence) of microtubules (Spinning-disk and SRRF reconstructed images)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3941884",
+      "tags": [
+        "CycleGAN",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3941884",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/unpaired-image_translation.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_CycleGAN_2D_ZeroCostDL4Mic",
+      "name": "CycleGAN (2D) - ZeroCostDL4Mic",
+      "description": "CycleGAN is a method that can capture the characteristics of one image domain and figure out how these characteristics could be translated into another image domain, all in the absence of any paired training examples (ie transform a horse into zebra or apples into oranges). While CycleGAN can potentially be used for any type of image-to-image translation, we illustrate that it can be used to predict what a fluorescent label would look like when imaged using another imaging modalities. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/CycleGAN_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "CycleGAN",
+        "2D",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CycleGAN_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_CycleGAN_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_StarDist_brightfield2_ZeroCostDL4Mic",
+      "name": "Combining StarDist and TrackMate example 3 - Flow chamber dataset",
+      "description": "Paired brightfield images of cancer cells and corresponding masks",
+      "cite": {
+        "text": "Elnaz Fazeli, Nathan H. Roy, Gautier Follain, Romain F. Laine, Lucas von Chamier, Pekka E. H\u00e4nninen, John E. Eriksson, Jean-Yves Tinevez, Guillaume Jacquemet. Automated cell tracking using StarDist and TrackMate. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.09.22.306233",
+        "doi": "https://doi.org/10.1101/2020.09.22.306233"
+      },
+      "authors": [
+        "Gautier Follain",
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3941884",
+      "tags": [
+        "StarDist",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://zenodo.org/record/4034939",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingflo_trackmate.png"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_StarDist_brightfield_ZeroCostDL4Mic",
+      "name": "Combining StarDist and TrackMate example 2 - T cell dataset",
+      "description": "Paired brightfield images of migrating T cells and corresponding masks",
+      "cite": {
+        "text": "Elnaz Fazeli, Nathan H. Roy, Gautier Follain, Romain F. Laine, Lucas von Chamier, Pekka E. H\u00e4nninen, John E. Eriksson, Jean-Yves Tinevez, Guillaume Jacquemet. Automated cell tracking using StarDist and TrackMate. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.09.22.306233",
+        "doi": "https://doi.org/10.1101/2020.09.22.306233"
+      },
+      "authors": [
+        "Nathan H. Roy",
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3941884",
+      "tags": [
+        "StarDist",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://zenodo.org/record/4034929",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingTcells_trackmate.png"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_StarDist_Fluo_ZeroCostDL4Mic",
+      "name": "Combining StarDist and TrackMate example 1 - Breast cancer cell dataset",
+      "description": "Fluorescence microscopy of Nuclei (SiR-DNA) and masks obtained via manual segmentation",
+      "cite": {
+        "text": "Elnaz Fazeli, Nathan H. Roy, Gautier Follain, Romain F. Laine, Lucas von Chamier, Pekka E. H\u00e4nninen, John E. Eriksson, Jean-Yves Tinevez, Guillaume Jacquemet. Automated cell tracking using StarDist and TrackMate. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.09.22.306233",
+        "doi": "https://doi.org/10.1101/2020.09.22.306233"
+      },
+      "authors": [
+        "Guillaume Jacquemet"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3941884",
+      "tags": [
+        "StarDist",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://zenodo.org/record/4034976",
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingfluo_trackmate.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Cellpose_2D_ZeroCostDL4Mic",
+      "name": "Cellpose (2D) - ZeroCostDL4Mic",
+      "description": "Cellpose is a generalist algorithm for cellular segmentation.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "Segmentation",
+        "Cellpose",
+        "ZeroCostDL4Mic"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_StarDist_2D_ZeroCostDL4Mic_2D",
+        "zero/Dataset_StarDist_Fluo_ZeroCostDL4Mic",
+        "zero/Dataset_StarDist_brightfield_ZeroCostDL4Mic",
+        "zero/Dataset_StarDist_brightfield2_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_CARE_3D_ZeroCostDL4Mic",
+      "name": "CARE (3D) example training and test dataset - ZeroCostDL4Mic",
+      "description": "Fluorescence microscopy (Lifeact-RFP)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacqueme"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3713337",
+      "tags": [
+        "3D",
+        "CARE",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3713337",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/CARE_wiki.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_CARE_3D_ZeroCostDL4Mic",
+      "name": "CARE (3D) - ZeroCostDL4Mic",
+      "description": "CARE is a neural network capable of image restoration from corrupted bio-images, first published in 2018 by Weigert et al. in Nature Methods. The network allows image denoising and resolution improvement in 2D and 3D images, in a supervised training manner. The function of the network is essentially determined by the set of images provided in the training dataset. For instance, if noisy images are provided as input and high signal-to-noise ratio images are provided as targets, the network will perform denoising. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Lucas von Chamier and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "CARE",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_CARE_3D_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "dataset",
+      "id": "zero/Dataset_CARE_2D_ZeroCostDL4Mic",
+      "name": "CARE (2D) example training and test dataset - ZeroCostDL4Mic",
+      "description": "Fluorescence microscopy (Lifeact-RFP)",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacqueme"
+      ],
+      "documentation": "https://doi.org/10.5281/zenodo.3713330",
+      "tags": [
+        "2D",
+        "CARE",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://doi.org/10.5281/zenodo.3713330",
+      "covers": [
+        "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/CARE_wiki.png"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_CARE_2D_ZeroCostDL4Mic",
+      "name": "CARE (2D) - ZeroCostDL4Mic",
+      "description": "CARE is a neural network capable of image restoration from corrupted bio-images, first published in 2018 by Weigert et al. in Nature Methods. The network allows image denoising and resolution improvement in 2D and 3D images, in a supervised training manner. The function of the network is essentially determined by the set of images provided in the training dataset. For instance, if noisy images are provided as input and high signal-to-noise ratio images are provided as targets, the network will perform denoising. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Lucas von Chamier and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "2D",
+        "CARE",
+        "ZeroCostDL4Mic",
+        "denoising"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview",
+        "zero/Dataset_CARE_2D_ZeroCostDL4Mic"
+      ]
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_Augmentor_ZeroCostDL4Mic",
+      "name": "Augmentor - ZeroCostDL4Mic",
+      "description": "Augmentor is a data augmentation library. Data augmentation can improve training progress by amplifying differences in the dataset. This can be useful if the available dataset is small since, in this case, it is possible that a network could quickly learn every example in the dataset (overfitting), without augmentation. Augmentation can be especially valuable when training dataset need to be manually labelled. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Guillaume Jacquemet and the ZeroCostDL4Mic Team"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Tools/Augmentor_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "Data Augmentation",
+        "ZeroCostDL4Mic",
+        "Augmentor"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Tools/Augmentor_ZeroCostDL4Mic.ipynb",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ]
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "weights": {
+          "pytorch_state_dict": {
+            "sha256": "9e59d76b200aec7ad7967695a0c9593610e374a8d378da196be2e25dffd610aa",
+            "source": "https://zenodo.org/record/3691092/files/cells.state"
+          }
+        }
+      },
+      "root_url": "https://raw.githubusercontent.com/mobie/platybrowser-datasets/1.0.1/segmentation/cells/UNet3DPlatyCellProbs.model",
+      "id": "ilastik/UNet3DPlatyCellProbs",
+      "source": "./models.py::UNetAnisotropic",
+      "links": [
+        "ilastik/Ilastik"
+      ],
+      "download_url": "https://github.com/mobie/platybrowser-datasets/releases/download/1.0.1/UNet3DPlatyCellProbs.model.zip",
+      "format_version": "0.3.0",
+      "name": "3D UNet Platynereis Cell Segmentation (Probabilities)",
+      "description": "A 3d U-Net trained to predict the cell boundaries in a EM volume of a 6 day old Platynereis.",
+      "authors": [
+        "Constantin Pape;@bioimage-io"
+      ],
+      "cite": [
+        {
+          "text": "Vergara, Hernando M. et al. Whole-body integration of gene expression and single-cell morphology. BioRxiv 2020.\"",
+          "doi": "https://doi.org/10.1101/2020.02.26.961037"
+        }
+      ],
+      "git_repo": "https://github.com/mobie/platybrowser-datasets/tree/master/segmentation/cells/UNet3DPlatyCellProbs.model",
+      "tags": [
+        "EM",
+        "pytorch",
+        "cell membrane",
+        "ilastik",
+        "unet3d",
+        "platynereis",
+        "segmentation"
+      ],
+      "license": "MIT",
+      "documentation": "README.md",
+      "covers": [
+        "ilastik_raw.png",
+        "ilastik_pred.png"
+      ],
+      "error": {}
+    },
+    {
+      "type": "model",
+      "root_url": "https://raw.githubusercontent.com/wolny/pytorch-3dunet/37f186c80f4d64b1dab5d165d8c2aae15b5aede1/bioimage-io/UNet3DArabidopsisOvules.model",
+      "id": "ilastik/UNet3DArabidopsisOvules",
+      "source": "pytorch3dunet.unet3d.model.UNet3D",
+      "links": [
+        "ilastik/Ilastik"
+      ],
+      "download_url": "https://github.com/wolny/pytorch-3dunet/releases/download/1.2.6/UNet3DArabidopsisOvules.model.zip",
+      "name": "3D UNet Arabidopsis Ovules",
+      "description": "A 3d U-Net trained to predict the cell boundaries in confocal stacks of Arabidopsis ovules. Voxel size: (0.235, 0.150, 0.150) microns ZYX",
+      "cite": [
+        {
+          "text": "Wolny, Adrian et al. Accurate and Versatile 3D Segmentation of Plant Tissues at Cellular Resolution. BioRxiv 2020.",
+          "doi": "https://doi.org/10.1101/2020.01.17.910562"
+        }
+      ],
+      "authors": [
+        "Adrian Wolny;@bioimage-io"
+      ],
+      "documentation": "README.md",
+      "tags": [
+        "pytorch",
+        "arabidopsis",
+        "cell membrane",
+        "ilastik",
+        "plant tissue",
+        "unet3d",
+        "ovuls",
+        "segmentation"
+      ],
+      "license": "MIT",
+      "format_version": "0.1.0",
+      "covers": [
+        "ilastik_4.png",
+        "ilastik_5.png",
+        "ilastik_6.png",
+        "ilastik_7.png",
+        "ilastik_8.png"
+      ],
+      "error": {
+        "spec": {
           "test_inputs": [
+            "Missing data for required field."
+          ],
+          "weights": [
+            "Missing data for required field."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1."
+          ],
+          "timestamp": [
             "Missing data for required field."
           ],
           "test_outputs": [
             "Missing data for required field."
+          ],
+          "optional_kwargs": [
+            "Unknown field."
+          ],
+          "test_input": [
+            "Unknown field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ],
+          "prediction": [
+            "Unknown field."
           ]
         }
       }
@@ -1106,13 +3079,13 @@
         "exampleImage.gif"
       ],
       "tags": [
-        "segmentation",
+        "deepimagej-beta",
+        "TEM",
         "mitochondria",
         "ZeroCostDL4Mic",
         "deepimagej",
         "3DUNet",
-        "deepimagej-beta",
-        "TEM"
+        "segmentation"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
@@ -1172,10 +3145,10 @@
         "cover.png"
       ],
       "tags": [
-        "segmentation",
-        "zerocostdl4mic",
+        "deepimagej",
         "unet",
-        "deepimagej"
+        "segmentation",
+        "zerocostdl4mic"
       ],
       "license": "MIT",
       "error": {}
@@ -1208,9 +3181,9 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
+        "deepimagej",
         "unet",
-        "segmentation",
-        "deepimagej"
+        "segmentation"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb",
       "links": [
