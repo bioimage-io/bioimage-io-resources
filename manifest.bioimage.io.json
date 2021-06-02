@@ -188,8 +188,8 @@
       "documentation": "https://deepimagej.github.io/deepimagej/index.html",
       "git_repo": "https://github.com/deepimagej/deepimagej-plugin",
       "tags": [
-        "deepimagej-beta",
-        "deepimagej"
+        "deepimagej",
+        "deepimagej-beta"
       ]
     },
     {
@@ -250,9 +250,9 @@
       ],
       "tags": [
         "GAN",
-        "Fluorescence microscopy",
+        "Super resolution",
         "deepimagej",
-        "Super resolution"
+        "Fluorescence microscopy"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -296,9 +296,9 @@
       ],
       "tags": [
         "GAN",
-        "Fluorescence microscopy",
+        "Super resolution",
         "deepimagej",
-        "Super resolution"
+        "Fluorescence microscopy"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -342,9 +342,9 @@
       ],
       "tags": [
         "GAN",
-        "Fluorescence microscopy",
+        "Super resolution",
         "deepimagej",
-        "Super resolution"
+        "Fluorescence microscopy"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -381,10 +381,10 @@
       ],
       "documentation": "https://cbia.fi.muni.cz/research/segmentation/fru-net.html",
       "tags": [
-        "TEM",
-        "extracellular vesicles",
         "segmentation",
-        "deepimagej"
+        "extracellular vesicles",
+        "deepimagej",
+        "TEM"
       ],
       "source": "https://raw.githubusercontent.com/BIIG-UC3M/FRU-Net-TEM-segmentation/master/FRUnet_TEM_Exosomes_sEV.ipynb",
       "links": [
@@ -432,10 +432,10 @@
         "frunet_sev.jpg"
       ],
       "tags": [
-        "TEM",
-        "extracellular vesicles",
         "segmentation",
-        "deepimagej"
+        "TEM",
+        "deepimagej",
+        "extracellular vesicles"
       ],
       "license": "BSD 3",
       "error": {
@@ -477,12 +477,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "classification",
         "pytorch",
-        "melanoma",
-        "deepimagej-beta",
+        "deepimagej",
+        "classification",
         "skin lesions",
-        "deepimagej"
+        "melanoma",
+        "deepimagej-beta"
       ],
       "license": "BSD2",
       "git_repo": "https://gist.github.com/esgomezm/72b584887ca5ed5ed0231c47fff9aa9b#file-skin_lession_classification_pytorch_adapted-ipynb",
@@ -535,9 +535,9 @@
       ],
       "tags": [
         "smlm",
-        "defcon",
         "deepimagej",
-        "density estimation"
+        "density estimation",
+        "defcon"
       ],
       "license": "BSD 3",
       "git_repo": "https://github.com/LEB-EPFL/DEFCoN",
@@ -596,10 +596,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "pancreatic stem cells",
+        "phase contrast",
         "segmentation",
-        "deepimagej",
-        "phase contrast"
+        "pancreatic stem cells",
+        "deepimagej"
       ],
       "license": "BSD-2",
       "error": {}
@@ -645,12 +645,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "deepwater",
-        "watershed",
-        "cell tracking challenge",
-        "segmentation",
         "deepimagej",
-        "phase contrast"
+        "deepwater",
+        "cell tracking challenge",
+        "watershed",
+        "phase contrast",
+        "segmentation"
       ],
       "license": "MIT",
       "error": {
@@ -705,14 +705,14 @@
         "MAX_finalMask.tif"
       ],
       "tags": [
-        "usiigaci",
-        "maskrcnn",
-        "deepimagej-beta",
-        "fibroblasts",
-        "2D",
-        "segmentation",
         "deepimagej",
-        "phase contrast"
+        "maskrcnn",
+        "segmentation",
+        "usiigaci",
+        "phase contrast",
+        "fibroblasts",
+        "deepimagej-beta",
+        "2D"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/oist/Usiigaci",
@@ -754,16 +754,28 @@
         "thumbnail.png"
       ],
       "tags": [
-        "denoising",
         "fiji",
-        "unet2d",
-        "n2v"
+        "n2v",
+        "denoising",
+        "unet2d"
       ],
       "license": "BSD 3",
       "format_version": "0.1.0",
       "error": {
         "spec": {
+          "weights": [
+            "Missing data for required field."
+          ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "cite": [
+            "Invalid type."
+          ],
           "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_inputs": [
             "Missing data for required field."
           ],
           "inputs": {
@@ -773,28 +785,16 @@
               ]
             }
           },
-          "test_outputs": [
-            "Missing data for required field."
-          ],
           "format_version": [
             "Must be one of: 0.3.0, 0.3.1."
           ],
-          "test_inputs": [
-            "Missing data for required field."
-          ],
-          "weights": [
-            "Missing data for required field."
-          ],
-          "cite": [
-            "Invalid type."
+          "test_input": [
+            "Unknown field."
           ],
           "test_output": [
             "Unknown field."
           ],
           "prediction": [
-            "Unknown field."
-          ],
-          "test_input": [
             "Unknown field."
           ],
           "training": [
@@ -842,9 +842,9 @@
       ],
       "tags": [
         "GAN",
-        "Virtual staining",
         "deepimagej",
-        "histology"
+        "histology",
+        "Virtual staining"
       ],
       "license": "CC BY 4.0",
       "error": {}
@@ -887,9 +887,9 @@
       ],
       "tags": [
         "GAN",
-        "Virtual staining",
         "deepimagej",
-        "histology"
+        "histology",
+        "Virtual staining"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -936,9 +936,9 @@
       ],
       "tags": [
         "segmentation",
-        "hela cells",
+        "phase contrast",
         "deepimagej",
-        "phase contrast"
+        "hela cells"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
@@ -984,10 +984,10 @@
         "cover_image.jpg"
       ],
       "tags": [
-        "phase contrast",
+        "glioblastoma cells",
         "segmentation",
-        "deepimagej",
-        "glioblastoma cells"
+        "phase contrast",
+        "deepimagej"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
@@ -1044,23 +1044,23 @@
         "zoom.png"
       ],
       "tags": [
+        "SMLM",
+        "deepimagej",
         "zerocostdl4mic",
         "super-resolution",
-        "image reconstruction",
-        "SMLM",
-        "deepimagej"
+        "image reconstruction"
       ],
       "license": "MIT",
       "error": {
         "spec": {
-          "test_outputs": [
-            "Missing data for required field."
-          ],
           "run_mode": {
             "_schema": [
               "Invalid input type."
             ]
           },
+          "test_outputs": [
+            "Missing data for required field."
+          ],
           "test_inputs": [
             "Missing data for required field."
           ]
@@ -1106,13 +1106,13 @@
         "exampleImage.gif"
       ],
       "tags": [
-        "TEM",
-        "deepimagej",
-        "ZeroCostDL4Mic",
-        "deepimagej-beta",
-        "segmentation",
         "mitochondria",
-        "3DUNet"
+        "deepimagej",
+        "TEM",
+        "3DUNet",
+        "ZeroCostDL4Mic",
+        "segmentation",
+        "deepimagej-beta"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
@@ -1172,10 +1172,10 @@
         "cover.png"
       ],
       "tags": [
-        "segmentation",
         "unet",
-        "zerocostdl4mic",
-        "deepimagej"
+        "segmentation",
+        "deepimagej",
+        "zerocostdl4mic"
       ],
       "license": "MIT",
       "error": {}
