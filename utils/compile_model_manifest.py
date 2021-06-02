@@ -104,7 +104,7 @@ def parse_manifest(models_yaml):
                     "id": item["id"],
                     "type": "application",
                     "source": app_url,
-                    "passive": item["passive"],
+                    "passive": item.get("passive", false),
                 }
                 fields = [
                     "icon",
