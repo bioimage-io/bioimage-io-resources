@@ -104,6 +104,7 @@ def parse_manifest(models_yaml):
                     "id": item["id"],
                     "type": "application",
                     "source": app_url,
+                    "passive": item["passive"],
                 }
                 fields = [
                     "icon",
@@ -115,6 +116,7 @@ def parse_manifest(models_yaml):
                     "requirements",
                     "dependencies",
                     "env",
+                    "passive",
                 ]
                 for f in fields:
                     if f in plugin_config:
