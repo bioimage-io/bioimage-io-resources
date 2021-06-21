@@ -164,7 +164,7 @@ def parse_manifest(models_yaml):
             compiled_apps.append(app_config)
             print("Added application: " + app_config["name"])
 
-    for tp in ["model", "dataset", "notebook"]:
+    for tp in ["model", "dataset", "notebook", "workflow"]:
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
