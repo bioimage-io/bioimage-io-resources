@@ -206,8 +206,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
         "notebook",
+        "imjoy",
         "jupyter"
       ],
       "documentation": null,
@@ -225,8 +225,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
         "notebook",
+        "imjoy",
         "jupyter"
       ],
       "documentation": null,
@@ -456,8 +456,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "2D",
-        "pix2pix"
+        "pix2pix",
+        "2D"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/pix2pix_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -561,8 +561,8 @@
         "resultImage.png"
       ],
       "tags": [
-        "Fluorescence microscopy",
         "GAN",
+        "Fluorescence microscopy",
         "deepimagej",
         "Super resolution"
       ],
@@ -573,9 +573,6 @@
           "documentation": [
             "Invalid suffix (https:/innovate.ee.ucla.edu): tuple index out of range",
             "Invalid as_posix (https:/innovate.ee.ucla.edu): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -593,7 +590,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -634,8 +634,8 @@
         "resultImage.png"
       ],
       "tags": [
-        "Fluorescence microscopy",
         "GAN",
+        "Fluorescence microscopy",
         "deepimagej",
         "Super resolution"
       ],
@@ -646,9 +646,6 @@
           "documentation": [
             "Invalid suffix (https:/innovate.ee.ucla.edu): tuple index out of range",
             "Invalid as_posix (https:/innovate.ee.ucla.edu): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -666,7 +663,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -707,8 +707,8 @@
         "resultImage.png"
       ],
       "tags": [
-        "Fluorescence microscopy",
         "GAN",
+        "Fluorescence microscopy",
         "deepimagej",
         "Super resolution"
       ],
@@ -719,9 +719,6 @@
           "documentation": [
             "Invalid suffix (https:/innovate.ee.ucla.edu): tuple index out of range",
             "Invalid as_posix (https:/innovate.ee.ucla.edu): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -739,7 +736,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -772,18 +772,33 @@
       ],
       "git_repo": "https://github.com/bioimage-io/pytorch-bioimage-io/tree/master/specs/models/unet2d",
       "tags": [
-        "ilastik",
         "nucleus",
         "unet2d",
-        "segmentation",
         "pytorch",
-        "dsb2018"
+        "ilastik",
+        "dsb2018",
+        "segmentation"
       ],
       "license": "MIT",
       "documentation": "UNet2DNucleiBroad.md",
       "covers": [],
       "error": {
         "spec": {
+          "authors": {
+            "0": {
+              "_schema": [
+                "Invalid input type."
+              ]
+            },
+            "1": {
+              "_schema": [
+                "Invalid input type."
+              ]
+            }
+          },
+          "type": [
+            "Missing data for required field."
+          ],
           "weights": {
             "pytorch_state_dict": {
               "value": {
@@ -795,21 +810,6 @@
                   }
                 }
               }
-            }
-          },
-          "type": [
-            "Missing data for required field."
-          ],
-          "authors": {
-            "0": {
-              "_schema": [
-                "Invalid input type."
-              ]
-            },
-            "1": {
-              "_schema": [
-                "Invalid input type."
-              ]
             }
           }
         }
@@ -837,13 +837,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "sga2",
-        "brain",
-        "ilastik",
         "vasculature",
-        "unet2d",
         "hbp",
-        "pytorch"
+        "unet2d",
+        "pytorch",
+        "brain",
+        "sga2",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -852,18 +852,6 @@
       ],
       "error": {
         "spec": {
-          "format_version": [
-            "Must be one of: 0.3.0, 0.3.1, 0.3.2."
-          ],
-          "weights": [
-            "Missing data for required field."
-          ],
-          "test_outputs": [
-            "Missing data for required field."
-          ],
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
@@ -871,19 +859,31 @@
               ]
             }
           },
-          "timestamp": [
+          "type": [
             "Missing data for required field."
           ],
           "test_inputs": [
             "Missing data for required field."
           ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "weights": [
+            "Missing data for required field."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1, 0.3.2."
+          ],
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ],
           "test_input": [
             "Unknown field."
           ],
           "prediction": [
-            "Unknown field."
-          ],
-          "test_output": [
             "Unknown field."
           ],
           "optional_kwargs": [
@@ -916,10 +916,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "U-Net",
         "3D",
         "segmentation",
-        "U-Net"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -951,10 +951,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "U-Net",
         "2D",
         "segmentation",
-        "U-Net"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -986,10 +986,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "U-Net",
         "2D",
         "segmentation",
-        "U-Net"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/U-Net_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1019,13 +1019,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "sga2",
-        "brain",
-        "ilastik",
         "vasculature",
-        "unet2d",
         "hbp",
-        "pytorch"
+        "unet2d",
+        "pytorch",
+        "brain",
+        "sga2",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -1034,18 +1034,6 @@
       ],
       "error": {
         "spec": {
-          "format_version": [
-            "Must be one of: 0.3.0, 0.3.1, 0.3.2."
-          ],
-          "weights": [
-            "Missing data for required field."
-          ],
-          "test_outputs": [
-            "Missing data for required field."
-          ],
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
@@ -1053,19 +1041,31 @@
               ]
             }
           },
-          "timestamp": [
+          "type": [
             "Missing data for required field."
           ],
           "test_inputs": [
             "Missing data for required field."
           ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "weights": [
+            "Missing data for required field."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1, 0.3.2."
+          ],
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ],
           "test_input": [
             "Unknown field."
           ],
           "prediction": [
-            "Unknown field."
-          ],
-          "test_output": [
             "Unknown field."
           ],
           "optional_kwargs": [
@@ -1099,9 +1099,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "StarDist",
+        "3D",
         "segmentation",
-        "3D"
+        "StarDist"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_3D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1125,9 +1125,9 @@
       "documentation": "https://doi.org/10.5281/zenodo.3715492",
       "tags": [
         "ZeroCostDL4Mic",
+        "segmentation",
         "2D",
-        "StarDist",
-        "segmentation"
+        "StarDist"
       ],
       "source": "https://doi.org/10.5281/zenodo.3715492",
       "covers": [
@@ -1159,9 +1159,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
+        "segmentation",
         "2D",
-        "StarDist",
-        "segmentation"
+        "StarDist"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/StarDist_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1198,9 +1198,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "StarDist",
         "segmentation",
-        "SplineDist"
+        "SplineDist",
+        "StarDist"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/SplineDist_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1244,9 +1244,9 @@
       "documentation": "https://cbia.fi.muni.cz/research/segmentation/fru-net.html",
       "tags": [
         "extracellular vesicles",
-        "TEM",
+        "segmentation",
         "deepimagej",
-        "segmentation"
+        "TEM"
       ],
       "source": "https://raw.githubusercontent.com/BIIG-UC3M/FRU-Net-TEM-segmentation/master/FRUnet_TEM_Exosomes_sEV.ipynb",
       "links": [
@@ -1295,9 +1295,9 @@
       ],
       "tags": [
         "extracellular vesicles",
-        "TEM",
+        "segmentation",
         "deepimagej",
-        "segmentation"
+        "TEM"
       ],
       "license": "BSD-3-Clause",
       "error": {
@@ -1305,14 +1305,6 @@
           "documentation": [
             "Invalid suffix (https:/cbia.fi.muni.cz/research/segmentation/fru-net.html): tuple index out of range",
             "Invalid as_posix (https:/cbia.fi.muni.cz/research/segmentation/fru-net.html): expected local, relative file path."
-          ],
-          "run_mode": {
-            "_schema": [
-              "Invalid input type."
-            ]
-          },
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -1340,6 +1332,14 @@
                 "Invalid input type."
               ]
             }
+          },
+          "type": [
+            "Missing data for required field."
+          ],
+          "run_mode": {
+            "_schema": [
+              "Invalid input type."
+            ]
           }
         }
       }
@@ -1373,12 +1373,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "classification",
         "deepimagej-beta",
-        "deepimagej",
-        "skin lesions",
         "pytorch",
-        "melanoma"
+        "deepimagej",
+        "melanoma",
+        "classification",
+        "skin lesions"
       ],
       "license": "BSD2",
       "git_repo": "https://gist.github.com/esgomezm/72b584887ca5ed5ed0231c47fff9aa9b#file-skin_lession_classification_pytorch_adapted-ipynb",
@@ -1388,7 +1388,14 @@
             "Invalid suffix (https:/gist.github.com/esgomezm/7398a83321ae589bafadb0392c7b78ef#file-skin_lession_classification_pytorch_original-ipynb): tuple index out of range",
             "Invalid as_posix (https:/gist.github.com/esgomezm/7398a83321ae589bafadb0392c7b78ef#file-skin_lession_classification_pytorch_original-ipynb): expected local, relative file path."
           ],
-          "cite": [
+          "authors": {
+            "0": {
+              "_schema": [
+                "Invalid input type."
+              ]
+            }
+          },
+          "type": [
             "Missing data for required field."
           ],
           "run_mode": {
@@ -1396,16 +1403,9 @@
               "Invalid input type."
             ]
           },
-          "type": [
+          "cite": [
             "Missing data for required field."
-          ],
-          "authors": {
-            "0": {
-              "_schema": [
-                "Invalid input type."
-              ]
-            }
-          }
+          ]
         }
       }
     },
@@ -1489,12 +1489,6 @@
             "Invalid suffix (https:/github.com/LEB-EPFL/DEFCoN-ImageJ/wiki): tuple index out of range",
             "Invalid as_posix (https:/github.com/LEB-EPFL/DEFCoN-ImageJ/wiki): expected local, relative file path."
           ],
-          "cite": [
-            "Missing data for required field."
-          ],
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
@@ -1511,7 +1505,13 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ],
+          "cite": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -1540,8 +1540,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "CARE",
         "3D",
+        "CARE",
         "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/3D-RCAN_ZeroCostDL4Mic.ipynb",
@@ -1599,8 +1599,8 @@
       ],
       "tags": [
         "pancreatic stem cells",
-        "deepimagej",
         "segmentation",
+        "deepimagej",
         "phase contrast"
       ],
       "license": "BSD-2",
@@ -1609,9 +1609,6 @@
           "documentation": [
             "Invalid suffix (https:/github.com/deepimagej/models/u-net_pancreatic_segmentation/U_Net_PhC-C2DL-PSC_segmentation.ipynb): tuple index out of range",
             "Invalid as_posix (https:/github.com/deepimagej/models/u-net_pancreatic_segmentation/U_Net_PhC-C2DL-PSC_segmentation.ipynb): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -1624,7 +1621,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -1669,12 +1669,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "phase contrast",
-        "deepimagej",
-        "segmentation",
-        "deepwater",
         "cell tracking challenge",
-        "watershed"
+        "deepimagej",
+        "phase contrast",
+        "deepwater",
+        "watershed",
+        "segmentation"
       ],
       "license": "MIT",
       "error": {
@@ -1682,14 +1682,6 @@
           "documentation": [
             "Invalid suffix (http:/public.celltrackingchallenge.net/participants/MU-Lux-CZ.pdf): tuple index out of range",
             "Invalid as_posix (http:/public.celltrackingchallenge.net/participants/MU-Lux-CZ.pdf): expected local, relative file path."
-          ],
-          "run_mode": {
-            "_schema": [
-              "Invalid input type."
-            ]
-          },
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -1702,6 +1694,14 @@
                 "Invalid input type."
               ]
             }
+          },
+          "type": [
+            "Missing data for required field."
+          ],
+          "run_mode": {
+            "_schema": [
+              "Invalid input type."
+            ]
           }
         }
       }
@@ -1782,8 +1782,8 @@
       "tags": [
         "ZeroCostDL4Mic",
         "2D",
-        "denoising",
-        "Noise2VOID"
+        "Noise2VOID",
+        "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Noise2Void_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1869,36 +1869,20 @@
         "cover.jpg"
       ],
       "tags": [
-        "maskrcnn",
-        "fibroblasts",
         "deepimagej-beta",
-        "phase contrast",
-        "2D",
         "deepimagej",
-        "segmentation",
-        "usiigaci"
+        "2D",
+        "usiigaci",
+        "fibroblasts",
+        "maskrcnn",
+        "phase contrast",
+        "segmentation"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/oist/Usiigaci",
       "error": {
         "spec": {
           "documentation": [
-            "Missing data for required field."
-          ],
-          "weights": {
-            "tensorflow_saved_model_bundle": {
-              "value": {
-                "authors": {
-                  "0": {
-                    "_schema": [
-                      "Invalid input type."
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "type": [
             "Missing data for required field."
           ],
           "authors": {
@@ -1926,6 +1910,22 @@
               "_schema": [
                 "Invalid input type."
               ]
+            }
+          },
+          "type": [
+            "Missing data for required field."
+          ],
+          "weights": {
+            "tensorflow_saved_model_bundle": {
+              "value": {
+                "authors": {
+                  "0": {
+                    "_schema": [
+                      "Invalid input type."
+                    ]
+                  }
+                }
+              }
             }
           }
         }
@@ -1974,10 +1974,10 @@
         "thumbnail.png"
       ],
       "tags": [
-        "fiji",
         "unet2d",
+        "n2v",
         "denoising",
-        "n2v"
+        "fiji"
       ],
       "license": "BSD-3-Clause",
       "format_version": "0.3.2",
@@ -2027,10 +2027,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Virtual staining",
-        "histology",
         "GAN",
-        "deepimagej"
+        "histology",
+        "deepimagej",
+        "Virtual staining"
       ],
       "license": "CC BY 4.0",
       "error": {
@@ -2038,9 +2038,6 @@
           "documentation": [
             "Invalid suffix (https:/innovate.ee.ucla.edu): tuple index out of range",
             "Invalid as_posix (https:/innovate.ee.ucla.edu): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -2058,7 +2055,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -2098,10 +2098,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3748967",
       "tags": [
-        "labelling",
-        "3D",
         "ZeroCostDL4Mic",
-        "fnet"
+        "fnet",
+        "3D",
+        "labelling"
       ],
       "source": "https://doi.org/10.5281/zenodo.3748967",
       "covers": [
@@ -2132,10 +2132,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "labelling",
-        "3D",
         "ZeroCostDL4Mic",
-        "fnet"
+        "fnet",
+        "3D",
+        "labelling"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/fnet_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2181,10 +2181,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Virtual staining",
-        "histology",
         "GAN",
-        "deepimagej"
+        "histology",
+        "deepimagej",
+        "Virtual staining"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -2193,9 +2193,6 @@
           "documentation": [
             "Invalid suffix (https:/innovate.ee.ucla.edu): tuple index out of range",
             "Invalid as_posix (https:/innovate.ee.ucla.edu): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -2213,7 +2210,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -2257,9 +2257,9 @@
         "unet_hela_seg.jpg"
       ],
       "tags": [
-        "deepimagej",
-        "segmentation",
         "hela cells",
+        "segmentation",
+        "deepimagej",
         "phase contrast"
       ],
       "license": "BSD-2",
@@ -2270,16 +2270,16 @@
             "Invalid suffix (https:/deepimagej.github.io/deepimagej/models_documentation.html): tuple index out of range",
             "Invalid as_posix (https:/deepimagej.github.io/deepimagej/models_documentation.html): expected local, relative file path."
           ],
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -2288,19 +2288,19 @@
       "id": "hpa/HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "airnet-50",
-        "resnet-101",
-        "classification",
-        "inception-v3",
-        "resnet-34",
-        "airnext-50",
-        "preresnet-50",
-        "resnet-50",
-        "se-resnext-50",
-        "hill-climbing",
-        "inception-resnet-v2",
-        "hpa",
         "resnet-18",
+        "resnet-34",
+        "preresnet-50",
+        "inception-v3",
+        "hpa",
+        "resnet-50",
+        "resnet-101",
+        "airnext-50",
+        "inception-resnet-v2",
+        "se-resnext-50",
+        "classification",
+        "hill-climbing",
+        "airnet-50",
         "cbam"
       ],
       "authors": [
@@ -2331,12 +2331,12 @@
       "id": "hpa/HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
-        "classification",
         "inception-v3",
-        "xception",
+        "inception-v4",
         "multilayer-perceptron",
+        "classification",
         "hpa",
-        "inception-v4"
+        "xception"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -2363,10 +2363,10 @@
       "id": "hpa/HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
-        "classification",
-        "inception-v3",
         "resnet-34",
+        "inception-v3",
         "se-resnext-50",
+        "classification",
         "hpa"
       ],
       "authors": [
@@ -2392,9 +2392,9 @@
       "id": "hpa/HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "classification",
         "inception-v3",
         "se-resnext-50",
+        "classification",
         "hpa",
         "xception"
       ],
@@ -2424,11 +2424,11 @@
       "id": "hpa/HPA-bestfitting",
       "name": "HPA-bestfitting",
       "tags": [
-        "classification",
-        "inception-v3",
         "resnet-34",
-        "densenet-121",
+        "inception-v3",
         "resnet-50",
+        "densenet-121",
+        "classification",
         "hpa"
       ],
       "authors": [
@@ -2456,13 +2456,13 @@
       "id": "hpa/HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
-        "classification",
+        "ibn-densenet-121",
         "opencv",
+        "densenet-169",
         "densenet-121",
         "se-resnext-50",
-        "densenet-169",
+        "classification",
         "hpa",
-        "ibn-densenet-121",
         "xception",
         "scikit-learn"
       ],
@@ -2489,10 +2489,10 @@
       "id": "hpa/HPA-Random-Walk",
       "name": "HPA-Random Walk",
       "tags": [
-        "attention-gate",
-        "classification",
+        "hpa",
         "resnet-18",
-        "hpa"
+        "attention-gate",
+        "classification"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -2520,13 +2520,13 @@
       "id": "hpa/HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
+        "inception-v4",
         "bn-inception",
-        "classification",
-        "xception",
         "lightgbm",
         "se-resnext-50",
+        "classification",
         "hpa",
-        "inception-v4"
+        "xception"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -2554,9 +2554,9 @@
       "id": "hpa/HPA-NTU_MiRA",
       "name": "HPA-NTU_MiRA",
       "tags": [
-        "classification",
         "hpa",
-        "resnet-34"
+        "resnet-34",
+        "classification"
       ],
       "authors": [
         "Kuan-Lun Tseng"
@@ -2593,11 +2593,11 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
-        "classification",
-        "tensorflow.js",
         "imjoy",
         "shufflenet",
-        "hpa"
+        "classification",
+        "hpa",
+        "tensorflow.js"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -2614,34 +2614,6 @@
       ],
       "error": {
         "spec": {
-          "outputs": {
-            "0": {
-              "axes": [
-                "Field may not be null."
-              ]
-            }
-          },
-          "cite": [
-            "Field may not be null."
-          ],
-          "framework": [
-            "Must be one of: scikit-learn, pytorch, tensorflow."
-          ],
-          "language": [
-            "Must be one of: python, java."
-          ],
-          "format_version": [
-            "Must be one of: 0.3.0, 0.3.1, 0.3.2."
-          ],
-          "weights": [
-            "Missing data for required field."
-          ],
-          "test_outputs": [
-            "Missing data for required field."
-          ],
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
@@ -2654,19 +2626,47 @@
               ]
             }
           },
-          "timestamp": [
+          "type": [
             "Missing data for required field."
           ],
           "test_inputs": [
             "Missing data for required field."
           ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "weights": [
+            "Missing data for required field."
+          ],
+          "outputs": {
+            "0": {
+              "axes": [
+                "Field may not be null."
+              ]
+            }
+          },
+          "framework": [
+            "Must be one of: scikit-learn, pytorch, tensorflow."
+          ],
+          "language": [
+            "Must be one of: python, java."
+          ],
+          "format_version": [
+            "Must be one of: 0.3.0, 0.3.1, 0.3.2."
+          ],
+          "cite": [
+            "Field may not be null."
+          ],
+          "timestamp": [
+            "Missing data for required field."
+          ],
+          "test_output": [
+            "Unknown field."
+          ],
           "test_input": [
             "Unknown field."
           ],
           "prediction": [
-            "Unknown field."
-          ],
-          "test_output": [
             "Unknown field."
           ],
           "optional_kwargs": [
@@ -2715,25 +2715,25 @@
         "cover_image.jpg"
       ],
       "tags": [
-        "phase contrast",
-        "deepimagej",
+        "glioblastoma cells",
         "segmentation",
-        "glioblastoma cells"
+        "deepimagej",
+        "phase contrast"
       ],
       "license": "BSD-2",
       "git_repo": "https://github.com/deepimagej/python4deepimagej/tree/master/unet",
       "error": {
         "spec": {
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -2788,11 +2788,11 @@
         "zoom.png"
       ],
       "tags": [
-        "image reconstruction",
-        "deepimagej",
+        "super-resolution",
         "zerocostdl4mic",
         "SMLM",
-        "super-resolution"
+        "deepimagej",
+        "image reconstruction"
       ],
       "license": "MIT",
       "error": {
@@ -2800,17 +2800,6 @@
           "documentation": [
             "Invalid suffix (https:/deepimagej.github.io/deepimagej): tuple index out of range",
             "Invalid as_posix (https:/deepimagej.github.io/deepimagej): expected local, relative file path."
-          ],
-          "run_mode": {
-            "_schema": [
-              "Invalid input type."
-            ]
-          },
-          "test_outputs": [
-            "Missing data for required field."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -2824,9 +2813,20 @@
               ]
             }
           },
+          "type": [
+            "Missing data for required field."
+          ],
           "test_inputs": [
             "Missing data for required field."
-          ]
+          ],
+          "test_outputs": [
+            "Missing data for required field."
+          ],
+          "run_mode": {
+            "_schema": [
+              "Invalid input type."
+            ]
+          }
         }
       }
     },
@@ -2854,9 +2854,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Detectron2",
         "ZeroCostDL4Mic",
-        "object detection"
+        "object detection",
+        "Detectron2"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Detectron2_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2889,9 +2889,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "CycleGAN",
         "2D",
-        "CycleGAN"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/DenoiSeg_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2949,9 +2949,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "Deep-STORM",
+        "DeepImageJ",
         "2D",
-        "DeepImageJ"
+        "Deep-STORM"
       ],
       "source": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2984,10 +2984,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "labelling",
-        "Deep-STORM",
+        "ZeroCostDL4Mic",
         "2D",
-        "ZeroCostDL4Mic"
+        "labelling",
+        "Deep-STORM"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Deep-STORM_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -3020,9 +3020,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "DRMIME",
-        "image registration"
+        "image registration",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/DRMIME_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -3044,8 +3044,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "ZeroCostDL4Mic",
-        "CycleGAN"
+        "CycleGAN",
+        "ZeroCostDL4Mic"
       ],
       "source": "https://doi.org/10.5281/zenodo.3941884",
       "covers": [
@@ -3076,9 +3076,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
+        "CycleGAN",
         "2D",
-        "CycleGAN"
+        "ZeroCostDL4Mic"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CycleGAN_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -3179,9 +3179,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Cellpose",
+        "ZeroCostDL4Mic",
         "Segmentation",
-        "ZeroCostDL4Mic"
+        "Cellpose"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -3208,8 +3208,8 @@
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
         "ZeroCostDL4Mic",
-        "CARE",
         "3D",
+        "CARE",
         "denoising"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713337",
@@ -3242,8 +3242,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "CARE",
         "3D",
+        "CARE",
         "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_3D_ZeroCostDL4Mic.ipynb",
@@ -3268,8 +3268,8 @@
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
         "ZeroCostDL4Mic",
-        "CARE",
         "2D",
+        "CARE",
         "denoising"
       ],
       "source": "https://doi.org/10.5281/zenodo.3713330",
@@ -3302,8 +3302,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "CARE",
         "2D",
+        "CARE",
         "denoising"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/CARE_2D_ZeroCostDL4Mic.ipynb",
@@ -3338,8 +3338,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "Data Augmentation",
-        "Augmentor"
+        "Augmentor",
+        "Data Augmentation"
       ],
       "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Tools/Augmentor_ZeroCostDL4Mic.ipynb",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -3387,12 +3387,12 @@
       ],
       "tags": [
         "deepimagej-beta",
-        "ZeroCostDL4Mic",
-        "3DUNet",
         "mitochondria",
         "deepimagej",
-        "segmentation",
-        "TEM"
+        "3DUNet",
+        "ZeroCostDL4Mic",
+        "TEM",
+        "segmentation"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
@@ -3402,20 +3402,20 @@
             "Invalid suffix (https:/github.com/HenriquesLab/ZeroCostDL4Mic/wiki): tuple index out of range",
             "Invalid as_posix (https:/github.com/HenriquesLab/ZeroCostDL4Mic/wiki): expected local, relative file path."
           ],
-          "run_mode": {
-            "_schema": [
-              "Invalid input type."
-            ]
-          },
-          "type": [
-            "Missing data for required field."
-          ],
           "authors": {
             "0": {
               "_schema": [
                 "Invalid input type."
               ]
             }
+          },
+          "type": [
+            "Missing data for required field."
+          ],
+          "run_mode": {
+            "_schema": [
+              "Invalid input type."
+            ]
           }
         }
       }
@@ -3466,10 +3466,10 @@
         "cover.png"
       ],
       "tags": [
-        "zerocostdl4mic",
         "unet",
-        "deepimagej",
-        "segmentation"
+        "zerocostdl4mic",
+        "segmentation",
+        "deepimagej"
       ],
       "license": "MIT",
       "error": {
@@ -3477,9 +3477,6 @@
           "documentation": [
             "Invalid suffix (https:/deepimagej.github.io/deepimagej): tuple index out of range",
             "Invalid as_posix (https:/deepimagej.github.io/deepimagej): expected local, relative file path."
-          ],
-          "type": [
-            "Missing data for required field."
           ],
           "authors": {
             "0": {
@@ -3492,7 +3489,10 @@
                 "Invalid input type."
               ]
             }
-          }
+          },
+          "type": [
+            "Missing data for required field."
+          ]
         }
       }
     },
@@ -3525,8 +3525,8 @@
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
         "unet",
-        "deepimagej",
-        "segmentation"
+        "segmentation",
+        "deepimagej"
       ],
       "source": "https://raw.githubusercontent.com/deepimagej/models/master/u-net_pancreatic_segmentation/U_Net_PhC_C2DL_PSC_segmentation.ipynb",
       "links": [
