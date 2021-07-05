@@ -5,9 +5,9 @@ name: compile-manifest
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
   schedule:
     - cron:  '0 */2 * * *'
 jobs:
@@ -41,7 +41,7 @@ jobs:
   deploy-manifest:
     runs-on: ubuntu-latest
     needs: build-manifest
-    if: (github.ref == 'refs/heads/master') && (github.repository == 'bioimage-io/bioimage-io-models')
+    if: (github.ref == 'refs/heads/main') && (github.repository == 'bioimage-io/bioimage-io-models')
     steps:
       - name: Load saved build output
         uses: actions/download-artifact@v1
