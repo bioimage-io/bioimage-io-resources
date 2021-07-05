@@ -1,0 +1,32 @@
+<config lang="json">
+{
+  "name": "BioImageIO-Downloader",
+  "type": "web-python",
+  "tags": [],
+  "ui": "",
+  "version": "0.1.0",
+  "api_version": "0.1.7",
+  "description": "Export a BioImage.IO model package from a model RDF",
+  "icon": "https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/main/assets/download-icon.png",
+  "inputs": null,
+  "outputs": null,
+  "env": "",
+  "requirements": [],
+  "dependencies": [],
+  "defaults": {"w": 20, "h": 10},
+  "runnable": true
+}
+</config>
+
+<script lang="python">
+from imjoy import api
+
+class ImJoyPlugin():
+    def setup(self):
+        api.log('initialized')
+
+    def run(self, ctx):
+        api.alert('hello world.')
+
+api.export(ImJoyPlugin())
+</script>
