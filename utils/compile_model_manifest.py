@@ -9,6 +9,8 @@ import requests
 import yaml
 from marshmallow import ValidationError
 
+from bioimageio.spec.commands import validate
+
 preserved_keys = [
     "api_version",
     "attachments",
@@ -183,7 +185,7 @@ def parse_manifest(models_yaml):
                         if "error" not in item:
                             item["error"] = {}
                         try:
-                            spec.verify_model_data(model_config)
+                            validate(source)
                         except ValidationError as e:
                             print(f'Error when verifying {item["id"]}: {e.messages}')
                             item["error"] = {"spec": e.messages}
