@@ -1,12 +1,12 @@
+import argparse
+import json
 import os
+import re
+import traceback
+from pathlib import Path
+
 import requests
 import yaml
-import re
-import json
-import traceback
-import argparse
-from pathlib import Path
-from bioimageio.spec import __main__ as spec
 from marshmallow import ValidationError
 
 preserved_keys = [
