@@ -75,16 +75,12 @@ def parse_manifest(models_yaml):
                     content = open(app_url, "r").read()
                     if not app_url.startswith("http"):
                         app_url = item["source"].strip("/").strip("./")
-                        app_url = (
-                            models_yaml["config"]["url_root"].strip("/") + "/" + app_url
-                        )
+                        app_url = models_yaml["config"]["url_root"].strip("/") + "/" + app_url
                 else:
 
                     if not app_url.startswith("http"):
                         app_url = item["source"].strip("/").strip("./")
-                        app_url = (
-                            models_yaml["config"]["url_root"].strip("/") + "/" + app_url
-                        )
+                        app_url = models_yaml["config"]["url_root"].strip("/") + "/" + app_url
 
                     response = requests.get(app_url)
                     if response.status_code != 200:
@@ -144,9 +140,7 @@ def parse_manifest(models_yaml):
                     app_config["authors"] = [app_config["authors"]]
 
                 assert item["id"] == plugin_config["name"], (
-                    "Please use the app name ("
-                    + plugin_config["name"]
-                    + ") as its application id."
+                    "Please use the app name (" + plugin_config["name"] + ") as its application id."
                 )
             else:
                 item["type"] = "application"
@@ -157,9 +151,7 @@ def parse_manifest(models_yaml):
             if "links" in app_config:
                 for i in range(len(app_config["links"])):
                     if "/" not in app_config["links"][i]:
-                        app_config["links"][i] = (
-                            models_yaml["config"]["id"] + "/" + app_config["links"][i]
-                        )
+                        app_config["links"][i] = models_yaml["config"]["id"] + "/" + app_config["links"][i]
 
             compiled_apps.append(app_config)
             print("Added application: " + app_config["name"])
@@ -168,9 +160,7 @@ def parse_manifest(models_yaml):
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
-            if "source" in item and (
-                item["source"].endswith("yaml") or item["source"].endswith("yml")
-            ):
+            if "source" in item and (item["source"].endswith("yaml") or item["source"].endswith("yml")):
                 source = item["source"]
 
                 try:
@@ -185,14 +175,8 @@ def parse_manifest(models_yaml):
                     else:
                         with open(source, "rb") as fil:
                             model_config = yaml.safe_load(fil)
-                        item["source"] = (
-                            models_yaml["config"]["url_root"].strip("/") + "/" + source
-                        )
-                        root_url = (
-                            models_yaml["config"]["url_root"].strip("/")
-                            + "/"
-                            + "/".join(source.split("/")[:-1])
-                        )
+                        item["source"] = models_yaml["config"]["url_root"].strip("/") + "/" + source
+                        root_url = models_yaml["config"]["url_root"].strip("/") + "/" + "/".join(source.split("/")[:-1])
                     # merge item from models.yaml to model config
                     item.update(model_config)
                     if tp == "model":
@@ -246,9 +230,7 @@ def parse_manifest(models_yaml):
             if "links" in model_info:
                 for i in range(len(model_info["links"])):
                     if "/" not in model_info["links"][i]:
-                        model_info["links"][i] = (
-                            models_yaml["config"]["id"] + "/" + model_info["links"][i]
-                        )
+                        model_info["links"][i] = models_yaml["config"]["id"] + "/" + model_info["links"][i]
 
             compiled_items.append(model_info)
             print("Added " + model_info["type"] + ": " + model_info["name"])
@@ -256,16 +238,10 @@ def parse_manifest(models_yaml):
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--manifest",
-    type=str,
-    default="manifest.bioimage.io.yaml",
-    help="Path to the input manifest yaml file",
+    "--manifest", type=str, default="manifest.bioimage.io.yaml", help="Path to the input manifest yaml file"
 )
 parser.add_argument(
-    "--output",
-    type=str,
-    default="manifest.bioimage.io.json",
-    help="Output file path for the compiled json file",
+    "--output", type=str, default="manifest.bioimage.io.json", help="Output file path for the compiled json file"
 )
 args = parser.parse_args()
 
@@ -301,6 +277,4 @@ with Path(args.output).open("wb") as f:
         resources.remove(res)
     new_model_yaml["resources"] = resources
     print("Done! Successfully added " + str(len(resources)) + " items.")
-    f.write(
-        json.dumps(new_model_yaml, indent=2, separators=(",", ": ")).encode("utf-8")
-    )
+    f.write(json.dumps(new_model_yaml, indent=2, separators=(",", ": ")).encode("utf-8"))
