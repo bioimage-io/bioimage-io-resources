@@ -28,7 +28,6 @@ preserved_keys = [
     "links",
     "model",
     "name",
-    "source",
     "tags",
     "version",
     "error",
@@ -168,6 +167,7 @@ def parse_manifest(models_yaml):
         if tp not in models_yaml:
             continue
         for item in models_yaml[tp]:
+            model_info = {"type": tp, "attachments": {}}
             if "source" in item and (
                 item["source"].endswith("yaml") or item["source"].endswith("yml")
             ):
@@ -209,9 +209,10 @@ def parse_manifest(models_yaml):
                 except:
                     print("Failed to download or parse source file from " + source)
                     raise
+                model_info['source'] = source
             else:
                 root_url = None
-            model_info = {"type": tp, "attachments": {}}
+            
             if root_url is not None:
                 model_info["root_url"] = root_url
             attachments = model_info["attachments"]
@@ -230,8 +231,10 @@ def parse_manifest(models_yaml):
                         for j in range(len(item[k])):
                             item[k][j] = item[k][j].strip("/").strip("./")
 
-                if k in preserved_keys and (k != 'source' or tp != 'model'): # don't copy model source
+                if k in preserved_keys: # don't copy model source
                     model_info[k] = item[k]
+            if 'source' not in model_info and 'source' in item:
+                model_info['source'] = item['source']
 
             if len(model_info["attachments"]) <= 0:
                 del model_info["attachments"]
