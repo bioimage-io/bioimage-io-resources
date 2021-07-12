@@ -230,7 +230,7 @@ def parse_manifest(models_yaml):
                         for j in range(len(item[k])):
                             item[k][j] = item[k][j].strip("/").strip("./")
 
-                if k in preserved_keys and (k != 'source' || tp != 'model'): # don't copy model source
+                if k in preserved_keys and (k != 'source' or tp != 'model'): # don't copy model source
                     model_info[k] = item[k]
 
             if len(model_info["attachments"]) <= 0:
