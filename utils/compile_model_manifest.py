@@ -162,9 +162,7 @@ def parse_manifest(models_yaml):
             continue
         for item in models_yaml[tp]:
             model_info = {"type": tp, "attachments": {}}
-            if "source" in item and (
-                item["source"].endswith("yaml") or item["source"].endswith("yml")
-            ):
+            if "source" in item and (item["source"].endswith("yaml") or item["source"].endswith("yml")):
                 source = item["source"]
 
                 try:
@@ -179,14 +177,8 @@ def parse_manifest(models_yaml):
                     else:
                         with open(source, "rb") as fil:
                             model_config = yaml.safe_load(fil)
-                        item["source"] = (
-                            models_yaml["config"]["url_root"].strip("/") + "/" + source
-                        )
-                        root_url = (
-                            models_yaml["config"]["url_root"].strip("/")
-                            + "/"
-                            + "/".join(source.split("/")[:-1])
-                        )
+                        item["source"] = models_yaml["config"]["url_root"].strip("/") + "/" + source
+                        root_url = models_yaml["config"]["url_root"].strip("/") + "/" + "/".join(source.split("/")[:-1])
                     # merge item from models.yaml to model config
                     item.update(model_config)
                     if tp == "model":
@@ -203,10 +195,10 @@ def parse_manifest(models_yaml):
                 except:
                     print("Failed to download or parse source file from " + source)
                     raise
-                model_info['source'] = source
+                model_info["source"] = source
             else:
                 root_url = None
-            
+
             if root_url is not None:
                 model_info["root_url"] = root_url
             attachments = model_info["attachments"]
@@ -225,10 +217,10 @@ def parse_manifest(models_yaml):
                         for j in range(len(item[k])):
                             item[k][j] = item[k][j].strip("/").strip("./")
 
-                if k in preserved_keys: # don't copy model source
+                if k in preserved_keys:  # don't copy model source
                     model_info[k] = item[k]
-            if 'source' not in model_info and 'source' in item:
-                model_info['source'] = item['source']
+            if "source" not in model_info and "source" in item:
+                model_info["source"] = item["source"]
 
             if len(model_info["attachments"]) <= 0:
                 del model_info["attachments"]
@@ -243,9 +235,7 @@ def parse_manifest(models_yaml):
             if "links" in model_info:
                 for i in range(len(model_info["links"])):
                     if "/" not in model_info["links"][i]:
-                        model_info["links"][i] = (
-                            models_yaml["config"]["id"] + "/" + model_info["links"][i]
-                        )
+                        model_info["links"][i] = models_yaml["config"]["id"] + "/" + model_info["links"][i]
 
             compiled_items.append(model_info)
             print("Added " + model_info["type"] + ": " + model_info["name"])
@@ -253,16 +243,10 @@ def parse_manifest(models_yaml):
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--manifest",
-    type=str,
-    default="manifest.bioimage.io.yaml",
-    help="Path to the input manifest yaml file",
+    "--manifest", type=str, default="manifest.bioimage.io.yaml", help="Path to the input manifest yaml file"
 )
 parser.add_argument(
-    "--output",
-    type=str,
-    default="manifest.bioimage.io.json",
-    help="Output file path for the compiled json file",
+    "--output", type=str, default="manifest.bioimage.io.json", help="Output file path for the compiled json file"
 )
 args = parser.parse_args()
 
@@ -298,6 +282,4 @@ with Path(args.output).open("wb") as f:
         resources.remove(res)
     new_model_yaml["resources"] = resources
     print("Done! Successfully added " + str(len(resources)) + " items.")
-    f.write(
-        json.dumps(new_model_yaml, indent=2, separators=(",", ": ")).encode("utf-8")
-    )
+    f.write(json.dumps(new_model_yaml, indent=2, separators=(",", ": ")).encode("utf-8"))
