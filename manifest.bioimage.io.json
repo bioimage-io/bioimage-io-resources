@@ -172,11 +172,11 @@
     {
       "id": "ilastik/ilastik",
       "type": "application",
-      "source": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/main/src/ilastik-packager.imjoy.html",
+      "source": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/main/src/ilastik-app.imjoy.html",
       "passive": false,
       "icon": "https://raw.githubusercontent.com/ilastik/bioimage-io-models/master/image/ilastik-fist-icon.png",
       "name": "ilastik",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "api_version": "0.1.7",
       "description": "Export BioImage.IO model packages for ilastik from a model description file",
       "requirements": [
@@ -206,9 +206,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
+        "jupyter",
         "notebook",
-        "jupyter"
+        "imjoy"
       ],
       "documentation": null,
       "covers": [],
@@ -225,9 +225,9 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
+        "jupyter",
         "notebook",
-        "jupyter"
+        "imjoy"
       ],
       "documentation": null,
       "covers": [],
@@ -314,40 +314,13 @@
       "type": "application"
     },
     {
-      "id": "deepimagej/deepimagej-beta",
-      "type": "application",
-      "name": "DeepImageJ Beta",
-      "description": "DeepImageJ is a user-friendly plugin that enables the use of pre-trained deep learning models in ImageJ and Fiji.",
-      "source": "https://deepimagej.github.io/deepimagej/beta_release.html",
-      "cite": {
-        "text": "G\u00f3mez-de-Mariscal, E., Garc\u00eda-L\u00f3pez-de-Haro, C., Donati, L., Unser, M., Mu\u00f1oz-Barrutia, A. and Sage, D. DeepImageJ: A user-friendly plugin to run deep learning models in ImageJ, BioRxiv, 2019",
-        "doi": "https://doi.org/10.1101/799270"
-      },
-      "authors": [
-        "DeepImageJ team"
-      ],
-      "icon": "https://raw.githubusercontent.com/deepimagej/models/master/logos/icon-beta.png",
-      "documentation": "https://deepimagej.github.io/deepimagej/index.html",
-      "git_repo": "https://github.com/deepimagej/deepimagej-plugin",
-      "tags": [
-        "deepimagej-beta",
-        "deepimagej"
-      ],
-      "config": {
-        "supported_weight_formats": [
-          "tensorflow_saved_model_bundle",
-          "pytorch_script"
-        ]
-      }
-    },
-    {
       "id": "deepimagej/deepimagej",
       "type": "application",
       "name": "DeepImageJ",
       "description": "DeepImageJ is a user-friendly plugin that enables the use of pre-trained deep learning models in ImageJ and Fiji.",
       "source": "https://deepimagej.github.io/deepimagej/index.html",
       "cite": {
-        "text": "G\u00f3mez-de-Mariscal, E., Garc\u00eda-L\u00f3pez-de-Haro, C., Donati, L., Unser, M., Mu\u00f1oz-Barrutia, A. and Sage, D. DeepImageJ: A user-friendly plugin to run deep learning models in ImageJ, BioRxiv, 2019",
+        "text": "G\u00f3mez-de-Mariscal, E., Garc\u00eda-L\u00f3pez-de-Haro, C., Ouyang, W., Donati, L., Lundberg E., Unser, M., Mu\u00f1oz-Barrutia, A. and Sage, D. DeepImageJ: A user-friendly plugin to run deep learning models in ImageJ, BioRxiv, 2019",
         "doi": "https://doi.org/10.1101/799270"
       },
       "authors": [
@@ -480,8 +453,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941908",
       "tags": [
-        "YOLOv2",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "YOLOv2"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
@@ -512,9 +485,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "ZeroCostDL4Mic",
         "object detection",
-        "YOLOv2",
-        "ZeroCostDL4Mic"
+        "YOLOv2"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -560,10 +533,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "GAN",
-        "Super resolution",
         "deepimagej",
-        "Fluorescence microscopy"
+        "Fluorescence microscopy",
+        "GAN",
+        "Super resolution"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -608,10 +581,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "GAN",
-        "Super resolution",
         "deepimagej",
-        "Fluorescence microscopy"
+        "Fluorescence microscopy",
+        "GAN",
+        "Super resolution"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -656,10 +629,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "GAN",
-        "Super resolution",
         "deepimagej",
-        "Fluorescence microscopy"
+        "Fluorescence microscopy",
+        "GAN",
+        "Super resolution"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -696,12 +669,12 @@
       ],
       "git_repo": "https://github.com/bioimage-io/pytorch-bioimage-io/tree/master/specs/models/unet2d",
       "tags": [
-        "dsb2018",
+        "nucleus",
         "unet2d",
-        "segmentation",
         "ilastik",
         "pytorch",
-        "nucleus"
+        "segmentation",
+        "dsb2018"
       ],
       "license": "MIT",
       "documentation": "UNet2DNucleiBroad.md",
@@ -732,13 +705,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "vasculature",
-        "hbp",
-        "unet2d",
         "brain",
         "sga2",
+        "vasculature",
+        "unet2d",
         "ilastik",
-        "pytorch"
+        "pytorch",
+        "hbp"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -773,10 +746,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
-        "segmentation",
         "ZeroCostDL4Mic",
-        "U-Net"
+        "U-Net",
+        "segmentation",
+        "3D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -808,10 +781,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
-        "segmentation",
         "ZeroCostDL4Mic",
-        "U-Net"
+        "U-Net",
+        "segmentation",
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -843,10 +816,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
-        "segmentation",
         "ZeroCostDL4Mic",
-        "U-Net"
+        "U-Net",
+        "segmentation",
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -876,13 +849,13 @@
       ],
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
-        "vasculature",
-        "hbp",
-        "unet2d",
         "brain",
         "sga2",
+        "vasculature",
+        "unet2d",
         "ilastik",
-        "pytorch"
+        "pytorch",
+        "hbp"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -917,10 +890,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
-        "3D",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "StarDist",
+        "segmentation",
+        "3D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -943,10 +916,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3715492",
       "tags": [
-        "StarDist",
-        "2D",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "StarDist",
+        "segmentation",
+        "2D"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/Stardist_nuclei_masks.png"
@@ -977,10 +950,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
-        "2D",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "StarDist",
+        "segmentation",
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1016,10 +989,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
-        "segmentation",
+        "SplineDist",
         "ZeroCostDL4Mic",
-        "SplineDist"
+        "StarDist",
+        "segmentation"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1063,9 +1036,9 @@
       "documentation": "https://cbia.fi.muni.cz/research/segmentation/fru-net.html",
       "tags": [
         "extracellular vesicles",
-        "TEM",
         "deepimagej",
-        "segmentation"
+        "segmentation",
+        "TEM"
       ],
       "links": [
         "deepimagej/FRUNet2DsEVSegmentation"
@@ -1114,9 +1087,9 @@
       ],
       "tags": [
         "extracellular vesicles",
-        "TEM",
         "deepimagej",
-        "segmentation"
+        "segmentation",
+        "TEM"
       ],
       "license": "BSD-3-Clause",
       "error": {
@@ -1139,7 +1112,7 @@
       "id": "deepimagej/SkinLesionClassification",
       "download_url": "https://zenodo.org/record/4155785/files/SkinLesions.bioimage.io.model.zip",
       "links": [
-        "deepimagej/deepimagej-beta"
+        "deepimagej/deepimagej"
       ],
       "format_version": "0.3.1",
       "name": "Skin lesions classification",
@@ -1152,12 +1125,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "pytorch",
         "deepimagej",
         "melanoma",
-        "classification",
+        "deepimagej-beta",
         "skin lesions",
-        "deepimagej-beta"
+        "pytorch",
+        "classification"
       ],
       "license": "BSD2",
       "git_repo": "https://gist.github.com/esgomezm/72b584887ca5ed5ed0231c47fff9aa9b#file-skin_lession_classification_pytorch_adapted-ipynb",
@@ -1194,10 +1167,10 @@
       "icon": "https://raw.githubusercontent.com/deepimagej/models/master/logos/icon.png",
       "documentation": "https://raw.githubusercontent.com/deepimagej/models/master/workflows/smlm_deepstorm/README.md",
       "tags": [
-        "smlm",
         "thunderstorm",
-        "deepstorm",
-        "deepimagej"
+        "deepimagej",
+        "smlm",
+        "deepstorm"
       ]
     },
     {
@@ -1233,8 +1206,8 @@
       ],
       "tags": [
         "defcon",
-        "smlm",
         "deepimagej",
+        "smlm",
         "density estimation"
       ],
       "license": "BSD 3",
@@ -1267,10 +1240,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
-        "CARE",
         "denoising",
-        "ZeroCostDL4Mic"
+        "CARE",
+        "ZeroCostDL4Mic",
+        "3D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1327,8 +1300,8 @@
       ],
       "tags": [
         "pancreatic stem cells",
-        "phase contrast",
         "deepimagej",
+        "phase contrast",
         "segmentation"
       ],
       "license": "BSD-2",
@@ -1377,12 +1350,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "phase contrast",
         "deepimagej",
-        "segmentation",
-        "cell tracking challenge",
         "deepwater",
-        "watershed"
+        "watershed",
+        "segmentation",
+        "phase contrast",
+        "cell tracking challenge"
       ],
       "license": "MIT",
       "error": {
@@ -1403,10 +1376,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713326",
       "tags": [
-        "3D",
-        "denoising",
         "Noise2Void",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "denoising",
+        "3D"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
@@ -1429,9 +1402,9 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713315",
       "tags": [
-        "denoising",
         "Noise2Void",
         "ZeroCostDL4Mic",
+        "denoising",
         "2D"
       ],
       "covers": [
@@ -1463,9 +1436,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Noise2VOID",
         "denoising",
         "ZeroCostDL4Mic",
+        "Noise2VOID",
         "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -1499,10 +1472,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
-        "denoising",
         "Noise2Void",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "denoising",
+        "3D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1529,7 +1502,7 @@
       "id": "deepimagej/Usiigaci",
       "download_url": "https://zenodo.org/record/4155785/files/usiigaci.bioimage.io.model.zip",
       "links": [
-        "deepimagej/deepimagej-beta",
+        "deepimagej/deepimagej",
         "imjoy/BioImageIO-Packager"
       ],
       "format_version": "0.3.1",
@@ -1552,14 +1525,14 @@
         "cover.jpg"
       ],
       "tags": [
-        "phase contrast",
-        "usiigaci",
         "deepimagej",
-        "segmentation",
-        "2D",
-        "maskrcnn",
+        "deepimagej-beta",
         "fibroblasts",
-        "deepimagej-beta"
+        "segmentation",
+        "phase contrast",
+        "maskrcnn",
+        "usiigaci",
+        "2D"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/oist/Usiigaci",
@@ -1610,13 +1583,76 @@
         "thumbnail.png"
       ],
       "tags": [
-        "n2v",
         "fiji",
         "denoising",
+        "n2v",
         "unet2d"
       ],
       "license": "BSD-3-Clause",
       "format_version": "0.3.2",
+      "error": {
+        "spec": "Failed to verify the model: module 'bioimageio.spec.__main__' has no attribute 'verify_model_data'"
+      }
+    },
+    {
+      "type": "model",
+      "attachments": {
+        "files": [
+          "./exampleImage.tif",
+          "./resultImage.tif",
+          "./per_sample_scale_range.ijm",
+          "./StarDist_Post-processing.ijm"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/deepimagej/models/master/stardist2D_zerocostdl4mic/model.yaml",
+      "root_url": "https://raw.githubusercontent.com/deepimagej/models/master/stardist2D_zerocostdl4mic",
+      "id": "deepimagej/Stardist2DZeroCostDL4Mic",
+      "download_url": "https://sandbox.zenodo.org/record/880529/files/MoNu_HE_StarDist_9JUL.bioimage.io.model.zip",
+      "links": [
+        "deepimagej/deepimagej"
+      ],
+      "format_version": "0.3.2",
+      "name": "Multi-Organ Nucleus Segmentation Challenge",
+      "description": "Nucleus segmentation in digital pathology datasets (MoNuSeg 2018 Challenge)",
+      "cite": [
+        {
+          "doi": "https://doi.org/10.1007/978-3-030-00934-2_30",
+          "text": "Uwe Schmidt et al. MICCAI 2018"
+        },
+        {
+          "doi": "https://doi.org/10.1109/WACV45572.2020.9093435",
+          "text": "Martin Weigert et al. WACV 2020"
+        },
+        {
+          "doi": "https://doi.org/10.1101/2020.03.20.000133",
+          "text": "Lucas von Chamier et al. biorXiv 2020"
+        },
+        {
+          "doi": "https://doi.org/10.1109/TMI.2019.2947628",
+          "text": "Neeraj Kumar et al. Transactions on medical imaging 2020"
+        }
+      ],
+      "authors": [
+        {
+          "name": "Estibaliz G\u00f3mez de Mariscal",
+          "affiliation": "Universidad Carlos III de Madrid"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "license": "MIT",
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "covers": [
+        "input.png",
+        "output.png"
+      ],
+      "tags": [
+        "deepimagej",
+        "StarDist",
+        "deepImageJ",
+        "histopathology",
+        "segmentation",
+        "ZeroCostDL4Mic"
+      ],
       "error": {
         "spec": "Failed to verify the model: module 'bioimageio.spec.__main__' has no attribute 'verify_model_data'"
       }
@@ -1659,9 +1695,9 @@
         "resultImage.png"
       ],
       "tags": [
-        "GAN",
         "histology",
         "deepimagej",
+        "GAN",
         "Virtual staining"
       ],
       "license": "CC BY 4.0",
@@ -1705,8 +1741,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3748967",
       "tags": [
-        "3D",
         "ZeroCostDL4Mic",
+        "3D",
         "fnet",
         "labelling"
       ],
@@ -1739,8 +1775,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
         "ZeroCostDL4Mic",
+        "3D",
         "fnet",
         "labelling"
       ],
@@ -1788,9 +1824,9 @@
         "resultImage.png"
       ],
       "tags": [
-        "GAN",
         "histology",
         "deepimagej",
+        "GAN",
         "Virtual staining"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
@@ -1839,9 +1875,9 @@
         "unet_hela_seg.jpg"
       ],
       "tags": [
-        "hela cells",
         "phase contrast",
         "deepimagej",
+        "hela cells",
         "segmentation"
       ],
       "license": "BSD-2",
@@ -1855,20 +1891,20 @@
       "id": "hpa/HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "inception-v3",
-        "inception-resnet-v2",
-        "airnext-50",
-        "hpa",
         "airnet-50",
         "cbam",
         "resnet-34",
+        "se-resnext-50",
+        "hpa",
+        "inception-v3",
+        "inception-resnet-v2",
+        "resnet-50",
         "hill-climbing",
         "resnet-101",
         "preresnet-50",
+        "airnext-50",
         "classification",
-        "resnet-50",
-        "resnet-18",
-        "se-resnext-50"
+        "resnet-18"
       ],
       "authors": [
         "Shaikat Mahmood Galib",
@@ -1898,12 +1934,12 @@
       "id": "hpa/HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
-        "inception-v3",
         "hpa",
-        "xception",
-        "multilayer-perceptron",
+        "inception-v3",
         "inception-v4",
-        "classification"
+        "multilayer-perceptron",
+        "classification",
+        "xception"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -1930,11 +1966,11 @@
       "id": "hpa/HPA-pudae",
       "name": "HPA-pudae",
       "tags": [
-        "inception-v3",
-        "hpa",
-        "classification",
         "resnet-34",
-        "se-resnext-50"
+        "se-resnext-50",
+        "hpa",
+        "inception-v3",
+        "classification"
       ],
       "authors": [
         "Park Jinmo"
@@ -1959,11 +1995,11 @@
       "id": "hpa/HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "inception-v3",
+        "se-resnext-50",
         "hpa",
-        "xception",
+        "inception-v3",
         "classification",
-        "se-resnext-50"
+        "xception"
       ],
       "authors": [
         "Xuan Cao",
@@ -1991,12 +2027,12 @@
       "id": "hpa/HPA-bestfitting",
       "name": "HPA-bestfitting",
       "tags": [
-        "inception-v3",
-        "densenet-121",
+        "resnet-34",
         "hpa",
+        "inception-v3",
         "resnet-50",
         "classification",
-        "resnet-34"
+        "densenet-121"
       ],
       "authors": [
         "Shubin Dai"
@@ -2023,15 +2059,15 @@
       "id": "hpa/HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
-        "scikit-learn",
-        "se-resnext-50",
-        "ibn-densenet-121",
-        "densenet-121",
-        "xception",
-        "hpa",
-        "classification",
         "opencv",
-        "densenet-169"
+        "se-resnext-50",
+        "hpa",
+        "ibn-densenet-121",
+        "scikit-learn",
+        "densenet-169",
+        "classification",
+        "xception",
+        "densenet-121"
       ],
       "authors": [
         "Jun Lan"
@@ -2056,10 +2092,10 @@
       "id": "hpa/HPA-Random-Walk",
       "name": "HPA-Random Walk",
       "tags": [
-        "resnet-18",
+        "hpa",
         "classification",
-        "attention-gate",
-        "hpa"
+        "resnet-18",
+        "attention-gate"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -2087,13 +2123,13 @@
       "id": "hpa/HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
-        "lightgbm",
-        "xception",
+        "bn-inception",
+        "se-resnext-50",
         "hpa",
+        "lightgbm",
         "inception-v4",
         "classification",
-        "se-resnext-50",
-        "bn-inception"
+        "xception"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -2121,9 +2157,9 @@
       "id": "hpa/HPA-NTU_MiRA",
       "name": "HPA-NTU_MiRA",
       "tags": [
+        "hpa",
         "resnet-34",
-        "classification",
-        "hpa"
+        "classification"
       ],
       "authors": [
         "Kuan-Lun Tseng"
@@ -2160,9 +2196,9 @@
       ],
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
+        "tensorflow.js",
         "shufflenet",
         "hpa",
-        "tensorflow.js",
         "imjoy",
         "classification"
       ],
@@ -2224,8 +2260,8 @@
       ],
       "tags": [
         "glioblastoma cells",
-        "phase contrast",
         "deepimagej",
+        "phase contrast",
         "segmentation"
       ],
       "license": "BSD-2",
@@ -2286,10 +2322,10 @@
       ],
       "tags": [
         "deepimagej",
-        "SMLM",
         "zerocostdl4mic",
-        "image reconstruction",
-        "super-resolution"
+        "SMLM",
+        "super-resolution",
+        "image reconstruction"
       ],
       "license": "MIT",
       "error": {
@@ -2320,9 +2356,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "object detection",
         "ZeroCostDL4Mic",
-        "Detectron2"
+        "Detectron2",
+        "object detection"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2355,8 +2391,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "CycleGAN",
         "ZeroCostDL4Mic",
+        "CycleGAN",
         "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2381,9 +2417,9 @@
       "documentation": "https://doi.org/10.5281/zenodo.3959089",
       "tags": [
         "SMLM",
-        "Deep-STORM",
         "ZeroCostDL4Mic",
-        "2D"
+        "2D",
+        "Deep-STORM"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
@@ -2414,10 +2450,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Deep-STORM",
-        "DeepImageJ",
         "ZeroCostDL4Mic",
-        "2D"
+        "2D",
+        "DeepImageJ",
+        "Deep-STORM"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2451,9 +2487,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "ZeroCostDL4Mic",
-        "Deep-STORM",
+        "2D",
         "labelling",
-        "2D"
+        "Deep-STORM"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2510,8 +2546,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "CycleGAN",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "CycleGAN"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/unpaired-image_translation.png"
@@ -2542,8 +2578,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "CycleGAN",
         "ZeroCostDL4Mic",
+        "CycleGAN",
         "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2568,8 +2604,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "StarDist",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingflo_trackmate.png"
@@ -2591,8 +2627,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "StarDist",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingTcells_trackmate.png"
@@ -2613,8 +2649,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "StarDist",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingfluo_trackmate.png"
@@ -2673,10 +2709,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
-        "3D",
-        "CARE",
         "denoising",
-        "ZeroCostDL4Mic"
+        "CARE",
+        "ZeroCostDL4Mic",
+        "3D"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/CARE_wiki.png"
@@ -2707,10 +2743,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
-        "CARE",
         "denoising",
-        "ZeroCostDL4Mic"
+        "CARE",
+        "ZeroCostDL4Mic",
+        "3D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2733,8 +2769,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
-        "CARE",
         "denoising",
+        "CARE",
         "ZeroCostDL4Mic",
         "2D"
       ],
@@ -2767,8 +2803,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "CARE",
         "denoising",
+        "CARE",
         "ZeroCostDL4Mic",
         "2D"
       ],
@@ -2804,8 +2840,8 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "Data Augmentation",
-        "Augmentor",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "Augmentor"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2827,7 +2863,7 @@
       "id": "deepimagej/3DUNetZeroCostDL4Mic",
       "download_url": "https://zenodo.org/record/4155785/files/3DUNet_ZeroCostDL4Mic.bioimage.io.model.zip",
       "links": [
-        "deepimagej/deepimagej-beta",
+        "deepimagej/deepimagej",
         "zero/Notebook_U-Net_3D_ZeroCostDL4Mic",
         "imjoy/BioImageIO-Packager"
       ],
@@ -2852,13 +2888,13 @@
         "exampleImage.gif"
       ],
       "tags": [
-        "deepimagej",
-        "segmentation",
         "mitochondria",
-        "3DUNet",
-        "ZeroCostDL4Mic",
+        "TEM",
+        "deepimagej",
         "deepimagej-beta",
-        "TEM"
+        "3DUNet",
+        "segmentation",
+        "ZeroCostDL4Mic"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
@@ -2912,9 +2948,9 @@
         "cover.png"
       ],
       "tags": [
-        "unet",
-        "deepimagej",
         "zerocostdl4mic",
+        "deepimagej",
+        "unet",
         "segmentation"
       ],
       "license": "MIT",
