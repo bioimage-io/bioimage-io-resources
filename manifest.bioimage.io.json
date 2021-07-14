@@ -206,8 +206,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
         "jupyter",
+        "imjoy",
         "notebook"
       ],
       "documentation": null,
@@ -225,8 +225,8 @@
       "api_version": "0.2.3",
       "description": "Previewing Jupyter notebook without a Jupyter server",
       "tags": [
-        "imjoy",
         "jupyter",
+        "imjoy",
         "notebook"
       ],
       "documentation": null,
@@ -427,9 +427,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "ZeroCostDL4Mic",
-        "pix2pix"
+        "pix2pix",
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -453,8 +453,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941908",
       "tags": [
-        "YOLOv2",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "YOLOv2"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
@@ -485,9 +485,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "ZeroCostDL4Mic",
         "object detection",
-        "YOLOv2",
-        "ZeroCostDL4Mic"
+        "YOLOv2"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -533,10 +533,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "deepimagej",
-        "GAN",
+        "Super resolution",
         "Fluorescence microscopy",
-        "Super resolution"
+        "deepimagej",
+        "GAN"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -579,10 +579,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "deepimagej",
-        "GAN",
+        "Super resolution",
         "Fluorescence microscopy",
-        "Super resolution"
+        "deepimagej",
+        "GAN"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -625,10 +625,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "deepimagej",
-        "GAN",
+        "Super resolution",
         "Fluorescence microscopy",
-        "Super resolution"
+        "deepimagej",
+        "GAN"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -663,12 +663,12 @@
       ],
       "git_repo": "https://github.com/bioimage-io/pytorch-bioimage-io/tree/master/specs/models/unet2d",
       "tags": [
-        "pytorch",
-        "nucleus",
         "segmentation",
-        "ilastik",
+        "pytorch",
+        "dsb2018",
+        "nucleus",
         "unet2d",
-        "dsb2018"
+        "ilastik"
       ],
       "license": "MIT",
       "documentation": "UNet2DNucleiBroad.md",
@@ -698,12 +698,12 @@
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
         "vasculature",
-        "pytorch",
-        "ilastik",
-        "brain",
         "sga2",
+        "pytorch",
+        "brain",
         "hbp",
-        "unet2d"
+        "unet2d",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -711,6 +711,42 @@
         "documentation/covers/UNetCover.png"
       ],
       "error": {}
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_U-Net_3D_ZeroCostDL4Mic_DeepImageJ",
+      "name": "U-Net (3D) - ZeroCostDL4Mic - DeepImageJ",
+      "description": "The 3D U-Net was first introduced by \u00c7i\u00e7ek et al for learning dense volumetric segmentations from sparsely annotated ground-truth data building upon the original U-Net architecture by Ronneberger et al. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via deepImageJ.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Estibaliz G\u00f3mez de Mariscal and the deepImageJ and the ZeroCostDL4Mic teams"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/BioImage.io%20notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "3D",
+        "segmentation",
+        "U-Net",
+        "ZeroCostDL4Mic",
+        "deepimagej"
+      ],
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ],
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/BioImage.io%20notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb"
     },
     {
       "type": "notebook",
@@ -736,10 +772,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "U-Net",
         "ZeroCostDL4Mic",
         "3D",
-        "segmentation"
+        "segmentation",
+        "U-Net"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -751,36 +787,37 @@
       "type": "notebook",
       "id": "zero/Notebook_U-Net_2D_ZeroCostDL4Mic_DeepImageJ",
       "name": "U-Net (2D) - ZeroCostDL4Mic - DeepImageJ",
-      "description": "U-Net is an encoder-decoder architecture originally used for image segmentation. The first half of the U-Net architecture is a downsampling convolutional neural network which acts as a feature extractor from input images. The other half upsamples these results and restores an image by combining results from downsampling with the upsampled images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via DeepImageJ.",
+      "description": "U-Net is an encoder-decoder architecture originally used for image segmentation. The first half of the U-Net architecture is a downsampling convolutional neural network which acts as a feature extractor from input images. The other half upsamples these results and restores an image by combining results from downsampling with the upsampled images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via deepImageJ.",
       "cite": {
         "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
         "doi": "https://doi.org/10.1101/2020.03.20.000133"
       },
       "authors": [
-        "Estibaliz G\u00f3mez de Mariscal and the DeepImageJ and the ZeroCostDL4Mic teams"
+        "Estibaliz G\u00f3mez de Mariscal and the deepImageJ and the ZeroCostDL4Mic teams"
       ],
       "covers": [
-        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
       ],
       "badges": [
         {
           "label": "Open in Colab",
           "icon": "https://colab.research.google.com/assets/colab-badge.svg",
-          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb"
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/BioImage.io%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb"
         }
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
+        "segmentation",
+        "deepImageJ",
         "U-Net",
-        "ZeroCostDL4Mic",
-        "segmentation"
+        "2D",
+        "ZeroCostDL4Mic"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
         "zero/Notebook Preview"
       ],
-      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/Beta%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb"
+      "source": "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Colab_notebooks/BioImage.io%20notebooks/U-Net_2D_ZeroCostDL4Mic_exportDeepImageJ.ipynb"
     },
     {
       "type": "notebook",
@@ -807,9 +844,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "2D",
-        "U-Net",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "segmentation",
+        "U-Net"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -840,12 +877,12 @@
       "documentation": "documentation/TransferLearningBasedSegmentationWorkflow.md",
       "tags": [
         "vasculature",
-        "pytorch",
-        "ilastik",
-        "brain",
         "sga2",
+        "pytorch",
+        "brain",
         "hbp",
-        "unet2d"
+        "unet2d",
+        "ilastik"
       ],
       "license": "MIT",
       "format_version": "0.1.0",
@@ -878,9 +915,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
-        "3D",
         "ZeroCostDL4Mic",
+        "3D",
+        "StarDist",
         "segmentation"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -904,15 +941,51 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3715492",
       "tags": [
-        "StarDist",
-        "2D",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "StarDist",
+        "segmentation",
+        "2D"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/Stardist_nuclei_masks.png"
       ],
       "source": "https://doi.org/10.5281/zenodo.3715492"
+    },
+    {
+      "type": "notebook",
+      "id": "zero/Notebook_StarDist_2D_ZeroCostDL4Mic_DeepImageJ",
+      "name": "StarDist (2D) - ZeroCostDL4Mic - DeepImageJ",
+      "description": "StarDist is a deep-learning method that can be used to segment cell nuclei in 2D (xy) images. Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via deepImageJ and StarDist plugins for ImageJ.",
+      "cite": {
+        "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
+        "doi": "https://doi.org/10.1101/2020.03.20.000133"
+      },
+      "authors": [
+        "Estibaliz G\u00f3mez de Mariscal and the deepImageJ and the ZeroCostDL4Mic teams"
+      ],
+      "covers": [
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+      ],
+      "badges": [
+        {
+          "label": "Open in Colab",
+          "icon": "https://colab.research.google.com/assets/colab-badge.svg",
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/BioImage.io%20notebooks/StarDist_2D_ZeroCostDL4Mic_BioImageModelZoo_export.ipynb"
+        }
+      ],
+      "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
+      "tags": [
+        "segmentation",
+        "2D",
+        "ZeroCostDL4Mic",
+        "deepimagej",
+        "StarDist"
+      ],
+      "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
+      "links": [
+        "zero/Notebook Preview"
+      ],
+      "source": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/BioImage.io%20notebooks/StarDist_2D_ZeroCostDL4Mic_BioImageModelZoo_export.ipynb"
     },
     {
       "type": "notebook",
@@ -938,10 +1011,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "StarDist",
-        "2D",
         "ZeroCostDL4Mic",
-        "segmentation"
+        "StarDist",
+        "segmentation",
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -977,10 +1050,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "SplineDist",
         "ZeroCostDL4Mic",
+        "segmentation",
         "StarDist",
-        "segmentation"
+        "SplineDist"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1111,10 +1184,10 @@
         "cover.jpg"
       ],
       "tags": [
-        "pytorch",
-        "classification",
         "melanoma",
+        "classification",
         "deepimagej",
+        "pytorch",
         "skin lesions",
         "deepimagej-beta"
       ],
@@ -1152,8 +1225,8 @@
       "documentation": "https://raw.githubusercontent.com/deepimagej/models/master/workflows/smlm_deepstorm/README.md",
       "tags": [
         "deepimagej",
-        "thunderstorm",
         "smlm",
+        "thunderstorm",
         "deepstorm"
       ]
     },
@@ -1190,9 +1263,9 @@
       ],
       "tags": [
         "deepimagej",
-        "defcon",
         "smlm",
-        "density estimation"
+        "density estimation",
+        "defcon"
       ],
       "license": "BSD 3",
       "git_repo": "https://github.com/LEB-EPFL/DEFCoN",
@@ -1222,10 +1295,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
+        "ZeroCostDL4Mic",
         "CARE",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "3D",
+        "denoising"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1330,12 +1403,12 @@
         "cover.jpg"
       ],
       "tags": [
-        "watershed",
-        "deepimagej",
-        "cell tracking challenge",
-        "phase contrast",
         "segmentation",
-        "deepwater"
+        "deepwater",
+        "watershed",
+        "phase contrast",
+        "cell tracking challenge",
+        "deepimagej"
       ],
       "license": "MIT",
       "error": {}
@@ -1354,10 +1427,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713326",
       "tags": [
-        "Noise2Void",
+        "ZeroCostDL4Mic",
         "3D",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "Noise2Void",
+        "denoising"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
@@ -1380,10 +1453,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713315",
       "tags": [
-        "Noise2Void",
-        "denoising",
+        "2D",
         "ZeroCostDL4Mic",
-        "2D"
+        "Noise2Void",
+        "denoising"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/N2V_wiki.png"
@@ -1415,9 +1488,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "2D",
+        "ZeroCostDL4Mic",
         "Noise2VOID",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "denoising"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1450,10 +1523,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "Noise2Void",
+        "ZeroCostDL4Mic",
         "3D",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "Noise2Void",
+        "denoising"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1504,13 +1577,13 @@
       ],
       "tags": [
         "maskrcnn",
-        "deepimagej",
-        "phase contrast",
-        "usiigaci",
-        "fibroblasts",
         "segmentation",
+        "usiigaci",
         "deepimagej-beta",
-        "2D"
+        "phase contrast",
+        "2D",
+        "deepimagej",
+        "fibroblasts"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/oist/Usiigaci",
@@ -1560,9 +1633,9 @@
       ],
       "tags": [
         "fiji",
+        "n2v",
         "unet2d",
-        "denoising",
-        "n2v"
+        "denoising"
       ],
       "license": "BSD-3-Clause",
       "format_version": "0.3.2",
@@ -1620,12 +1693,12 @@
         "output.png"
       ],
       "tags": [
-        "deepImageJ",
-        "ZeroCostDL4Mic",
-        "StarDist",
-        "deepimagej",
         "segmentation",
-        "histopathology"
+        "deepImageJ",
+        "histopathology",
+        "ZeroCostDL4Mic",
+        "deepimagej",
+        "StarDist"
       ],
       "error": {}
     },
@@ -1667,10 +1740,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Virtual staining",
+        "histology",
         "deepimagej",
         "GAN",
-        "histology"
+        "Virtual staining"
       ],
       "license": "CC BY 4.0",
       "error": {}
@@ -1711,10 +1784,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3748967",
       "tags": [
-        "3D",
-        "labelling",
         "ZeroCostDL4Mic",
-        "fnet"
+        "fnet",
+        "labelling",
+        "3D"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/Fnet_exemplary_data_mitochondria.png"
@@ -1745,10 +1818,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
-        "labelling",
         "ZeroCostDL4Mic",
-        "fnet"
+        "fnet",
+        "labelling",
+        "3D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -1794,10 +1867,10 @@
         "resultImage.png"
       ],
       "tags": [
-        "Virtual staining",
+        "histology",
         "deepimagej",
         "GAN",
-        "histology"
+        "Virtual staining"
       ],
       "documentation": "https://innovate.ee.ucla.edu",
       "license": "CC BY 4.0",
@@ -1843,8 +1916,8 @@
         "unet_hela_seg.jpg"
       ],
       "tags": [
-        "hela cells",
         "deepimagej",
+        "hela cells",
         "phase contrast",
         "segmentation"
       ],
@@ -1857,19 +1930,19 @@
       "id": "hpa/HPA-wienerschnitzelgemeinschaft",
       "name": "HPA-wienerschnitzelgemeinschaft",
       "tags": [
-        "airnet-50",
-        "resnet-34",
-        "hpa",
+        "inception-resnet-v2",
         "classification",
-        "resnet-18",
         "preresnet-50",
         "cbam",
-        "hill-climbing",
-        "resnet-50",
-        "se-resnext-50",
-        "inception-resnet-v2",
-        "inception-v3",
         "resnet-101",
+        "inception-v3",
+        "resnet-18",
+        "airnet-50",
+        "resnet-50",
+        "hpa",
+        "resnet-34",
+        "hill-climbing",
+        "se-resnext-50",
         "airnext-50"
       ],
       "authors": [
@@ -1900,12 +1973,12 @@
       "id": "hpa/HPA-vpp",
       "name": "HPA-vpp",
       "tags": [
-        "xception",
-        "inception-v4",
         "classification",
-        "multilayer-perceptron",
         "inception-v3",
-        "hpa"
+        "hpa",
+        "multilayer-perceptron",
+        "inception-v4",
+        "xception"
       ],
       "authors": [
         "Yinzheng Gu",
@@ -1933,10 +2006,10 @@
       "name": "HPA-pudae",
       "tags": [
         "classification",
-        "se-resnext-50",
         "inception-v3",
         "hpa",
-        "resnet-34"
+        "resnet-34",
+        "se-resnext-50"
       ],
       "authors": [
         "Park Jinmo"
@@ -1961,11 +2034,11 @@
       "id": "hpa/HPA-conv",
       "name": "HPA-conv is all you need",
       "tags": [
-        "xception",
         "classification",
-        "se-resnext-50",
         "inception-v3",
-        "hpa"
+        "hpa",
+        "xception",
+        "se-resnext-50"
       ],
       "authors": [
         "Xuan Cao",
@@ -1994,11 +2067,11 @@
       "name": "HPA-bestfitting",
       "tags": [
         "classification",
-        "densenet-121",
-        "resnet-50",
         "inception-v3",
+        "resnet-50",
         "hpa",
-        "resnet-34"
+        "resnet-34",
+        "densenet-121"
       ],
       "authors": [
         "Shubin Dai"
@@ -2025,15 +2098,15 @@
       "id": "hpa/HPA-WAIR",
       "name": "HPA-WAIR",
       "tags": [
+        "ibn-densenet-121",
+        "classification",
+        "densenet-169",
+        "scikit-learn",
+        "hpa",
         "opencv",
         "xception",
-        "classification",
-        "densenet-121",
-        "ibn-densenet-121",
-        "scikit-learn",
         "se-resnext-50",
-        "densenet-169",
-        "hpa"
+        "densenet-121"
       ],
       "authors": [
         "Jun Lan"
@@ -2059,9 +2132,9 @@
       "name": "HPA-Random Walk",
       "tags": [
         "resnet-18",
-        "hpa",
+        "attention-gate",
         "classification",
-        "attention-gate"
+        "hpa"
       ],
       "authors": [
         "Zhifeng Gao",
@@ -2089,13 +2162,13 @@
       "id": "hpa/HPA-One-More",
       "name": "HPA-One More Layer Of Stacking",
       "tags": [
-        "lightgbm",
-        "xception",
-        "hpa",
-        "inception-v4",
         "classification",
-        "se-resnext-50",
-        "bn-inception"
+        "bn-inception",
+        "hpa",
+        "lightgbm",
+        "inception-v4",
+        "xception",
+        "se-resnext-50"
       ],
       "authors": [
         "Dmitry Buslov",
@@ -2123,9 +2196,9 @@
       "id": "hpa/HPA-NTU_MiRA",
       "name": "HPA-NTU_MiRA",
       "tags": [
-        "resnet-34",
         "hpa",
-        "classification"
+        "classification",
+        "resnet-34"
       ],
       "authors": [
         "Kuan-Lun Tseng"
@@ -2163,10 +2236,10 @@
       "documentation": "HPAShuffleNetV2.md",
       "tags": [
         "classification",
-        "shufflenet",
         "tensorflow.js",
-        "imjoy",
-        "hpa"
+        "hpa",
+        "shufflenet",
+        "imjoy"
       ],
       "git_repo": "https://github.com/CellProfiling/HPA-Special-Prize",
       "badges": [
@@ -2284,10 +2357,10 @@
       ],
       "tags": [
         "zerocostdl4mic",
-        "super-resolution",
-        "deepimagej",
         "image reconstruction",
-        "SMLM"
+        "deepimagej",
+        "SMLM",
+        "super-resolution"
       ],
       "license": "MIT",
       "error": {}
@@ -2316,9 +2389,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "ZeroCostDL4Mic",
         "object detection",
-        "Detectron2",
-        "ZeroCostDL4Mic"
+        "Detectron2"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2351,9 +2424,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
+        "ZeroCostDL4Mic",
         "CycleGAN",
-        "ZeroCostDL4Mic"
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2376,10 +2449,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3959089",
       "tags": [
-        "SMLM",
-        "2D",
         "ZeroCostDL4Mic",
-        "Deep-STORM"
+        "Deep-STORM",
+        "SMLM",
+        "2D"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/TrainingDataset_ShowOff_v3.png"
@@ -2390,37 +2463,38 @@
       "type": "notebook",
       "id": "zero/Notebook_Deep-STORM_2D_ZeroCostDL4Mic_DeepImageJ",
       "name": "Deep-STORM (2D) - ZeroCostDL4Mic - DeepImageJ",
-      "description": "Deep-STORM is a neural network capable of image reconstruction from high-density single-molecule localization microscopy (SMLM), first published in 2018 by Nehme et al. in Optica. This network allows image reconstruction of 2D super-resolution images, in a supervised training manner. The network is trained using simulated high-density SMLM data for which the ground-truth is available. These simulations are obtained from random distribution of single molecules in a field-of-view and therefore do not imprint structural priors during training. The network output a super-resolution image with increased pixel density (typically upsampling factor of 8 in each dimension). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via DeepImageJ.",
+      "description": "Deep-STORM is a neural network capable of image reconstruction from high-density single-molecule localization microscopy (SMLM), first published in 2018 by Nehme et al. in Optica. This network allows image reconstruction of 2D super-resolution images, in a supervised training manner. The network is trained using simulated high-density SMLM data for which the ground-truth is available. These simulations are obtained from random distribution of single molecules in a field-of-view and therefore do not imprint structural priors during training. The network output a super-resolution image with increased pixel density (typically upsampling factor of 8 in each dimension). Note - visit the ZeroCostDL4Mic wiki to check the original publications this network is based on and make sure you cite these. Networks trained in this notebook can be used in Fiji via deepImageJ and ThunderSTORM plugin.",
       "cite": {
         "text": "Lucas von Chamier, Romain F. Laine, Johanna Jukkala, Christoph Spahn, Daniel Krentzel, Elias Nehme, Martina Lerche, Sara Hern\u00e1ndez-p\u00e9rez, Pieta Mattila, Eleni Karinou, S\u00e9amus Holden, Ahmet Can Solak, Alexander Krull, Tim-Oliver Buchholz, Martin L Jones, Loic Alain Royer, Christophe Leterrier, Yoav Shechtman, Florian Jug, Mike Heilemann, Guillaume Jacquemet, Ricardo Henriques. ZeroCostDL4Mic: an open platform to use Deep-Learning in Microscopy. bioRxiv, 2020. DOI: https://doi.org/10.1101/2020.03.20.000133",
         "doi": "https://doi.org/10.1101/2020.03.20.000133"
       },
       "authors": [
-        "Estibaliz G\u00f3mez de Mariscal and the DeepImageJ and the ZeroCostDL4Mic teams"
+        "Estibaliz G\u00f3mez de Mariscal and the deepImageJ and the ZeroCostDL4Mic teams"
       ],
       "covers": [
-        "https://raw.githubusercontent.com/oeway/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
+        "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.png"
       ],
       "badges": [
         {
           "label": "Open in Colab",
           "icon": "https://colab.research.google.com/assets/colab-badge.svg",
-          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb"
+          "url": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/BioImage.io%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb"
         }
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
         "DeepImageJ",
-        "ZeroCostDL4Mic",
-        "Deep-STORM"
+        "Deep-STORM",
+        "deepImageJ",
+        "2D",
+        "ZeroCostDL4Mic"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
         "zero/Notebook Preview",
         "zero/Dataset_Deep-STORM_ZeroCostDL4Mic"
       ],
-      "source": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb"
+      "source": "https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/BioImage.io%20notebooks/Deep-STORM_2D_ZeroCostDL4Mic_Fiji_export.ipynb"
     },
     {
       "type": "notebook",
@@ -2446,10 +2520,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
-        "labelling",
         "ZeroCostDL4Mic",
-        "Deep-STORM"
+        "Deep-STORM",
+        "labelling",
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2482,9 +2556,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "DRMIME",
         "ZeroCostDL4Mic",
-        "image registration",
-        "DRMIME"
+        "image registration"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2506,8 +2580,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "CycleGAN",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "CycleGAN"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/unpaired-image_translation.png"
@@ -2538,9 +2612,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "2D",
+        "ZeroCostDL4Mic",
         "CycleGAN",
-        "ZeroCostDL4Mic"
+        "2D"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2564,8 +2638,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "StarDist",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingflo_trackmate.png"
@@ -2587,8 +2661,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "StarDist",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingTcells_trackmate.png"
@@ -2609,8 +2683,8 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3941884",
       "tags": [
-        "StarDist",
-        "ZeroCostDL4Mic"
+        "ZeroCostDL4Mic",
+        "StarDist"
       ],
       "covers": [
         "https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/Wiki_files/StarDist_trainingfluo_trackmate.png"
@@ -2641,8 +2715,8 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "ZeroCostDL4Mic",
         "Segmentation",
+        "ZeroCostDL4Mic",
         "Cellpose"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
@@ -2669,10 +2743,10 @@
       ],
       "documentation": "https://doi.org/10.5281/zenodo.3713337",
       "tags": [
-        "3D",
+        "ZeroCostDL4Mic",
         "CARE",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "3D",
+        "denoising"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/CARE_wiki.png"
@@ -2703,10 +2777,10 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
-        "3D",
+        "ZeroCostDL4Mic",
         "CARE",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "3D",
+        "denoising"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2730,9 +2804,9 @@
       "documentation": "https://doi.org/10.5281/zenodo.3713330",
       "tags": [
         "2D",
+        "ZeroCostDL4Mic",
         "CARE",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "denoising"
       ],
       "covers": [
         "https://github.com/HenriquesLab/ZeroCostDL4Mic/raw/master/Wiki_files/CARE_wiki.png"
@@ -2764,9 +2838,9 @@
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
         "2D",
+        "ZeroCostDL4Mic",
         "CARE",
-        "denoising",
-        "ZeroCostDL4Mic"
+        "denoising"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2799,9 +2873,9 @@
       ],
       "documentation": "https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki",
       "tags": [
+        "ZeroCostDL4Mic",
         "Data Augmentation",
-        "Augmentor",
-        "ZeroCostDL4Mic"
+        "Augmentor"
       ],
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic",
       "links": [
@@ -2848,13 +2922,13 @@
         "exampleImage.gif"
       ],
       "tags": [
-        "ZeroCostDL4Mic",
-        "deepimagej",
-        "mitochondria",
-        "3DUNet",
-        "TEM",
         "segmentation",
-        "deepimagej-beta"
+        "TEM",
+        "3DUNet",
+        "deepimagej-beta",
+        "mitochondria",
+        "ZeroCostDL4Mic",
+        "deepimagej"
       ],
       "license": "MIT",
       "git_repo": "https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/U-Net_3D_ZeroCostDL4Mic.ipynb",
@@ -2906,9 +2980,9 @@
         "cover.png"
       ],
       "tags": [
-        "unet",
         "deepimagej",
         "zerocostdl4mic",
+        "unet",
         "segmentation"
       ],
       "license": "MIT",
@@ -2942,9 +3016,9 @@
       ],
       "documentation": "https://github.com/miura/NEUBIAS_AnalystSchool2020/tree/master/Ignacio",
       "tags": [
-        "deepimagej",
         "segmentation",
-        "unet"
+        "unet",
+        "deepimagej"
       ],
       "links": [
         "deepimagej/UNet2DPancreaticSegmentation"
