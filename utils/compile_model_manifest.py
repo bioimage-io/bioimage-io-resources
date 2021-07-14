@@ -199,7 +199,9 @@ def parse_manifest(models_yaml):
                         if "error" not in item:
                             item["error"] = {}
                         try:
-                            spec.verify_model_data(model_config)
+                            with open("./rdf.yaml", "w") as f:
+                                yaml.dump(model_config, f)
+                            spec.validate("./rdf.yaml", verbose=True)
                         except ValidationError as e:
                             print(f'Error when verifying {item["id"]}: {e.messages}')
                             item["error"] = {"spec": e.messages}
@@ -209,10 +211,10 @@ def parse_manifest(models_yaml):
                 except:
                     print("Failed to download or parse source file from " + source)
                     raise
-                model_info['source'] = source
+                model_info["source"] = source
             else:
                 root_url = None
-            
+
             if root_url is not None:
                 model_info["root_url"] = root_url
             attachments = model_info["attachments"]
@@ -231,10 +233,10 @@ def parse_manifest(models_yaml):
                         for j in range(len(item[k])):
                             item[k][j] = item[k][j].strip("/").strip("./")
 
-                if k in preserved_keys: # don't copy model source
+                if k in preserved_keys:  # don't copy model source
                     model_info[k] = item[k]
-            if 'source' not in model_info and 'source' in item:
-                model_info['source'] = item['source']
+            if "source" not in model_info and "source" in item:
+                model_info["source"] = item["source"]
 
             if len(model_info["attachments"]) <= 0:
                 del model_info["attachments"]
