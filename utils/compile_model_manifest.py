@@ -121,7 +121,10 @@ def parse_manifest(models_yaml):
                     if f in plugin_config:
                         app_config[f] = plugin_config[f]
                 tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
+                if "bioengine" not in tags:
+                    tags.append("bioengine")
                 app_config["tags"] = tags
+                    
                 app_config["documentation"] = plugin_config.get("docs")
                 app_config["covers"] = plugin_config.get("cover")
                 # make sure we have a list
