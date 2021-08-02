@@ -69,9 +69,7 @@ def parse_manifest(models_yaml):
     if "application" in models_yaml:
         for item in models_yaml["application"]:
             app_url = item.get("source")
-            if not app_url:
-                continue
-            if app_url.endswith(".imjoy.html"):
+            if app_url and app_url.endswith(".imjoy.html"):
                 if os.path.exists(app_url):
                     content = open(app_url, "r").read()
                     if not app_url.startswith("http"):
@@ -119,7 +117,10 @@ def parse_manifest(models_yaml):
                     if f in plugin_config:
                         app_config[f] = plugin_config[f]
                 tags = plugin_config.get("labels", []) + plugin_config.get("flags", [])
+                if "bioengine" not in tags:
+                    tags.append("bioengine")
                 app_config["tags"] = tags
+                    
                 app_config["documentation"] = plugin_config.get("docs")
                 app_config["covers"] = plugin_config.get("cover")
                 # make sure we have a list
@@ -185,7 +186,7 @@ def parse_manifest(models_yaml):
                         if "error" not in item:
                             item["error"] = {}
                         try:
-                            validate(source)
+                            validate(source, verbose=True)
                         except ValidationError as e:
                             print(f'Error when verifying {item["id"]}: {e.messages}')
                             item["error"] = {"spec": e.messages}
