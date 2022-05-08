@@ -1,5 +1,18 @@
-format_version: 0.2.0
-config:
+format_version: 0.2.2
+type: collection
+name: BioImageIO Collection
+tags: [bioimage.io]
+description: "Resources collection for BioImgage.IO"
+
+authors:
+  - name: "BioImageIO Team"
+    github_user: bioimage-io
+
+maintainers:
+  - name: "BioImageIO Team"
+    github_user: bioimage-io
+
+config:  # todo: clean up config (which of these fields are still used?)
   id: bioimage.io
   name: BioImage.IO
   tags: []
@@ -21,25 +34,3 @@ config:
     - dataset
   default_type: model
   url_root: https://raw.githubusercontent.com/bioimage-io/bioimage-io-models/main
-
-collection:
-  - id: zero
-    source: https://raw.githubusercontent.com/HenriquesLab/ZeroCostDL4Mic/master/manifest.bioimage.io.yaml
-  - id: deepimagej
-    source: https://raw.githubusercontent.com/deepimagej/models/master/manifest.bioimage.io.yaml
-  - id: fiji
-    source: https://raw.githubusercontent.com/bioimage-io/fiji-bioimage-io/master/manifest.bioimage.io.yaml
-  - id: imjoy
-    source: https://raw.githubusercontent.com/imjoy-team/bioimage-io-models/master/manifest.bioimage.io.yaml
-  - id: ilastik
-    source: https://raw.githubusercontent.com/ilastik/bioimage-io-models/main/manifest.bioimage.io.yaml
-  - id: hpa
-    source: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/manifest.bioimage.io.yaml
-
-model: []
-
-application: []
-
-dataset: []
-
-notebook: []
