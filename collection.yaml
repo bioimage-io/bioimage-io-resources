@@ -13,7 +13,8 @@ maintainers:
     github_user: bioimage-io
 
 config:  # todo: clean up config (which of these fields are still used?)
-  id: bioimage.io
+  # todo: compare to https://github.com/bioimage-io/collection-bioimage-io/blob/f89e869c2f84d3589d4c7e57e6993faf76d48ed3/collection_rdf_template.yaml#L15-L24
+  id: bioimageio
   name: BioImage.IO
   tags: []
   logo: 🦒
@@ -35,4 +36,27 @@ config:  # todo: clean up config (which of these fields are still used?)
   default_type: model
   url_root: https://raw.githubusercontent.com/bioimage-io/bioimage-io-resources/main
   
-collection: []
+collection:
+- id: stardist
+  name: StarDist
+  description: "Object Detection with Star-convex Shapes"
+  format_version: 0.2.2
+  git_repo: "https://github.com/stardist/stardist"
+  type: application
+  authors:
+    - name: Uwe Schmidt
+      github_user: uschmidt83
+    - name: Martin Weigert 
+      github_user: maweigert
+  maintainers:
+    - name: Uwe Schmidt
+      github_user: uschmidt83
+  cite:
+  - doi: https://doi.org/10.1007/978-3-030-00934-2_30
+    text: Cell Detection with Star-Convex Polygons
+  - doi: https://doi.org/10.1109/WACV45572.2020.9093435
+    text: >-
+      Star-convex Polyhedra for 3D Object Detection and Segmentation in
+      Microscopy
+  documentation: https://raw.githubusercontent.com/stardist/stardist/master/README.md
+  tags: [stardist]
